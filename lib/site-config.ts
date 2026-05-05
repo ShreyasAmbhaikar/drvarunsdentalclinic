@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Dr. Varun's Dental Clinic",
   shortName: "Dr. Varun's",
-  tagline: "Gentle modern dental care for confident smiles",
+  tagline: "Gentle modern dental care for confident, healthy smiles and lasting comfort",
   url: "https://www.drvarundental.com",
   domainPlaceholder: true,
   locale: "en_IN",
@@ -94,66 +94,89 @@ export const siteConfig = {
   ],
   team: [
     {
-      name: "Dr. Varun Sharma",
-      role: "Dental Surgeon",
-      image: "/images/doctor-ralph.jpg",
-      alt: "Dr. Varun Sharma dental surgeon"
-    },
-    {
-      name: "Dr. Priya Mehta",
-      role: "Dental Surgeon",
-      image: "/images/doctor-shelley.jpg",
-      alt: "Dr. Priya Mehta dental surgeon"
-    },
-    {
-      name: "Dr. Neha Kapoor",
-      role: "Dental Surgeon",
-      image: "/images/doctor-nicola.jpg",
-      alt: "Dr. Neha Kapoor dental surgeon"
+      name: "Dr. Varun Tomke",
+      role: "Dental Surgeon and Implantologist",
+      image: "/images/gallery/dr-varun-pocket-hands.png",
+      alt: "Dr. Varun Tomke, dental surgeon and implantologist",
+      summary:
+        "Dr. Varun Tomke brings more than 17 years of experience in advanced dentistry with a strong focus on implants, smile makeovers, full mouth rehabilitation, and patient-first care.",
+      highlights: [
+        "17+ years serving Viman Nagar and Wagholi",
+        "Best Dentist recognition in 2017 and 2022",
+        "President, IDA Pune East branch"
+      ]
     }
   ],
   testimonials: [
     {
-      name: "Alexander Harris",
+      name: "Shreyas Ambhaikar",
+      image: "/images/testimonial/shreyas.jpg",
+      alt: "Shreyas Ambhaikar testimonial profile photo",
       quote:
-        "The team made my visit comfortable and stress free. Everything felt modern, clean, and professional."
+        "I visited Dr. Varun's Dental Clinic in Viman Nagar for a root canal treatment and dental cap. Dr. Varun explained the entire procedure very clearly before starting the treatment, which made me feel comfortable. The procedure was smooth and almost painless. The clinic is very clean and well maintained. I would definitely recommend Dr. Varun to anyone looking for a reliable dentist in Viman Nagar."
     },
     {
-      name: "Emily Williams",
+      name: "Sheetal Joshi",
+      image: "/images/testimonial/sheetal.png",
+      alt: "Sheetal Joshi testimonial profile photo",
       quote:
-        "I was nervous before my appointment, but the dentist explained every step and made me feel at ease."
+        "Dr. Varun did excellent work for an implant on one molar tooth and a cap for another tooth. I would recommend him to my friends. Very soft-handed, precise in his work, and genuinely committed to good dental care."
     },
     {
-      name: "Samuel Walker",
+      name: "Swati Tirpude",
+      image: "/images/testimonial/swati.png",
+      alt: "Swati Tirpude testimonial profile photo",
       quote:
-        "Great care, friendly staff, and excellent results. My smile looks brighter than ever."
+        "Satisfied with the overall root canal treatment. Doctor was very supportive and knowledgeable. Thank you so much."
     },
     {
-      name: "Matthew Lewis",
+      name: "Rahul Dalal",
+      image: "/images/testimonial/rahul.png",
+      alt: "Rahul Dalal testimonial profile photo",
       quote:
-        "Best dental experience I have had. Highly recommend this clinic to anyone looking for professional care."
+        "I had to undergo a root canal treatment. Dr. Varun is patient and good with the analysis of the problem. The clinic is very neat and punctual with the timings as well. The best thing I came across was that they explain things in detail and do not hurry or force us to make a decision. Recommended."
     }
   ],
   faqs: [
     {
-      question: "What is the fastest way to schedule my visit?",
+      question: "What dental treatments are available at Dr Varun's Dental Clinic in Viman Nagar, Pune?",
       answer:
-        "You can contact us directly or book an appointment online. Our team will help you choose the earliest available slot and prepare for your visit."
+        "Dr Varun's Dental Clinic in Viman Nagar, Pune provides a wide range of dental treatments including routine dental checkups, teeth cleaning, tooth-coloured fillings, root canal treatment, crowns and bridges, teeth whitening, smile makeovers, dental implants, gum care, full mouth rehabilitation, and emergency dental care. Patients can visit the clinic for preventive, restorative, cosmetic, and advanced dental treatment needs."
     },
     {
-      question: "How do I know if I need braces or Invisalign?",
+      question: "How often should I visit a dentist for a dental checkup and teeth cleaning?",
       answer:
-        "A dental evaluation can confirm your bite, tooth alignment, and smile goals. We will recommend braces or clear aligners only after checking your teeth properly."
+        "Most patients should schedule a dental checkup and professional teeth cleaning every six months to maintain healthy teeth and gums. If you have gum problems, frequent cavities, braces, implants, or ongoing sensitivity, your dentist may recommend more frequent visits. Regular preventive dental care helps detect problems early and can reduce the need for more complex treatment later."
     },
     {
-      question: "How do I know if I need a root canal?",
+      question: "When should I see a dentist for tooth pain, swelling, or sensitivity?",
       answer:
-        "Persistent pain, swelling, temperature sensitivity, or discomfort while chewing can be signs that the tooth nerve needs attention. A dentist can confirm it with an exam and X-ray."
+        "You should visit a dentist as soon as possible if you have tooth pain, gum swelling, pain while chewing, prolonged sensitivity to hot or cold foods, or bleeding around a tooth. These symptoms can point to decay, infection, gum disease, or a damaged tooth. Early diagnosis at a dental clinic in Viman Nagar can help prevent the problem from getting worse."
     },
     {
-      question: "What should I do if I have a toothache?",
+      question: "Do you provide root canal treatment in Viman Nagar, Pune?",
       answer:
-        "Call the clinic as soon as possible, avoid chewing on the painful side, and do not place aspirin directly on the gums. Urgent pain should be assessed promptly."
+        "Yes, Dr Varun's Dental Clinic provides root canal treatment for infected or severely damaged teeth. Root canal treatment is usually advised when a tooth has deep decay, infection, severe pain, or sensitivity that does not settle. The goal is to remove infection, save the natural tooth, and restore comfortable function."
+    },
+    {
+      question: "Are dental implants a good option for missing teeth?",
+      answer:
+        "Dental implants are often an excellent option for patients who want a stable, long-lasting replacement for one or more missing teeth. They can help restore chewing comfort, appearance, and confidence while supporting long-term oral health. A proper consultation is needed to assess bone support, gum health, and overall suitability before implant treatment is planned."
+    },
+    {
+      question: "Is teeth whitening safe, and how long do whitening results usually last?",
+      answer:
+        "Professional teeth whitening is generally safe when it is done after a dental examination and under proper supervision. Results can vary depending on your existing tooth shade, eating habits, smoking, and oral hygiene, but many patients enjoy a brighter smile for months with good care. A dentist can also advise whether whitening or another cosmetic dental treatment is better for your smile goals."
+    },
+    {
+      question: "Can I visit your clinic for braces, aligners, or smile makeover consultation?",
+      answer:
+        "Yes, patients can book a consultation at Dr Varun's Dental Clinic for braces guidance, aligner treatment planning, smile makeover options, and cosmetic dental care. During the consultation, the dentist can evaluate tooth alignment, bite concerns, smile aesthetics, and treatment goals to recommend the most suitable next step."
+    },
+    {
+      question: "How can I book an appointment with a dentist in Viman Nagar, Pune?",
+      answer:
+        "You can book an appointment with Dr Varun's Dental Clinic by calling the clinic directly or contacting the team through the website. Sharing your dental concern in advance, such as tooth pain, cleaning, implants, whitening, or a routine checkup, can help the team guide you to the right appointment slot."
     }
   ],
   images: {

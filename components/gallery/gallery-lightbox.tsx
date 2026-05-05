@@ -2,7 +2,6 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import Image from "next/image";
 import { ChevronLeft, ChevronRight, Play, X } from "lucide-react";
 
 type GalleryMedia = {
@@ -133,7 +132,7 @@ export function GalleryLightbox({
             <button
               type="button"
               onClick={goToPrevious}
-              className="absolute left-3 top-1/2 z-10 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/92 text-text-dark shadow-soft transition-colors hover:bg-white"
+              className="absolute left-3 top-1/2 z-10 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/14 bg-[rgba(20,12,6,0.78)] text-white shadow-[0_14px_30px_rgba(0,0,0,0.28)] transition-colors hover:bg-[rgba(20,12,6,0.92)]"
               aria-label="Previous media"
             >
               <ChevronLeft className="h-5 w-5" aria-hidden="true" />
@@ -142,7 +141,7 @@ export function GalleryLightbox({
             <button
               type="button"
               onClick={goToNext}
-              className="absolute right-3 top-1/2 z-10 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/92 text-text-dark shadow-soft transition-colors hover:bg-white"
+              className="absolute right-3 top-1/2 z-10 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/14 bg-[rgba(20,12,6,0.78)] text-white shadow-[0_14px_30px_rgba(0,0,0,0.28)] transition-colors hover:bg-[rgba(20,12,6,0.92)]"
               aria-label="Next media"
             >
               <ChevronRight className="h-5 w-5" aria-hidden="true" />
@@ -151,37 +150,35 @@ export function GalleryLightbox({
             <button
               type="button"
               onClick={() => setActiveIndex(null)}
-              className="absolute right-3 top-3 z-10 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/92 text-text-dark shadow-soft transition-colors hover:bg-white"
+              className="absolute right-3 top-3 z-10 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/14 bg-[rgba(20,12,6,0.78)] text-white shadow-[0_14px_30px_rgba(0,0,0,0.28)] transition-colors hover:bg-[rgba(20,12,6,0.92)]"
               aria-label="Close image preview"
             >
               <X className="h-5 w-5" aria-hidden="true" />
             </button>
 
             <div className="overflow-hidden rounded-[24px] bg-white p-2 shadow-[0_30px_80px_rgba(37,20,6,0.35)]">
-              <div className="relative h-[min(82vh,760px)] w-[min(92vw,980px)] overflow-hidden rounded-[18px] bg-section-light">
+              <div className="flex max-h-[72dvh] w-[min(92vw,980px)] items-center justify-center overflow-hidden rounded-[18px] bg-section-light sm:max-h-[82dvh]">
                 {images[activeIndex].type === "video" ? (
                   <video
                     src={images[activeIndex].src}
-                    className="h-full w-full object-contain"
+                    className="max-h-[72dvh] w-full object-contain sm:max-h-[82dvh]"
                     controls
                     autoPlay
                     playsInline
                   />
                 ) : (
-                  <Image
+                  <img
                     src={images[activeIndex].src}
                     alt={images[activeIndex].alt}
-                    fill
-                    sizes="100vw"
-                    className="object-contain"
+                    className="block max-h-[72dvh] w-auto max-w-full object-contain sm:max-h-[82dvh]"
                   />
                 )}
               </div>
             </div>
 
-            <p className="mt-4 text-center font-body-main text-sm text-white/92">
+            <p className="mt-4 rounded-full border border-white/12 bg-[rgba(20,12,6,0.72)] px-4 py-2 text-center font-body-main text-sm text-white shadow-[0_14px_30px_rgba(0,0,0,0.24)]">
               {images[activeIndex].alt}{" "}
-              <span className="text-white/65">
+              <span className="text-white/75">
                 ({activeIndex + 1}/{images.length})
               </span>
             </p>

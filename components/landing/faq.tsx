@@ -17,7 +17,9 @@ export function Faq() {
           Questions
         </h2>
         <p className="font-body-main text-base leading-7 text-text-muted">
-          Find quick answers to common dental care questions before your visit.
+          Find quick answers about dental checkups, root canal treatment, implants,
+          teeth whitening, smile makeovers, and emergency dental care at DR VARUN&apos;S
+          DENTAL CLINIC in Viman Nagar, Pune.
         </p>
       </div>
 

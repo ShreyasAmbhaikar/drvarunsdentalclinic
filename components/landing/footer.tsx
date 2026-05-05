@@ -4,6 +4,7 @@ import {
   BriefcaseBusiness,
   Camera,
   Globe,
+  Heart,
   Mail,
   MapPin,
   MessageCircle,
@@ -12,13 +13,14 @@ import {
 import { siteConfig } from "@/lib/site-config";
 
 const phoneHref = `tel:${siteConfig.phone.replace(/[^\d+]/g, "")}`;
+const agencyWhatsappHref = "https://wa.me/919284394722";
 
 export function Footer() {
   return (
     <footer className="relative overflow-hidden bg-primary-container pb-24 pt-[60px] md:pb-28">
       <div className="relative z-10 mx-auto max-w-[1440px] px-6 md:px-14">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
-          <div>
+        <div className="grid grid-cols-2 gap-x-8 gap-y-12 md:grid-cols-4">
+          <div className="col-span-2 md:col-span-1">
             <div className="mb-6 flex items-center gap-3">
               <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/95 p-1 shadow-soft">
                 <Image
@@ -58,9 +60,22 @@ export function Footer() {
             <p className="font-body-main text-[14px] text-white/70">
               &copy; 2026 {siteConfig.shortName}. All Rights Reserved.
             </p>
+            <p className="mt-3 flex flex-wrap items-center gap-1 font-body-main text-[13px] text-white/78">
+              <span>Developed with</span>
+              <Heart className="h-3.5 w-3.5 fill-current text-[#ff8c78]" aria-hidden="true" />
+              <span>by</span>
+              <a
+                href={agencyWhatsappHref}
+                target="_blank"
+                rel="noreferrer"
+                className="font-semibold text-white underline decoration-white/35 underline-offset-4 transition-colors hover:text-white/80"
+              >
+                QuantumReach Marketing
+              </a>
+            </p>
           </div>
 
-          <FooterColumn title="Quick Links">
+          <FooterColumn title="Quick Links" className="col-span-1">
             {siteConfig.nav.map((item) => (
               <li key={item.href}>
                 <Link className="transition-colors hover:text-white" href={item.href}>
@@ -70,7 +85,7 @@ export function Footer() {
             ))}
           </FooterColumn>
 
-          <FooterColumn title="Services">
+          <FooterColumn title="Services" className="col-span-1">
             {siteConfig.services.map((service) => (
               <li key={service.title}>
                 <span>{service.title}</span>
@@ -78,7 +93,7 @@ export function Footer() {
             ))}
           </FooterColumn>
 
-          <FooterColumn title="Contact">
+          <FooterColumn title="Contact" className="col-span-2 md:col-span-1">
             <li className="flex gap-3">
               <Phone className="mt-1 h-4 w-4 shrink-0" aria-hidden="true" />
               <a href={phoneHref} className="transition-colors hover:text-white">
@@ -113,14 +128,16 @@ export function Footer() {
 
 function FooterColumn({
   title,
-  children
+  children,
+  className
 }: {
   title: string;
   children: React.ReactNode;
+  className?: string;
 }) {
   return (
-    <div>
-      <h3 className="mb-6 font-card-title text-[18px] font-bold text-white">{title}</h3>
+    <div className={className}>
+      <h3 className="mb-5 font-card-title text-[18px] font-bold text-white">{title}</h3>
       <ul className="space-y-4 font-body-main text-[15px] leading-6 text-white/70">
         {children}
       </ul>

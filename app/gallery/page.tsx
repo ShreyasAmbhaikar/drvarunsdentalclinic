@@ -31,16 +31,16 @@ const galleryImages = [
     alt: "Gallery image 1 from Dr. Varun's Dental Clinic"
   },
   {
-    src: "/images/gallery/pic2.jpg",
-    alt: "Gallery image 2 from Dr. Varun's Dental Clinic"
+    src: "/images/gallery/pic6.jpg",
+    alt: "Gallery image 6 from Dr. Varun's Dental Clinic"
   },
   {
     src: "/images/gallery/pic5.webp",
     alt: "Gallery image 5 from Dr. Varun's Dental Clinic"
   },
   {
-    src: "/images/gallery/pic6.jpg",
-    alt: "Gallery image 6 from Dr. Varun's Dental Clinic"
+    src: "/images/gallery/pic2.jpg",
+    alt: "Gallery image 2 from Dr. Varun's Dental Clinic"
   },
   {
     src: "/images/gallery/pic7.jpg",

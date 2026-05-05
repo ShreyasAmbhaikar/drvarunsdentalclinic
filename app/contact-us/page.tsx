@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Clock3, ExternalLink, Mail, MapPin, Phone } from "lucide-react";
+import {
+  Clock4,
+  ExternalLink,
+  MailOpen,
+  MapPinned,
+  PhoneCall
+} from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
@@ -39,27 +45,27 @@ export default function ContactUsPage() {
               Call, email, or visit the clinic directly with the details below.
             </p>
 
-            <div className="mt-8 space-y-4">
+            <div className="mt-8 space-y-5">
               <ContactCard
-                icon={<Phone className="h-5 w-5" aria-hidden="true" />}
+                icon={<PhoneCall className="h-5 w-5" aria-hidden="true" />}
                 label="Phone"
                 value={siteConfig.phone}
                 href={phoneHref}
               />
               <ContactCard
-                icon={<Mail className="h-5 w-5" aria-hidden="true" />}
+                icon={<MailOpen className="h-5 w-5" aria-hidden="true" />}
                 label="Email"
                 value={siteConfig.email}
                 href={`mailto:${siteConfig.email}`}
               />
               <ContactCard
-                icon={<MapPin className="h-5 w-5" aria-hidden="true" />}
+                icon={<MapPinned className="h-5 w-5" aria-hidden="true" />}
                 label="Address"
                 value={`${siteConfig.address.streetAddress}, ${siteConfig.address.addressLocality}, ${siteConfig.address.addressRegion} ${siteConfig.address.postalCode}`}
                 href={siteConfig.businessListingUrl}
               />
               <ContactCard
-                icon={<Clock3 className="h-5 w-5" aria-hidden="true" />}
+                icon={<Clock4 className="h-5 w-5" aria-hidden="true" />}
                 label="Clinic Hours"
                 value={siteConfig.hours}
               />
@@ -127,18 +133,20 @@ function ContactCard({
   href?: string;
 }) {
   const content = (
-    <div className="flex items-start gap-4 rounded-[22px] border border-white/10 bg-white/8 px-5 py-4 backdrop-blur-sm transition-colors hover:bg-white/12">
-      <span className="mt-1 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/12 text-white">
-        {icon}
-      </span>
-      <span className="block">
-        <span className="block font-label-sm text-[12px] font-semibold uppercase tracking-[0.18em] text-white/65">
-          {label}
+    <div className="overflow-hidden rounded-[24px] border border-white/16 bg-white/[0.04] shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] transition-colors group-hover:border-white/24">
+      <div className="flex items-start gap-4 rounded-[24px] bg-[rgba(175,91,10,0.78)] px-5 py-4 transition-colors group-hover:bg-[rgba(175,91,10,0.68)]">
+        <span className="mt-1 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-primary-container shadow-[0_8px_20px_rgba(37,20,6,0.14)]">
+          {icon}
         </span>
-        <span className="mt-2 block font-body-main text-[16px] leading-7 text-white">
-          {value}
+        <span className="block">
+          <span className="block font-label-sm text-[12px] font-semibold uppercase tracking-[0.18em] text-white/65">
+            {label}
+          </span>
+          <span className="mt-2 block font-body-main text-[16px] leading-7 text-white">
+            {value}
+          </span>
         </span>
-      </span>
+      </div>
     </div>
   );
 
@@ -147,7 +155,12 @@ function ContactCard({
   }
 
   return (
-    <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noreferrer" : undefined}>
+    <a
+      href={href}
+      target={href.startsWith("http") ? "_blank" : undefined}
+      rel={href.startsWith("http") ? "noreferrer" : undefined}
+      className="group block"
+    >
       {content}
     </a>
   );

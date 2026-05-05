@@ -3,13 +3,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, Phone } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
 const phoneHref = `tel:${siteConfig.phone.replace(/[^\d+]/g, "")}`;
 
 export function Header() {
   const pathname = usePathname();
+  const isActive = (href: string) =>
+    href === "/" ? pathname === href : pathname === href || pathname.startsWith(`${href}/`);
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur-md">
@@ -38,10 +40,10 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className={`border-b-2 pb-1 transition-colors ${
-                pathname === item.href
-                  ? "border-primary-container text-primary-container"
-                  : "border-transparent text-text-dark hover:border-primary-container/40 hover:text-primary-container"
+              className={`rounded-full px-4 py-2 transition-colors ${
+                isActive(item.href)
+                  ? "bg-primary-container text-white shadow-soft"
+                  : "text-text-dark hover:bg-section-light hover:text-primary-container"
               }`}
             >
               {item.label}
@@ -61,8 +63,9 @@ export function Header() {
 
         <details className="group relative md:hidden">
           <summary className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full border border-slate-200 bg-white text-text-dark">
-            <Menu className="h-5 w-5" aria-hidden="true" />
-            <span className="sr-only">Open navigation</span>
+            <Menu className="h-5 w-5 group-open:hidden" aria-hidden="true" />
+            <X className="hidden h-5 w-5 group-open:block" aria-hidden="true" />
+            <span className="sr-only">Toggle navigation</span>
           </summary>
           <div className="absolute right-0 top-14 w-64 rounded-[18px] border border-slate-100 bg-white p-3 shadow-card">
             {siteConfig.nav.map((item) => (
@@ -70,7 +73,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 className={`block rounded-full px-4 py-3 font-label-sm text-sm font-semibold transition-colors ${
-                  pathname === item.href
+                  isActive(item.href)
                     ? "bg-primary-container text-white"
                     : "text-text-dark hover:bg-section-light hover:text-primary-container"
                 }`}
