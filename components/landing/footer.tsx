@@ -15,8 +15,8 @@ const phoneHref = `tel:${siteConfig.phone.replace(/[^\d+]/g, "")}`;
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-primary-container px-6 pb-24 pt-[60px] md:px-14 md:pb-28">
-      <div className="relative z-10 mx-auto max-w-[1440px]">
+    <footer className="relative overflow-hidden bg-primary-container pb-24 pt-[60px] md:pb-28">
+      <div className="relative z-10 mx-auto max-w-[1440px] px-6 md:px-14">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           <div>
             <div className="mb-6 flex items-center gap-3">
@@ -60,12 +60,20 @@ export function Footer() {
             </p>
           </div>
 
-          <FooterColumn title={siteConfig.name}>
+          <FooterColumn title="Quick Links">
             {siteConfig.nav.map((item) => (
               <li key={item.href}>
                 <Link className="transition-colors hover:text-white" href={item.href}>
                   {item.label}
                 </Link>
+              </li>
+            ))}
+          </FooterColumn>
+
+          <FooterColumn title="Services">
+            {siteConfig.services.map((service) => (
+              <li key={service.title}>
+                <span>{service.title}</span>
               </li>
             ))}
           </FooterColumn>
@@ -91,20 +99,10 @@ export function Footer() {
             </li>
             <li>{siteConfig.hours}</li>
           </FooterColumn>
-
-          <FooterColumn title="Helpful Links">
-            {["Oral Health", "Careers", "Privacy Policy", "Terms & Conditions"].map((item) => (
-              <li key={item}>
-                <a className="transition-colors hover:text-white" href="#">
-                  {item}
-                </a>
-              </li>
-            ))}
-          </FooterColumn>
         </div>
       </div>
 
-      <div className="pointer-events-none absolute bottom-[-1.2vw] left-1/2 w-[calc(100%-3rem)] -translate-x-1/2 select-none overflow-hidden text-center md:w-[calc(100%-7rem)]">
+      <div className="pointer-events-none absolute bottom-[-1.2vw] left-1/2 w-full max-w-[1440px] -translate-x-1/2 select-none overflow-hidden px-6 text-center md:px-14">
         <span className="whitespace-nowrap font-hero-heading text-[7.8vw] font-black leading-none text-white opacity-5">
           {siteConfig.name}
         </span>

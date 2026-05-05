@@ -32,15 +32,11 @@ export default function ContactUsPage() {
 
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="rounded-[28px] bg-primary-container p-8 text-white shadow-[0_24px_60px_rgba(108,60,17,0.18)] md:p-10">
-            <p className="font-label-sm text-[12px] font-semibold uppercase tracking-[0.22em] text-white/70">
-              Dr. Varun&apos;s Dental Clinic
-            </p>
-            <h2 className="mt-4 max-w-[420px] font-section-heading text-[30px] font-extrabold leading-[1.12] md:text-[38px]">
-              Find us easily and connect with the clinic in the way that works best for you.
+            <h2 className="max-w-[360px] font-section-heading text-[30px] font-extrabold leading-[1.12] md:text-[36px]">
+              Find us easily.
             </h2>
-            <p className="mt-5 max-w-[460px] font-body-main text-[15px] leading-7 text-white/80">
-              Whether you want to call, email, or visit in person, all clinic details are available
-              below along with the live location map.
+            <p className="mt-4 max-w-[430px] font-body-main text-[15px] leading-7 text-white/80">
+              Call, email, or visit the clinic directly with the details below.
             </p>
 
             <div className="mt-8 space-y-4">
@@ -90,25 +86,27 @@ export default function ContactUsPage() {
                 referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
-            <div className="flex flex-col gap-4 px-3 pb-2 pt-5 sm:flex-row sm:items-center sm:justify-between">
-              <div>
-                <p className="font-card-title text-[18px] font-bold text-text-dark">
-                  Clinic Location
-                </p>
-                <p className="mt-2 max-w-[560px] font-body-main text-[14px] leading-6 text-text-muted">
-                  Shop no 3, Ideal Landmark, Besides PNG Jewellers, Viman Nagar, Pune,
-                  Maharashtra 411014
-                </p>
+            <div className="flex flex-col gap-4 px-3 pb-2 pt-5">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                <div>
+                  <p className="font-card-title text-[18px] font-bold text-text-dark">
+                    Clinic Location
+                  </p>
+                  <p className="mt-2 max-w-[560px] font-body-main text-[14px] leading-6 text-text-muted">
+                    Shop no 3, Ideal Landmark, Besides PNG Jewellers, Viman Nagar, Pune,
+                    Maharashtra 411014
+                  </p>
+                </div>
+                <a
+                  href={siteConfig.businessListingUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex h-[48px] items-center justify-center gap-2 self-start rounded-full bg-primary-container px-5 font-label-sm text-sm font-semibold text-white transition-colors hover:bg-primary-dark sm:self-auto"
+                >
+                  Open in Google Maps
+                  <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                </a>
               </div>
-              <a
-                href={siteConfig.businessListingUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex h-[46px] items-center justify-center gap-2 rounded-full border border-primary-container/15 bg-primary-container/5 px-5 font-label-sm text-sm font-semibold text-primary-container transition-colors hover:bg-primary-container/10"
-              >
-                Open In Google Maps
-                <ExternalLink className="h-4 w-4" aria-hidden="true" />
-              </a>
             </div>
           </div>
         </div>

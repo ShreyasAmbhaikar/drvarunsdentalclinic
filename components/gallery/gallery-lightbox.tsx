@@ -1,21 +1,43 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
-import { X } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play, X } from "lucide-react";
 
-type GalleryImage = {
+type GalleryMedia = {
   src: string;
   alt: string;
-  className: string;
+  type?: "image" | "video";
 };
 
 export function GalleryLightbox({
   images
 }: {
-  images: readonly GalleryImage[];
+  images: readonly GalleryMedia[];
 }) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
+
+  const goToPrevious = useCallback(() => {
+    setActiveIndex((currentIndex) => {
+      if (currentIndex === null) {
+        return currentIndex;
+      }
+
+      return currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+    });
+  }, [images.length]);
+
+  const goToNext = useCallback(() => {
+    setActiveIndex((currentIndex) => {
+      if (currentIndex === null) {
+        return currentIndex;
+      }
+
+      return currentIndex === images.length - 1 ? 0 : currentIndex + 1;
+    });
+  }, [images.length]);
 
   useEffect(() => {
     if (activeIndex === null) {
@@ -25,33 +47,54 @@ export function GalleryLightbox({
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         setActiveIndex(null);
+      } else if (event.key === "ArrowLeft") {
+        goToPrevious();
+      } else if (event.key === "ArrowRight") {
+        goToNext();
       }
     };
 
     window.addEventListener("keydown", handleKeyDown);
 
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [activeIndex]);
+  }, [activeIndex, goToNext, goToPrevious]);
 
   return (
     <>
-      <div className="columns-1 gap-4 sm:columns-2 lg:columns-4">
+      <div className="columns-1 gap-4 sm:columns-2 lg:columns-3 lg:gap-5">
         {images.map((image, index) => (
           <button
             key={`${image.src}-${index}`}
             type="button"
             onClick={() => setActiveIndex(index)}
-            className={`relative mb-4 block w-full break-inside-avoid overflow-hidden rounded-[16px] bg-section-light text-left shadow-soft ${image.className}`}
-            aria-label={`Open gallery image ${index + 1}`}
+            className="group relative mb-4 block w-full break-inside-avoid overflow-hidden rounded-[18px] bg-section-light text-left shadow-soft lg:mb-5"
+            aria-label={`Open gallery ${image.type === "video" ? "video" : "image"} ${index + 1}`}
           >
-            <Image
-              src={image.src}
-              alt={image.alt}
-              fill
-              sizes="(min-width: 1024px) 270px, (min-width: 640px) 50vw, 100vw"
-              className="object-cover transition-transform duration-500 hover:scale-[1.035]"
-              priority={index < 4}
-            />
+            {image.type === "video" ? (
+              <>
+                <video
+                  src={image.src}
+                  className="block h-auto w-full transition-transform duration-500 group-hover:scale-[1.02]"
+                  muted
+                  playsInline
+                  preload="metadata"
+                />
+                <span className="absolute inset-0 bg-black/22 transition-colors duration-300 group-hover:bg-black/28" />
+                <span className="absolute left-1/2 top-1/2 inline-flex h-[76px] w-[76px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-4 border-white/90 bg-primary-container/88 text-white shadow-[0_16px_34px_rgba(37,20,6,0.28)] backdrop-blur-sm">
+                  <Play className="ml-1 h-8 w-8 fill-current" aria-hidden="true" />
+                </span>
+              </>
+            ) : (
+              <>
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="block h-auto w-full transition-transform duration-500 group-hover:scale-[1.02]"
+                  loading={index < 4 ? "eager" : "lazy"}
+                />
+                <span className="absolute inset-0 bg-gradient-to-t from-primary-container/24 via-primary-container/6 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+              </>
+            )}
           </button>
         ))}
       </div>
@@ -60,6 +103,25 @@ export function GalleryLightbox({
         <div
           className="fixed inset-0 z-[70] flex items-center justify-center bg-[rgba(37,20,6,0.82)] px-4 py-6 backdrop-blur-sm"
           onClick={() => setActiveIndex(null)}
+          onTouchStart={(event) => setTouchStartX(event.touches[0]?.clientX ?? null)}
+          onTouchEnd={(event) => {
+            const touchEndX = event.changedTouches[0]?.clientX;
+
+            if (touchStartX === null || touchEndX === undefined) {
+              setTouchStartX(null);
+              return;
+            }
+
+            const deltaX = touchEndX - touchStartX;
+
+            if (deltaX > 50) {
+              goToPrevious();
+            } else if (deltaX < -50) {
+              goToNext();
+            }
+
+            setTouchStartX(null);
+          }}
           role="dialog"
           aria-modal="true"
           aria-label="Gallery image preview"
@@ -68,6 +130,24 @@ export function GalleryLightbox({
             className="relative flex w-fit max-w-[min(92vw,1100px)] flex-col items-center"
             onClick={(event) => event.stopPropagation()}
           >
+            <button
+              type="button"
+              onClick={goToPrevious}
+              className="absolute left-3 top-1/2 z-10 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/92 text-text-dark shadow-soft transition-colors hover:bg-white"
+              aria-label="Previous media"
+            >
+              <ChevronLeft className="h-5 w-5" aria-hidden="true" />
+            </button>
+
+            <button
+              type="button"
+              onClick={goToNext}
+              className="absolute right-3 top-1/2 z-10 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/92 text-text-dark shadow-soft transition-colors hover:bg-white"
+              aria-label="Next media"
+            >
+              <ChevronRight className="h-5 w-5" aria-hidden="true" />
+            </button>
+
             <button
               type="button"
               onClick={() => setActiveIndex(null)}
@@ -79,18 +159,31 @@ export function GalleryLightbox({
 
             <div className="overflow-hidden rounded-[24px] bg-white p-2 shadow-[0_30px_80px_rgba(37,20,6,0.35)]">
               <div className="relative h-[min(82vh,760px)] w-[min(92vw,980px)] overflow-hidden rounded-[18px] bg-section-light">
-                <Image
-                  src={images[activeIndex].src}
-                  alt={images[activeIndex].alt}
-                  fill
-                  sizes="100vw"
-                  className="object-contain"
-                />
+                {images[activeIndex].type === "video" ? (
+                  <video
+                    src={images[activeIndex].src}
+                    className="h-full w-full object-contain"
+                    controls
+                    autoPlay
+                    playsInline
+                  />
+                ) : (
+                  <Image
+                    src={images[activeIndex].src}
+                    alt={images[activeIndex].alt}
+                    fill
+                    sizes="100vw"
+                    className="object-contain"
+                  />
+                )}
               </div>
             </div>
 
             <p className="mt-4 text-center font-body-main text-sm text-white/92">
-              {images[activeIndex].alt}
+              {images[activeIndex].alt}{" "}
+              <span className="text-white/65">
+                ({activeIndex + 1}/{images.length})
+              </span>
             </p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { GalleryLightbox } from "@/components/gallery/gallery-lightbox";
+import { GalleryLightboxClient } from "@/components/gallery/gallery-lightbox-client";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/gallery`,
     images: [
       {
-        url: siteConfig.images.heroCheckup,
+        url: "/images/gallery/pic1.jpg",
         width: 1200,
         height: 630,
         alt: `${siteConfig.name} gallery`
@@ -27,64 +27,33 @@ export const metadata: Metadata = {
 
 const galleryImages = [
   {
-    src: siteConfig.images.heroCheckup,
-    alt: "Dentist performing a comfortable dental checkup",
-    className: "aspect-[4/5]"
+    src: "/images/gallery/pic1.jpg",
+    alt: "Gallery image 1 from Dr. Varun's Dental Clinic"
   },
   {
-    src: siteConfig.images.smileAfter,
-    alt: "Bright smile after dental treatment",
-    className: "aspect-[4/3]"
+    src: "/images/gallery/pic2.jpg",
+    alt: "Gallery image 2 from Dr. Varun's Dental Clinic"
   },
   {
-    src: siteConfig.images.doctorRalph,
-    alt: "Dr Varun Sharma in the dental clinic",
-    className: "aspect-[3/4]"
+    src: "/images/gallery/pic5.webp",
+    alt: "Gallery image 5 from Dr. Varun's Dental Clinic"
   },
   {
-    src: siteConfig.images.childPatient,
-    alt: "Child patient during a dental visit",
-    className: "aspect-[5/4]"
+    src: "/images/gallery/pic6.jpg",
+    alt: "Gallery image 6 from Dr. Varun's Dental Clinic"
   },
   {
-    src: siteConfig.images.confidentSmile,
-    alt: "Confident patient smile",
-    className: "aspect-[4/3]"
+    src: "/images/gallery/pic7.jpg",
+    alt: "Gallery image 7 from Dr. Varun's Dental Clinic"
   },
   {
-    src: siteConfig.images.faqTreatment,
-    alt: "Dental treatment room with patient care",
-    className: "aspect-[3/4]"
+    src: "/images/gallery/pic9.jpg",
+    alt: "Gallery image 9 from Dr. Varun's Dental Clinic"
   },
   {
-    src: siteConfig.images.smilingPatient,
-    alt: "Patient smiling after a dental appointment",
-    className: "aspect-[4/5]"
-  },
-  {
-    src: siteConfig.images.doctorShelley,
-    alt: "Dental surgeon ready for consultation",
-    className: "aspect-[5/4]"
-  },
-  {
-    src: siteConfig.images.smileBefore,
-    alt: "Smile before cosmetic dental treatment",
-    className: "aspect-[4/3]"
-  },
-  {
-    src: siteConfig.images.ctaPillTwo,
-    alt: "Close-up detail of professional dental care",
-    className: "aspect-[16/10]"
-  },
-  {
-    src: siteConfig.images.childPatient,
-    alt: "Young patient at the dental clinic",
-    className: "aspect-[3/4]"
-  },
-  {
-    src: siteConfig.images.confidentSmile,
-    alt: "Happy patient smile",
-    className: "aspect-[4/5]"
+    src: "/images/gallery/videoplayback.mp4",
+    alt: "Clinic walkthrough video from Dr. Varun's Dental Clinic",
+    type: "video" as const
   }
 ] as const;
 
@@ -93,6 +62,9 @@ export default function GalleryPage() {
     <main className="bg-surface-container-lowest px-6 pb-20 pt-[136px] md:px-14 md:pb-24">
       <section className="mx-auto max-w-[1180px]">
         <div className="mb-10 text-center">
+          <p className="font-label-sm text-[13px] font-semibold uppercase tracking-[0.18em] text-primary-container">
+            Our Clinic Moments
+          </p>
           <h1 className="font-hero-heading text-[38px] font-extrabold leading-[1.08] text-text-dark sm:text-[50px] md:text-[58px]">
             Gallery
           </h1>
@@ -102,7 +74,7 @@ export default function GalleryPage() {
           </p>
         </div>
 
-        <GalleryLightbox images={galleryImages} />
+        <GalleryLightboxClient images={galleryImages} />
       </section>
     </main>
   );

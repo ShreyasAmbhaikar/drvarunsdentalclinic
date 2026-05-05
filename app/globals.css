@@ -68,6 +68,10 @@ summary::-webkit-details-marker {
   animation: toothFloat 3s ease-in-out infinite;
 }
 
+.about-bounce {
+  animation: aboutBounce 4.4s ease-in-out infinite;
+}
+
 .faq-minus {
   display: none;
 }
@@ -129,6 +133,16 @@ details[open] .faq-minus {
   }
   50% {
     transform: translateY(-12px);
+  }
+}
+
+@keyframes aboutBounce {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -12px, 0) scale(1.02);
   }
 }
 
