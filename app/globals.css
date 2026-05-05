@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --page-bg: #fefcff;
+  --white: #fefcff;
+  --primary-blue: #b85f0d;
+  --primary-blue-dark: #8f4506;
+  --cyan: #e57f1b;
+  --cyan-soft: #f9a137;
+  --dark-text: #6c3c11;
+  --muted-text: #8b6645;
+  --light-section: #fff6ea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--dark-text);
+  font-family: "Plus Jakarta Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  scroll-margin-top: 96px;
+}
+
+summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.canvas-wrapper {
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: none;
+}
+
+.rotating-badge {
+  animation: spin 15s linear infinite;
+}
+
+.tooth-float {
+  animation: toothFloat 3s ease-in-out infinite;
+}
+
+.faq-minus {
+  display: none;
+}
+
+details[open] .faq-plus {
+  display: none;
+}
+
+details[open] .faq-minus {
+  display: block;
+}
+
+.before-after-range {
+  appearance: none;
+  background: transparent;
+  cursor: ew-resize;
+}
+
+.before-after-range:focus {
+  outline: none;
+}
+
+.before-after-range:focus-visible {
+  outline: 3px solid rgba(249, 161, 55, 0.85);
+  outline-offset: -6px;
+}
+
+.before-after-range::-webkit-slider-runnable-track {
+  height: 100%;
+  background: transparent;
+}
+
+.before-after-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 56px;
+  height: 56px;
+  border: 0;
+  border-radius: 9999px;
+  background: transparent;
+}
+
+.before-after-range::-moz-range-track {
+  height: 100%;
+  background: transparent;
+}
+
+.before-after-range::-moz-range-thumb {
+  width: 56px;
+  height: 56px;
+  border: 0;
+  border-radius: 9999px;
+  background: transparent;
+}
+
+@keyframes toothFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
