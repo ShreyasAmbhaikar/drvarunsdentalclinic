@@ -16,6 +16,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: siteConfig.lastUpdated,
       changeFrequency: "monthly",
       priority: 0.8
+    },
+    {
+      url: `${siteConfig.url}/root-canal-treatment-in-viman-nagar`,
+      lastModified: siteConfig.lastUpdated,
+      changeFrequency: "monthly",
+      priority: 0.9
+    },
+    {
+      url: `${siteConfig.url}/dental-implant-in-viman-nagar`,
+      lastModified: siteConfig.lastUpdated,
+      changeFrequency: "monthly",
+      priority: 0.9
+    },
+    {
+      url: `${siteConfig.url}/teeth-cleaning-in-viman-nagar`,
+      lastModified: siteConfig.lastUpdated,
+      changeFrequency: "monthly",
+      priority: 0.9
+    },
+    {
+      url: `${siteConfig.url}/teeth-whitening-in-viman-nagar`,
+      lastModified: siteConfig.lastUpdated,
+      changeFrequency: "monthly",
+      priority: 0.9
     }
   ];
 }

@@ -85,10 +85,12 @@ export function Footer() {
             ))}
           </FooterColumn>
 
-          <FooterColumn title="Services" className="col-span-1">
-            {siteConfig.services.map((service) => (
-              <li key={service.title}>
-                <span>{service.title}</span>
+          <FooterColumn title="Our Treatments" className="col-span-1">
+            {siteConfig.treatments.map((treatment) => (
+              <li key={treatment.href}>
+                <Link className="transition-colors hover:text-white" href={treatment.href}>
+                  {treatment.title}
+                </Link>
               </li>
             ))}
           </FooterColumn>

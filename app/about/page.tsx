@@ -32,7 +32,7 @@ const achievements = [
     detail: "Viman Nagar and Wagholi care",
     icon: Cross,
     className:
-      "left-3 top-5 max-w-[180px] sm:left-[-4%] sm:top-[14%] lg:left-[-6%]",
+      "sm:left-[-5%] sm:top-[12%] lg:left-[-8%]",
     delay: "0s",
     duration: "4.2s"
   },
@@ -41,7 +41,7 @@ const achievements = [
     detail: "Awarded in 2017 and 2022",
     icon: Award,
     className:
-      "right-3 top-5 max-w-[180px] sm:right-[-4%] sm:top-[13%] lg:right-[-6%]",
+      "sm:right-[-5%] sm:top-[12%] lg:right-[-8%]",
     delay: "1s",
     duration: "4.8s"
   },
@@ -50,16 +50,16 @@ const achievements = [
     detail: "President, Pune East branch",
     icon: BadgeCheck,
     className:
-      "left-4 bottom-6 max-w-[190px] sm:left-[-3%] sm:bottom-[16%] lg:left-[-5%]",
+      "sm:left-[-5%] sm:bottom-[15%] lg:left-[-8%]",
     delay: "1.8s",
     duration: "4.4s"
   },
   {
-    title: "Implants and Smile Makeovers",
-    detail: "Implants, surgeries, and rehabilitation",
+    title: "Implants & Smiles",
+    detail: "Rehab planning",
     icon: Sparkles,
     className:
-      "bottom-7 right-4 max-w-[210px] sm:right-[-3%] sm:bottom-[18%] lg:right-[-5%]",
+      "sm:right-[-3%] sm:bottom-[16%] lg:right-[-5%]",
     delay: "2.5s",
     duration: "5.1s"
   }
@@ -67,59 +67,34 @@ const achievements = [
 
 export default function AboutPage() {
   return (
-    <main className="bg-surface-container-lowest px-6 pb-20 pt-[136px] md:px-14 md:pb-24">
+    <main className="bg-surface-container-lowest px-6 pb-20 pt-[112px] md:px-14 md:pb-24 md:pt-[136px]">
       <section className="mx-auto max-w-[1180px]">
-        <div className="relative mb-16 overflow-hidden rounded-[36px] border border-primary-container/8 bg-[linear-gradient(135deg,#fffdf8_0%,#fff4e2_46%,#fffdfa_100%)] px-6 py-8 shadow-soft md:px-8 md:py-10 lg:px-12">
-          <div className="absolute left-6 top-8 h-24 w-24 rounded-full border border-dashed border-primary-container/18" />
-          <div className="absolute bottom-12 right-8 h-20 w-20 rounded-full border border-dashed border-cyan-soft/25" />
-          <div className="absolute right-[-6%] top-12 h-44 w-44 rounded-full bg-primary-container/8 blur-3xl" />
-          <div className="absolute bottom-[-8%] left-[26%] h-40 w-40 rounded-full bg-cyan-soft/10 blur-3xl" />
-
-          <div className="relative grid gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
+        <div className="relative mb-14 md:mb-16">
+          <div className="relative grid gap-8 lg:grid-cols-[0.94fr_1.06fr] lg:items-start">
             <div className="max-w-[560px]">
-              <div className="inline-flex items-center gap-3 rounded-full border border-white/80 bg-white/85 px-4 py-2 shadow-soft backdrop-blur-sm">
-                <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary-container text-white">
-                  <SmilePlus className="h-4 w-4" aria-hidden="true" />
-                </span>
-                <span className="font-label-sm text-[12px] font-bold uppercase tracking-[0.2em] text-primary-container">
-                  About The Clinic
-                </span>
-              </div>
-
-              <h1 className="mt-6 max-w-[12ch] font-hero-heading text-[34px] font-extrabold leading-[1.03] text-text-dark md:text-[56px]">
-                A thoughtfully designed clinic for modern, comfortable dentistry.
+              <h1 className="max-w-[11ch] font-hero-heading text-[34px] font-extrabold leading-[1.04] text-text-dark md:text-[52px]">
+                About The Clinic
               </h1>
 
-              <div className="mt-8 grid gap-5 sm:grid-cols-[auto_1fr] sm:items-start">
-                <div className="rounded-[28px] bg-primary-container px-5 py-5 text-white shadow-[0_18px_42px_rgba(108,60,17,0.16)]">
-                  <p className="font-hero-heading text-[40px] font-extrabold leading-none">
-                    17+
-                  </p>
-                  <p className="mt-2 max-w-[88px] font-label-sm text-[11px] font-semibold uppercase tracking-[0.18em] text-white/80">
-                    Years of trusted care
-                  </p>
-                </div>
-
-                <div className="space-y-5 font-body-main text-[17px] leading-8 text-text-dark/90">
-                  <p>
-                    Dr. Varun&apos;s Dental Clinic is built around the belief that
-                    exceptional dental care should feel reassuring from the moment a
-                    patient walks in. The clinic combines advanced technology, clear
-                    treatment planning, and a welcoming environment that helps patients
-                    feel relaxed and informed.
-                  </p>
-                  <p>
-                    From preventive care and smile improvements to complex rehabilitation
-                    and implant procedures, every treatment is guided by precision,
-                    hygiene, patient comfort, and long-term oral health outcomes.
-                  </p>
-                  <p>
-                    With a strong focus on trust, transparency, and updated dental
-                    methods, the clinic continues to serve families and individuals
-                    looking for dependable, high-quality dentistry in Viman Nagar and
-                    beyond.
-                  </p>
-                </div>
+              <div className="mt-7 max-w-[30rem] space-y-5 font-body-main text-[16px] leading-7 text-text-dark/90 md:text-[17px] md:leading-8">
+                <p>
+                  Dr. Varun&apos;s Dental Clinic is built around the belief that
+                  exceptional dental care should feel reassuring from the moment a
+                  patient walks in. The clinic combines advanced technology, clear
+                  treatment planning, and a welcoming environment that helps patients
+                  feel relaxed and informed.
+                </p>
+                <p>
+                  From preventive care and smile improvements to complex rehabilitation
+                  and implant procedures, every treatment is guided by precision,
+                  hygiene, patient comfort, and long-term oral health outcomes.
+                </p>
+                <p>
+                  With a strong focus on trust, transparency, and updated dental
+                  methods, the clinic continues to serve families and individuals
+                  looking for dependable, high-quality dentistry in Viman Nagar and
+                  beyond.
+                </p>
               </div>
 
               <div className="mt-8 flex flex-wrap gap-3">
@@ -142,32 +117,20 @@ export default function AboutPage() {
                 })}
               </div>
 
-              <div className="mt-8 flex items-center gap-4">
-                <div className="h-px flex-1 bg-[linear-gradient(90deg,rgba(184,95,13,0.4)_0%,rgba(184,95,13,0)_100%)]" />
-                <p className="font-label-sm text-[12px] font-semibold uppercase tracking-[0.24em] text-primary-container/70">
-                  Comfort / Precision / Trust
-                </p>
-              </div>
             </div>
 
-            <div className="relative mx-auto w-full max-w-[520px]">
+            <div className="relative mx-auto w-full max-w-[540px] lg:mt-8">
               <div className="absolute -left-5 top-10 h-[78%] w-[84%] rounded-[40px] bg-[linear-gradient(145deg,rgba(255,245,233,0.96)_0%,rgba(248,210,170,0.62)_100%)]" />
-              <div className="absolute right-6 top-[-14px] inline-flex items-center gap-2 rounded-full border border-primary-container/10 bg-white px-4 py-2 shadow-soft tooth-float">
-                <Sparkles className="h-4 w-4 text-primary-container" aria-hidden="true" />
-                <span className="font-label-sm text-[11px] font-semibold uppercase tracking-[0.18em] text-primary-container">
-                  Warm, modern care
-                </span>
-              </div>
               <div className="absolute -right-3 bottom-10 hidden h-16 w-16 rounded-full border border-dashed border-primary-container/20 md:block" />
 
-              <div className="relative rounded-[38px] border border-white/85 bg-white/92 p-3 shadow-[0_24px_60px_rgba(108,60,17,0.15)] backdrop-blur-sm">
-                <div className="relative overflow-hidden rounded-[30px]">
+              <div className="relative rounded-[30px] border border-white/85 bg-white/92 p-3 shadow-[0_24px_60px_rgba(108,60,17,0.15)] backdrop-blur-sm md:rounded-[38px]">
+                <div className="relative overflow-hidden rounded-[24px] md:rounded-[30px]">
                   <Image
                     src="/images/gallery/pic1.jpg"
                     alt="Dr. Varun's Dental Clinic interior"
                     width={760}
                     height={980}
-                    className="h-[420px] w-full object-cover sm:h-[500px]"
+                    className="h-[330px] w-full object-cover sm:h-[440px] lg:h-[500px]"
                   />
                   <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#6c3c11]/42 to-transparent" />
                 </div>
@@ -193,10 +156,10 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="grid gap-12 lg:grid-cols-[0.98fr_1.02fr] lg:items-center">
+        <div className="grid gap-10 lg:grid-cols-[0.98fr_1.02fr] lg:items-center">
           <div className="relative mx-auto w-full max-w-[560px] lg:pt-4">
-            <div className="absolute left-[8%] top-[10%] h-[72%] w-[72%] rounded-[42px] bg-[linear-gradient(160deg,rgba(229,127,27,0.94)_0%,rgba(184,95,13,0.97)_58%,rgba(108,60,17,1)_100%)] shadow-[0_28px_80px_rgba(108,60,17,0.22)]" />
-            <div className="absolute inset-[6%] rounded-[44px] border border-dashed border-primary-container/22" />
+            <div className="absolute left-[8%] top-[10%] h-[72%] w-[72%] rounded-[42px] bg-white shadow-[0_28px_80px_rgba(108,60,17,0.14)]" />
+            <div className="absolute inset-[6%] rounded-[44px] border border-dashed border-white" />
             <div className="absolute right-3 top-3 hidden h-20 w-20 items-center justify-center rounded-full border border-white/70 bg-white/85 shadow-soft md:flex">
               <SmilePlus className="h-9 w-9 text-cyan-soft" aria-hidden="true" />
             </div>
@@ -221,21 +184,21 @@ export default function AboutPage() {
               return (
                 <div
                   key={achievement.title}
-                  className={`about-bounce absolute z-20 rounded-[24px] border border-primary-container/10 bg-white px-4 py-4 shadow-[0_16px_36px_rgba(108,60,17,0.16)] ${achievement.className}`}
+                  className={`about-bounce relative z-20 mt-4 rounded-[22px] border border-primary-container/10 bg-white px-3.5 py-3.5 shadow-[0_18px_36px_rgba(108,60,17,0.16)] sm:absolute sm:mt-0 sm:w-[174px] ${achievement.className}`}
                   style={{
                     animationDelay: achievement.delay,
                     animationDuration: achievement.duration
                   }}
                 >
                   <div className="flex items-start gap-3">
-                    <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary-container/10 text-primary-container">
-                      <Icon className="h-4 w-4" aria-hidden="true" />
+                    <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary-container/10 text-primary-container">
+                      <Icon className="h-3.5 w-3.5" aria-hidden="true" />
                     </span>
-                    <div>
-                      <p className="font-label-sm text-[12px] font-bold uppercase tracking-[0.18em] text-primary-container">
+                    <div className="pt-0.5">
+                      <p className="font-body-main text-[13px] font-bold leading-5 text-primary-container">
                         {achievement.title}
                       </p>
-                      <p className="mt-1 font-body-main text-[13px] leading-5 text-text-dark">
+                      <p className="mt-0.5 font-body-main text-[12px] font-semibold leading-4 text-primary-container/82">
                         {achievement.detail}
                       </p>
                     </div>
@@ -246,10 +209,7 @@ export default function AboutPage() {
           </div>
 
           <div className="max-w-[590px] lg:pl-6">
-            <p className="font-label-sm text-[14px] font-bold uppercase tracking-[0.18em] text-primary-container">
-              Lead Doctor Profile
-            </p>
-            <h2 className="mt-4 font-hero-heading text-[38px] font-extrabold leading-[1.06] text-text-dark md:text-[60px]">
+            <h2 className="font-hero-heading text-[38px] font-extrabold leading-[1.06] text-text-dark md:text-[60px]">
               Dr. Varun Tomke
             </h2>
             <p className="mt-6 font-label-sm text-[14px] font-bold uppercase tracking-[0.18em] text-primary-container">
@@ -289,16 +249,6 @@ export default function AboutPage() {
                 leads a team that is deeply committed to modern dentistry and lasting
                 patient outcomes.
               </p>
-            </div>
-
-            <div className="mt-8 flex items-center gap-4">
-              <div className="h-px flex-1 bg-[linear-gradient(90deg,rgba(184,95,13,0.4)_0%,rgba(184,95,13,0)_100%)]" />
-              <div className="inline-flex items-center gap-3 rounded-full border border-primary-container/10 bg-section-light px-4 py-3 shadow-soft">
-                <Award className="h-4 w-4 text-primary-container" aria-hidden="true" />
-                <span className="font-body-main text-[14px] font-semibold text-text-dark">
-                  Recognised for trusted, modern dentistry
-                </span>
-              </div>
             </div>
           </div>
         </div>

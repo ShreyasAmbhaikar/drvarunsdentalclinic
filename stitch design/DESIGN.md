@@ -734,7 +734,7 @@ Use placeholder contact details:
 - `+1 234 567 8900`
 - `smilebright@email.com`
 - `123 Dental Street, New York`
-- `Mon - Sat: 9AM - 6PM`
+- `Mon - Sat: 9AM - 9PM`
 
 ### Column 4: Helpful Links
 Links:

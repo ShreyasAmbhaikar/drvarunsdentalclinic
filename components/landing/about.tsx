@@ -9,20 +9,32 @@ const strengths = [
   "Personalized Care Approaches for Each Patient"
 ];
 
+const aboutImageMask =
+  "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 430'%3E%3Cpath fill='white' d='M56 0H350C380 0 398 18 398 48C398 81 425 108 458 108H462C494 108 520 134 520 166V374C520 405 495 430 464 430H134C104 430 84 410 84 380C84 348 58 322 26 322C12 322 0 310 0 296V56C0 25 25 0 56 0Z'/%3E%3C/svg%3E\")";
+
 export function About() {
   return (
     <section id="about" className="bg-white px-6 py-20 md:px-14">
       <div className="mx-auto grid max-w-[1140px] grid-cols-1 items-center gap-14 md:grid-cols-2">
         <div className="relative flex items-center justify-center">
-          <div className="relative aspect-[1.1] w-full max-w-[450px]">
-            <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-[40px] rounded-br-[120px] rounded-tl-[120px] bg-surface-container-low" />
-            <div className="relative h-full w-full overflow-hidden rounded-[40px] rounded-br-[120px] rounded-tl-[120px]">
+          <div className="relative aspect-[1.08] w-full max-w-[470px] drop-shadow-[0_26px_50px_rgba(140,87,31,0.10)]">
+            <div
+              className="relative h-full w-full overflow-hidden bg-surface-container-low"
+              style={{
+                WebkitMaskImage: aboutImageMask,
+                maskImage: aboutImageMask,
+                WebkitMaskRepeat: "no-repeat",
+                maskRepeat: "no-repeat",
+                WebkitMaskSize: "100% 100%",
+                maskSize: "100% 100%"
+              }}
+            >
               <Image
-                src={siteConfig.images.confidentSmile}
-                alt="Patient smiling during dental care"
+                src={siteConfig.images.heroCheckup}
+                alt="Dental team treating a patient during a clinic visit"
                 fill
                 sizes="(min-width: 768px) 500px, 100vw"
-                className="object-cover"
+                className="object-cover object-[43%_50%]"
               />
             </div>
           </div>

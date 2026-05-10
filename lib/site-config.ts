@@ -24,7 +24,7 @@ export const siteConfig = {
     "braces and Invisalign"
   ],
   phone: "098229 52573",
-  email: "hello@drvarundental.com",
+  email: "dr.varuntomke@gmail.com",
   address: {
     streetAddress: "Shop no 3, Ideal Landmark, Besides PNG Jewellers",
     addressLocality: "Viman Nagar, Pune",
@@ -36,7 +36,7 @@ export const siteConfig = {
     latitude: "18.565329",
     longitude: "73.9167066"
   },
-  hours: "Mon - Sat: 9AM - 7PM",
+  hours: "Mon - Sat: 9AM - 9PM",
   openingHoursSpecification: [
     {
       dayOfWeek: [
@@ -65,10 +65,35 @@ export const siteConfig = {
   nav: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Our Services", href: "/our-services" },
+    { label: "Our Treatments", href: "/our-services" },
     { label: "Gallery", href: "/gallery" },
-    { label: "Testimonials", href: "/testimonials" },
     { label: "Contact Us", href: "/contact-us" }
+  ],
+  treatments: [
+    {
+      title: "Root Canal Treatment",
+      href: "/root-canal-treatment-in-viman-nagar",
+      description:
+        "Tooth-saving care for pain, infection, sensitivity, and deep decay with a calm, modern approach."
+    },
+    {
+      title: "Dental Implant Treatment",
+      href: "/dental-implant-in-viman-nagar",
+      description:
+        "Stable replacement planning for one or more missing teeth with natural-looking restorative support."
+    },
+    {
+      title: "Teeth Cleaning",
+      href: "/teeth-cleaning-in-viman-nagar",
+      description:
+        "Professional scaling and polishing to remove tartar, reduce gum irritation, and freshen the smile."
+    },
+    {
+      title: "Teeth Whitening",
+      href: "/teeth-whitening-in-viman-nagar",
+      description:
+        "Professional smile brightening for yellow or dull-looking teeth after proper dental evaluation."
+    }
   ],
   services: [
     {
@@ -112,6 +137,7 @@ export const siteConfig = {
       name: "Shreyas Ambhaikar",
       image: "/images/testimonial/shreyas.jpg",
       alt: "Shreyas Ambhaikar testimonial profile photo",
+      rating: 5,
       quote:
         "I visited Dr. Varun's Dental Clinic in Viman Nagar for a root canal treatment and dental cap. Dr. Varun explained the entire procedure very clearly before starting the treatment, which made me feel comfortable. The procedure was smooth and almost painless. The clinic is very clean and well maintained. I would definitely recommend Dr. Varun to anyone looking for a reliable dentist in Viman Nagar."
     },
@@ -119,6 +145,7 @@ export const siteConfig = {
       name: "Sheetal Joshi",
       image: "/images/testimonial/sheetal.png",
       alt: "Sheetal Joshi testimonial profile photo",
+      rating: 5,
       quote:
         "Dr. Varun did excellent work for an implant on one molar tooth and a cap for another tooth. I would recommend him to my friends. Very soft-handed, precise in his work, and genuinely committed to good dental care."
     },
@@ -126,6 +153,7 @@ export const siteConfig = {
       name: "Swati Tirpude",
       image: "/images/testimonial/swati.png",
       alt: "Swati Tirpude testimonial profile photo",
+      rating: 5,
       quote:
         "Satisfied with the overall root canal treatment. Doctor was very supportive and knowledgeable. Thank you so much."
     },
@@ -133,6 +161,7 @@ export const siteConfig = {
       name: "Rahul Dalal",
       image: "/images/testimonial/rahul.png",
       alt: "Rahul Dalal testimonial profile photo",
+      rating: 5,
       quote:
         "I had to undergo a root canal treatment. Dr. Varun is patient and good with the analysis of the problem. The clinic is very neat and punctual with the timings as well. The best thing I came across was that they explain things in detail and do not hurry or force us to make a decision. Recommended."
     }
