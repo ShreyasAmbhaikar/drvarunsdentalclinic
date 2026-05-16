@@ -80,7 +80,7 @@ images: { unoptimized: true }
 The production static website is generated in:
 
 ```txt
-out/
+.next-build/
 ```
 
 ## Preview Static Export
@@ -100,8 +100,8 @@ http://127.0.0.1:4173
 ## Hostinger Deployment
 
 1. Run `npm run build`.
-2. Open the generated `out/` folder.
-3. Upload the **contents** of `out/` into Hostinger `public_html`.
+2. Open the generated `.next-build/` folder.
+3. Upload the **contents** of `.next-build/` into Hostinger `public_html`.
 4. Confirm these URLs work after deployment:
 
 ```txt

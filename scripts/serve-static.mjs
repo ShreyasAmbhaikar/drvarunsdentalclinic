@@ -2,7 +2,7 @@ import { createServer } from "node:http";
 import { createReadStream, existsSync, statSync } from "node:fs";
 import { extname, join, normalize, resolve, sep } from "node:path";
 
-const rootArg = process.argv[2] ?? "out";
+const rootArg = process.argv[2] ?? ".next-build";
 const port = Number(process.argv[3] ?? 4173);
 const root = resolve(rootArg);
 

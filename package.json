@@ -6,7 +6,7 @@
     "dev": "next dev --hostname 127.0.0.1",
     "build": "next build",
     "lint": "eslint . --max-warnings=0",
-    "preview": "node scripts/serve-static.mjs out 4173"
+    "preview": "node scripts/serve-static.mjs .next-build 4173"
   },
   "dependencies": {
     "@fontsource/plus-jakarta-sans": "^5.2.8",

@@ -177,10 +177,7 @@ export function GalleryLightbox({
             </div>
 
             <p className="mt-4 rounded-full border border-white/12 bg-[rgba(20,12,6,0.72)] px-4 py-2 text-center font-body-main text-sm text-white shadow-[0_14px_30px_rgba(0,0,0,0.24)]">
-              {images[activeIndex].alt}{" "}
-              <span className="text-white/75">
-                ({activeIndex + 1}/{images.length})
-              </span>
+              {activeIndex + 1}/{images.length}
             </p>
           </div>
         </div>

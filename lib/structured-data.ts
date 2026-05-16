@@ -49,10 +49,12 @@ export function getStructuredData() {
       name: "Dental services",
       itemListElement: siteConfig.services.map((service) => ({
         "@type": "Offer",
+        url: absoluteUrl(service.href),
         itemOffered: {
           "@type": "Service",
           name: service.title,
           description: service.description,
+          url: absoluteUrl(service.href),
           provider: {
             "@id": `${siteConfig.url}/#dentist`
           }

@@ -8,11 +8,11 @@ export const siteConfig = {
   language: "en",
   lastUpdated: "2026-05-04",
   description:
-    "Dr Varun Dental Clinic provides gentle, modern dental care including dental exams, teeth whitening, implants, braces guidance, root canal support, and emergency dental care.",
+    "Dr. Varun's Dental Clinic provides gentle, modern dental care including dental exams, teeth whitening, implants, braces guidance, root canal support, and emergency dental care.",
   seoTitle:
-    "Dr Varun Dental Clinic | Modern Dentist for Confident Smiles",
+    "Dr. Varun's Dental Clinic | Modern Dentist for Confident Smiles",
   seoDescription:
-    "Book gentle, modern dental care at Dr Varun Dental Clinic. Explore dental exams, teeth whitening, implants, emergency dentist support, and smile care services.",
+    "Book gentle, modern dental care at Dr. Varun's Dental Clinic. Explore dental exams, teeth whitening, implants, emergency dentist support, and smile care services.",
   keywords: [
     "Dr. Varun's Dental Clinic",
     "dentist near me",
@@ -93,23 +93,50 @@ export const siteConfig = {
       href: "/teeth-whitening-in-viman-nagar",
       description:
         "Professional smile brightening for yellow or dull-looking teeth after proper dental evaluation."
+    },
+    {
+      title: "Braces Treatment",
+      href: "/braces-treatment-in-viman-nagar",
+      description:
+        "Orthodontic guidance for crooked teeth, gaps, crowding, bite concerns, and smile alignment."
+    },
+    {
+      title: "Invisalign Treatment",
+      href: "/invisalign-treatment-in-viman-nagar",
+      description:
+        "Clear aligner consultation for discreet teeth straightening and selected alignment concerns."
+    },
+    {
+      title: "Wisdom Tooth Extraction",
+      href: "/wisdom-tooth-extraction-in-viman-nagar",
+      description:
+        "Careful evaluation and removal planning for wisdom tooth pain, swelling, infection, and impaction."
+    },
+    {
+      title: "Dental Tooth Filling",
+      href: "/dental-tooth-filling-in-viman-nagar",
+      description:
+        "Cavity filling, tooth-coloured restoration, chipped tooth repair, and old filling replacement."
     }
   ],
   services: [
     {
-      title: "Teeth Whitening",
+      title: "Root Canal Treatment",
+      href: "/root-canal-treatment-in-viman-nagar",
       description:
-        "Brighten stains and discoloration with a comfortable whitening visit designed to refresh your smile."
+        "Tooth-saving care for pain, infection, sensitivity, and deep decay with a calm, modern approach."
     },
     {
-      title: "Dental Implant",
+      title: "Dental Implant Treatment",
+      href: "/dental-implant-in-viman-nagar",
       description:
-        "Replace missing teeth with durable implant planning and natural-looking restorative care."
+        "Stable replacement planning for one or more missing teeth with natural-looking restorative support."
     },
     {
-      title: "Dental Exams",
+      title: "Braces Treatment",
+      href: "/braces-treatment-in-viman-nagar",
       description:
-        "Comprehensive oral checkups to detect issues early and keep your teeth, gums, and smile healthy."
+        "Orthodontic guidance for crooked teeth, gaps, crowding, bite concerns, and smile alignment."
     }
   ],
   stats: [
@@ -168,9 +195,9 @@ export const siteConfig = {
   ],
   faqs: [
     {
-      question: "What dental treatments are available at Dr Varun's Dental Clinic in Viman Nagar, Pune?",
+      question: "What dental treatments are available at Dr. Varun's Dental Clinic in Viman Nagar, Pune?",
       answer:
-        "Dr Varun's Dental Clinic in Viman Nagar, Pune provides a wide range of dental treatments including routine dental checkups, teeth cleaning, tooth-coloured fillings, root canal treatment, crowns and bridges, teeth whitening, smile makeovers, dental implants, gum care, full mouth rehabilitation, and emergency dental care. Patients can visit the clinic for preventive, restorative, cosmetic, and advanced dental treatment needs."
+        "Dr. Varun's Dental Clinic in Viman Nagar, Pune provides routine dental checkups, teeth cleaning, tooth-coloured fillings, root canal treatment, crowns and bridges, teeth whitening, smile makeovers, dental implants, gum care, full mouth rehabilitation, and emergency dental care."
     },
     {
       question: "How often should I visit a dentist for a dental checkup and teeth cleaning?",
@@ -183,29 +210,14 @@ export const siteConfig = {
         "You should visit a dentist as soon as possible if you have tooth pain, gum swelling, pain while chewing, prolonged sensitivity to hot or cold foods, or bleeding around a tooth. These symptoms can point to decay, infection, gum disease, or a damaged tooth. Early diagnosis at a dental clinic in Viman Nagar can help prevent the problem from getting worse."
     },
     {
-      question: "Do you provide root canal treatment in Viman Nagar, Pune?",
+      question: "Do you provide same-day emergency dental treatment in Viman Nagar, Pune?",
       answer:
-        "Yes, Dr Varun's Dental Clinic provides root canal treatment for infected or severely damaged teeth. Root canal treatment is usually advised when a tooth has deep decay, infection, severe pain, or sensitivity that does not settle. The goal is to remove infection, save the natural tooth, and restore comfortable function."
+        "Patients with toothache, swelling, a broken tooth, a lost filling, gum infection, or sudden dental discomfort should contact the clinic as early as possible. The team can guide you to the earliest suitable visit for urgent dental care in Viman Nagar, Pune and explain what to do until you reach the clinic."
     },
     {
-      question: "Are dental implants a good option for missing teeth?",
+      question: "What happens during the first visit to a dentist in Viman Nagar, Pune?",
       answer:
-        "Dental implants are often an excellent option for patients who want a stable, long-lasting replacement for one or more missing teeth. They can help restore chewing comfort, appearance, and confidence while supporting long-term oral health. A proper consultation is needed to assess bone support, gum health, and overall suitability before implant treatment is planned."
-    },
-    {
-      question: "Is teeth whitening safe, and how long do whitening results usually last?",
-      answer:
-        "Professional teeth whitening is generally safe when it is done after a dental examination and under proper supervision. Results can vary depending on your existing tooth shade, eating habits, smoking, and oral hygiene, but many patients enjoy a brighter smile for months with good care. A dentist can also advise whether whitening or another cosmetic dental treatment is better for your smile goals."
-    },
-    {
-      question: "Can I visit your clinic for braces, aligners, or smile makeover consultation?",
-      answer:
-        "Yes, patients can book a consultation at Dr Varun's Dental Clinic for braces guidance, aligner treatment planning, smile makeover options, and cosmetic dental care. During the consultation, the dentist can evaluate tooth alignment, bite concerns, smile aesthetics, and treatment goals to recommend the most suitable next step."
-    },
-    {
-      question: "How can I book an appointment with a dentist in Viman Nagar, Pune?",
-      answer:
-        "You can book an appointment with Dr Varun's Dental Clinic by calling the clinic directly or contacting the team through the website. Sharing your dental concern in advance, such as tooth pain, cleaning, implants, whitening, or a routine checkup, can help the team guide you to the right appointment slot."
+        "Your first visit usually includes a discussion of your concern, an examination of your teeth and gums, and when needed, an X-ray or treatment planning advice. Whether you visit for tooth pain, cleaning, braces, implants, or a routine checkup, the goal is to diagnose the problem clearly and explain the next step in a simple way."
     }
   ],
   images: {
@@ -213,8 +225,8 @@ export const siteConfig = {
     heroCheckup: "/images/hero-checkup.jpg",
     childPatient: "/images/child-checkup.jpg",
     smilingPatient: "/images/smiling-patient.jpg",
-    smileBefore: "/images/smile-before.jpg",
-    smileAfter: "/images/smile-after.jpg",
+    smileBefore: "/images/smile-before-new.png",
+    smileAfter: "/images/smile-after-new.png",
     confidentSmile: "/images/confident-smile.jpg",
     doctorRalph: "/images/doctor-ralph.jpg",
     doctorShelley: "/images/doctor-shelley.jpg",

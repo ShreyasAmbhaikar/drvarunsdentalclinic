@@ -69,7 +69,7 @@ export default function AboutPage() {
   return (
     <main className="bg-surface-container-lowest px-6 pb-20 pt-[112px] md:px-14 md:pb-24 md:pt-[136px]">
       <section className="mx-auto max-w-[1180px]">
-        <div className="relative mb-14 md:mb-16">
+        <div className="relative mb-20 md:mb-24">
           <div className="relative grid gap-8 lg:grid-cols-[0.94fr_1.06fr] lg:items-start">
             <div className="max-w-[560px]">
               <h1 className="max-w-[11ch] font-hero-heading text-[34px] font-extrabold leading-[1.04] text-text-dark md:text-[52px]">
@@ -86,30 +86,25 @@ export default function AboutPage() {
                 </p>
                 <p>
                   From preventive care and smile improvements to complex rehabilitation
-                  and implant procedures, every treatment is guided by precision,
-                  hygiene, patient comfort, and long-term oral health outcomes.
-                </p>
-                <p>
-                  With a strong focus on trust, transparency, and updated dental
-                  methods, the clinic continues to serve families and individuals
-                  looking for dependable, high-quality dentistry in Viman Nagar and
-                  beyond.
+                  and implant procedures, every treatment is guided by precision, hygiene,
+                  transparency, and long-term oral health outcomes for families in Viman
+                  Nagar and beyond.
                 </p>
               </div>
 
-              <div className="mt-8 flex flex-wrap gap-3">
+              <div className="mt-8 grid max-w-[430px] gap-3 sm:grid-cols-2">
                 {clinicHighlights.map((highlight) => {
                   const Icon = highlight.icon;
 
                   return (
                     <div
                       key={highlight.label}
-                      className="inline-flex items-center gap-3 rounded-full border border-primary-container/10 bg-white/88 px-4 py-3 shadow-soft backdrop-blur-sm"
+                      className="flex min-h-[106px] items-start gap-3 rounded-[16px] border border-primary-container/10 bg-white/88 px-4 py-4 shadow-soft backdrop-blur-sm"
                     >
-                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-primary-container/10 text-primary-container">
+                      <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-[12px] bg-primary-container/10 text-primary-container">
                         <Icon className="h-4 w-4" aria-hidden="true" />
                       </span>
-                      <span className="font-body-main text-[14px] font-medium leading-6 text-text-dark">
+                      <span className="font-body-main text-[13px] font-semibold leading-5 text-text-dark">
                         {highlight.label}
                       </span>
                     </div>
@@ -130,7 +125,7 @@ export default function AboutPage() {
                     alt="Dr. Varun's Dental Clinic interior"
                     width={760}
                     height={980}
-                    className="h-[330px] w-full object-cover sm:h-[440px] lg:h-[500px]"
+                    className="h-[330px] w-full object-cover sm:h-[440px] lg:h-[570px]"
                   />
                   <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#6c3c11]/42 to-transparent" />
                 </div>

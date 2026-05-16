@@ -40,6 +40,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: siteConfig.lastUpdated,
       changeFrequency: "monthly",
       priority: 0.9
+    },
+    {
+      url: `${siteConfig.url}/braces-treatment-in-viman-nagar`,
+      lastModified: siteConfig.lastUpdated,
+      changeFrequency: "monthly",
+      priority: 0.9
+    },
+    {
+      url: `${siteConfig.url}/invisalign-treatment-in-viman-nagar`,
+      lastModified: siteConfig.lastUpdated,
+      changeFrequency: "monthly",
+      priority: 0.9
+    },
+    {
+      url: `${siteConfig.url}/wisdom-tooth-extraction-in-viman-nagar`,
+      lastModified: siteConfig.lastUpdated,
+      changeFrequency: "monthly",
+      priority: 0.9
+    },
+    {
+      url: `${siteConfig.url}/dental-tooth-filling-in-viman-nagar`,
+      lastModified: siteConfig.lastUpdated,
+      changeFrequency: "monthly",
+      priority: 0.9
     }
   ];
 }

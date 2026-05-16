@@ -22,7 +22,8 @@ export default function OurServicesPage() {
         </h1>
         <p className="mt-5 max-w-[720px] font-body-main text-[16px] leading-7 text-text-muted">
           Explore the clinic&apos;s key treatment pages for tooth-saving care, missing tooth
-          replacement, preventive cleaning, and cosmetic smile brightening in Viman Nagar.
+          replacement, preventive cleaning, cosmetic smile care, braces, clear aligners,
+          wisdom tooth removal, and cavity filling in Viman Nagar.
         </p>
 
         <div className="mt-10 grid gap-5 md:grid-cols-2">

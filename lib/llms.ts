@@ -26,7 +26,7 @@ ${siteConfig.services.map((service) => `- ${service.title}: ${service.descriptio
 export function getLlmsFullText() {
   return `${getLlmsText()}
 ## About
-Dr Varun Dental Clinic offers patient-friendly dental care with a modern clinical experience, clear treatment explanations, and support for preventive, cosmetic, restorative, and emergency dental needs.
+Dr. Varun's Dental Clinic offers patient-friendly dental care with a modern clinical experience, clear treatment explanations, and support for preventive, cosmetic, restorative, and emergency dental needs.
 
 ## FAQ
 ${siteConfig.faqs.map((faq) => `### ${faq.question}\n${faq.answer}`).join("\n\n")}

@@ -17,7 +17,7 @@ export function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="overflow-hidden bg-[linear-gradient(180deg,#fff9f1_0%,#fff4e7_56%,#fff9f1_100%)] px-6 py-20 md:px-14 md:py-24"
+      className="overflow-hidden bg-[linear-gradient(180deg,#fff9f1_0%,#fff4e7_56%,#fff9f1_100%)] px-6 pb-10 pt-14 md:px-14 md:pb-12 md:pt-16"
     >
       <div className="mx-auto grid max-w-[1180px] grid-cols-1 gap-10 md:grid-cols-12 md:gap-8">
         <div className="md:col-span-5 md:pt-10">
@@ -39,7 +39,7 @@ export function Testimonials() {
             <div>
               <div className="font-hero-heading text-[42px] font-extrabold leading-none">4.8</div>
               <div className="mt-1 font-label-sm text-[13px] font-semibold text-white/88">
-                122 reviews
+                121 reviews
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@ export function Testimonials() {
 
         <div className="relative md:col-span-7">
           <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-24 bg-gradient-to-b from-[#fff9f1] via-[#fff9f1]/80 to-transparent" />
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-44 bg-gradient-to-t from-[#fff9f1] via-[#fff9f1]/88 to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-28 bg-gradient-to-t from-[#fff9f1] via-[#fff9f1]/88 to-transparent md:h-32" />
 
           <div className="grid gap-6 md:grid-cols-2">
             <div className="space-y-6 md:pt-5">
@@ -79,11 +79,19 @@ function TestimonialCard({
   testimonial: (typeof siteConfig.testimonials)[number];
   fadedBottom?: boolean;
 }) {
+  const fadeMask = fadedBottom
+    ? {
+        WebkitMaskImage:
+          "linear-gradient(to bottom, #000 0%, #000 56%, rgba(0,0,0,0.62) 74%, transparent 100%)",
+        maskImage:
+          "linear-gradient(to bottom, #000 0%, #000 56%, rgba(0,0,0,0.62) 74%, transparent 100%)"
+      }
+    : undefined;
+
   return (
     <article
-      className={`relative overflow-hidden rounded-[24px] border border-[#f2e1cb] bg-white/96 p-6 shadow-[0_24px_44px_rgba(133,82,32,0.08)] backdrop-blur ${
-        fadedBottom ? "border-b-transparent" : ""
-      }`}
+      className="relative overflow-hidden rounded-[24px] border border-[#f2e1cb] bg-white/96 p-6 shadow-[0_24px_44px_rgba(133,82,32,0.08)] backdrop-blur"
+      style={fadeMask}
     >
       <div className="mb-4 flex items-start justify-between gap-4">
         <div className="flex items-center gap-3">
@@ -128,12 +136,6 @@ function TestimonialCard({
         {truncateQuote(testimonial.quote, 220)}
       </p>
 
-      {fadedBottom ? (
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-x-[-2px] bottom-[-2px] h-28 rounded-b-[26px] bg-gradient-to-t from-[#fff7ee] via-[#fff7ee]/95 to-transparent"
-        />
-      ) : null}
     </article>
   );
 }

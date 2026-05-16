@@ -5,14 +5,14 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Image Gallery",
   description:
-    "Explore clinic moments, dental care, and confident smiles at Dr Varun Dental Clinic.",
+    "Explore clinic moments, dental care, and confident smiles at Dr. Varun's Dental Clinic.",
   alternates: {
     canonical: `${siteConfig.url}/gallery`
   },
   openGraph: {
     title: `Image Gallery | ${siteConfig.shortName}`,
     description:
-      "Explore clinic moments, dental care, and confident smiles at Dr Varun Dental Clinic.",
+      "Explore clinic moments, dental care, and confident smiles at Dr. Varun's Dental Clinic.",
     url: `${siteConfig.url}/gallery`,
     images: [
       {
@@ -28,27 +28,27 @@ export const metadata: Metadata = {
 const galleryImages = [
   {
     src: "/images/gallery/pic1.jpg",
-    alt: "Gallery image 1 from Dr. Varun's Dental Clinic"
-  },
-  {
-    src: "/images/gallery/pic6.jpg",
-    alt: "Gallery image 6 from Dr. Varun's Dental Clinic"
-  },
-  {
-    src: "/images/gallery/pic5.webp",
-    alt: "Gallery image 5 from Dr. Varun's Dental Clinic"
-  },
-  {
-    src: "/images/gallery/pic2.jpg",
-    alt: "Gallery image 2 from Dr. Varun's Dental Clinic"
+    alt: "Exterior view of Dr. Varun's Dental Clinic"
   },
   {
     src: "/images/gallery/pic7.jpg",
-    alt: "Gallery image 7 from Dr. Varun's Dental Clinic"
+    alt: "Clinic reception area at Dr. Varun's Dental Clinic"
+  },
+  {
+    src: "/images/gallery/pic6.jpg",
+    alt: "Dental operatory at Dr. Varun's Dental Clinic"
+  },
+  {
+    src: "/images/gallery/pic5.webp",
+    alt: "Consultation room at Dr. Varun's Dental Clinic"
+  },
+  {
+    src: "/images/gallery/pic2.jpg",
+    alt: "Treatment chair at Dr. Varun's Dental Clinic"
   },
   {
     src: "/images/gallery/pic9.jpg",
-    alt: "Gallery image 9 from Dr. Varun's Dental Clinic"
+    alt: "Clinic workspace at Dr. Varun's Dental Clinic"
   },
   {
     src: "/images/gallery/videoplayback.mp4",

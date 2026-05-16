@@ -17,22 +17,22 @@ export function BeforeAfterSmile() {
             Smile Results
           </p>
           <h2 className="break-words font-section-heading text-[31px] font-extrabold leading-[1.12] text-text-dark md:text-[40px]">
-            See the Difference a Brighter Smile Can Make
+            See the Difference a Straighter Smile Can Make
           </h2>
           <p className="mx-auto mt-5 max-w-[640px] font-body-main text-[15px] leading-7 text-text-muted">
-            A visual look at how focused whitening care can reduce stains and
-            bring a cleaner, more confident smile forward.
+            A visual look at how smile correction can improve crooked front
+            teeth, balance spacing, and create a more even smile.
           </p>
         </div>
 
         <div
-            className="group relative mx-auto h-[340px] w-full max-w-full overflow-hidden rounded-[24px] bg-primary-container shadow-card sm:aspect-[16/9] sm:h-auto md:max-h-[660px]"
-          aria-label="Before and after teeth whitening smile comparison"
+          className="group relative mx-auto h-[300px] w-full max-w-[980px] overflow-hidden rounded-[24px] bg-primary-container shadow-card sm:aspect-[16/9] sm:h-auto md:max-h-[552px]"
+          aria-label="Before and after crooked teeth smile correction comparison"
           style={{ "--slider-position": `${position}%` } as CSSProperties}
         >
           <Image
             src={siteConfig.images.smileAfter}
-            alt="After teeth whitening result with a brighter smile"
+            alt="After smile correction with straighter front teeth"
             fill
             sizes="(min-width: 1280px) 1140px, 100vw"
             className="object-cover"
@@ -44,7 +44,7 @@ export function BeforeAfterSmile() {
           >
             <Image
               src={siteConfig.images.smileBefore}
-              alt="Before teeth whitening with visible tooth stains"
+              alt="Before smile correction with visible crowding in the front teeth"
               fill
               sizes="(min-width: 1280px) 1140px, 100vw"
               className="object-cover"
@@ -83,8 +83,8 @@ export function BeforeAfterSmile() {
         </div>
 
         <p className="mx-auto mt-5 max-w-[680px] text-center font-body-main text-[13px] leading-6 text-text-muted">
-          Individual treatment results vary after clinical examination,
-          treatment planning, and oral health condition.
+          Individual smile correction results vary after clinical examination,
+          treatment planning, tooth position, and oral health condition.
         </p>
       </div>
     </section>
