@@ -18,7 +18,7 @@ const dentalImplant: TreatmentPageData = {
   heroBadge: "Fixed teeth replacement",
   heroIntro:
     "Replace missing teeth with carefully planned dental implants at Dr. Varun's Dental Clinic in Viman Nagar.",
-  heroImage: "/images/dental-implant-treatment-viman-nagar.jpg",
+  heroImage: "/images/dental-implant-treatment-viman-nagar.webp",
   heroAlt: "Dental implant treatment in Viman Nagar at Dr. Varun's Dental Clinic",
   heroObjectPosition: "52% 50%",
   heroGradientClassName:
@@ -43,7 +43,7 @@ const dentalImplant: TreatmentPageData = {
   overviewParagraphs: [
     "A dental implant is a small titanium post placed into the jawbone to replace the root of a missing tooth. Once stable in the bone, it can support a dental crown, bridge, or denture.",
     "Dental implants are popular because they look natural, feel stable, and do not depend on support from nearby teeth in the same way as traditional bridges.",
-    "If you are searching for dental implant near me, implant dentist in Viman Nagar, or missing tooth replacement near me, Dr. Varun's Dental Clinic offers experienced implant care in a clean and comfortable setting."
+    "If you are searching for dental implants near me, dental impants in Viman Nagar, single tooth implant, advanced dental implants in viman nagar, implantologist in viman nagar or missing tooth replacement near me, Dr. Varun's Dental Clinic offers experienced implant care in a clean and comfortable setting."
   ],
   overviewCards: [
     { text: "Implant post placed inside the jawbone" },
@@ -98,8 +98,8 @@ const dentalImplant: TreatmentPageData = {
       text: "Regular follow-ups help ensure the implant, gums, bite, and crown remain stable. Good oral hygiene is essential for long-term success."
     }
   ],
-  procedureImage: "/images/root-canal-treatment-clinic.jpg",
-  procedureImageAlt: "Implant dentist in Viman Nagar placing dental implant",
+  procedureImage: "/images/dental-implant-planning-viman-nagar.webp",
+  procedureImageAlt: "Implant dentist in Viman Nagar explaining dental implant planning",
   procedureImageObjectPosition: "48% 50%",
   procedureNoteTitle: "Is implant treatment painful?",
   procedureNoteText:
@@ -184,9 +184,9 @@ const dentalImplant: TreatmentPageData = {
   faqTitle: "Dental implant questions patients usually ask first.",
   faqs: [
     {
-      question: "What is a dental implant?",
+      question: "Who is a good candidate for dental implants?",
       answer:
-        "A dental implant is an artificial tooth root placed inside the jawbone to support a dental crown, bridge, or denture. It is used to replace missing teeth and restore chewing function, smile appearance, and confidence."
+        "Patients with one or more missing teeth, healthy or treatable gums, adequate bone support, and good oral hygiene are usually good candidates. A consultation is needed to confirm suitability."
     },
     {
       question: "Is dental implant treatment painful?",
@@ -194,44 +194,29 @@ const dentalImplant: TreatmentPageData = {
         "Dental implant treatment is usually done under local anaesthesia, so patients generally remain comfortable during the procedure. Mild swelling or discomfort may occur after treatment, but this usually settles with proper care and medication."
     },
     {
-      question: "Who is the best candidate for dental implants?",
-      answer:
-        "Patients with one or more missing teeth, healthy or treatable gums, adequate bone support, and good oral hygiene are usually good candidates. A consultation is needed to confirm suitability."
-    },
-    {
-      question: "Can dental implants replace multiple missing teeth?",
-      answer:
-        "Yes. Dental implants can replace a single missing tooth, multiple missing teeth, or support full mouth fixed teeth or implant-supported dentures depending on the case."
-    },
-    {
       question: "How long does dental implant treatment take?",
       answer:
         "Treatment time depends on bone condition, healing response, number of implants, and whether additional procedures are needed. Some cases take a few months because the implant needs time to integrate with the jawbone."
     },
     {
-      question: "Are dental implants better than dentures?",
+      question: "How long do dental implants last?",
       answer:
-        "Dental implants are fixed and usually more stable than removable dentures. They can improve chewing comfort, speech, and confidence, but the best option depends on oral health, bone support, budget, and treatment goals."
+        "With good oral hygiene and regular follow-ups, the implant itself can last many years. The implant crown may need maintenance or replacement earlier depending on bite forces, wear, and home care."
     },
     {
-      question: "Do dental implants look natural?",
+      question: "Will I need bone grafting before an implant?",
       answer:
-        "Yes. The final crown placed on the dental implant is designed to match the shape, size, and shade of nearby teeth. A well-planned implant restoration can look very natural."
+        "Not every patient needs bone grafting. It is advised only if the bone at the missing-tooth site is too thin or too short to support the implant safely."
     },
     {
-      question: "What is the cost of dental implant treatment in Viman Nagar?",
+      question: "Are dental implants better than bridges or dentures?",
       answer:
-        "The cost depends on the number of implants, implant system, bone condition, crown type, missing tooth location, and whether additional procedures such as bone grafting are needed."
+        "Dental implants are fixed and usually more stable than removable dentures, and they do not depend on adjacent teeth the way a bridge often does. The best option still depends on your oral health, bone support, budget, and treatment goals."
     },
     {
-      question: "How should I care for my dental implant?",
+      question: "What is the approximate cost of dental implant treatment in Viman Nagar?",
       answer:
-        "Brush twice daily, clean around the implant properly, avoid chewing very hard objects, and visit your dentist for regular follow-ups. Good gum health is important for long-term implant success."
-    },
-    {
-      question: "Where can I get dental implant treatment in Viman Nagar?",
-      answer:
-        "You can visit Dr. Varun's Dental Clinic in Viman Nagar, Pune for dental implant consultation, missing tooth replacement, implant-supported crowns, bridges, dentures, and full mouth rehabilitation planning."
+        "In India, a single dental implant commonly falls around Rs. 25,000 to Rs. 75,000 per tooth, and many implant-with-crown plans are often around Rs. 35,000 to Rs. 65,000 or more. The final estimate depends on the implant system, crown type, bone grafting need, and case complexity."
     }
   ],
   ctaKicker: "Dental implant near me in Viman Nagar",

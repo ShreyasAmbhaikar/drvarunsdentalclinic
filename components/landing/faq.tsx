@@ -12,23 +12,23 @@ export function Faq() {
   const [openIndex, setOpenIndex] = useState(-1);
 
   return (
-    <section id="faq" className="bg-white px-6 pb-16 pt-16 md:px-14 md:pb-20 md:pt-[72px]">
-      <div className="mx-auto mb-12 max-w-[760px] text-center">
-        <h2 className="mb-4 font-section-heading text-[31px] font-extrabold text-text-dark md:text-[38px]">
+    <section id="faq" className="bg-white px-6 pb-12 pt-10 md:px-14 md:pb-14 md:pt-[52px]">
+      <div className="mx-auto mb-8 max-w-[760px] text-center">
+        <h2 className="mb-4 font-section-heading text-[29px] font-extrabold text-text-dark md:text-[38px]">
           Frequently Asked
           <br />
           Questions
         </h2>
-        <p className="mx-auto max-w-[700px] font-body-main text-base leading-7 text-text-muted">
+        <p className="mx-auto max-w-[700px] font-body-main text-[15px] leading-7 text-text-muted">
           Find quick answers about appointments, dental checkups, root canal care,
           dental implants, teeth whitening, and emergency visits at Dr. Varun&apos;s
           Dental Clinic in Viman Nagar, Pune.
         </p>
       </div>
 
-      <div className="mx-auto grid max-w-[1140px] grid-cols-1 items-start gap-9 md:grid-cols-2">
+      <div className="mx-auto grid max-w-[1140px] grid-cols-1 items-start gap-7 md:grid-cols-2">
         <div
-          className="relative h-[330px] overflow-hidden bg-surface-container-low md:h-[500px]"
+          className="relative h-[280px] overflow-hidden bg-surface-container-low md:h-[380px]"
           style={{
             WebkitMaskImage: faqImageMask,
             maskImage: faqImageMask,
@@ -40,7 +40,7 @@ export function Faq() {
         >
           <Image
             src={siteConfig.images.faqTreatment}
-            alt="Dental treatment room"
+            alt="Dentist answering patient questions during a dental consultation"
             fill
             sizes="(min-width: 768px) 500px, 100vw"
             className="object-cover"

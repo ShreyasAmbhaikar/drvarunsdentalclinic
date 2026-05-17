@@ -1,7 +1,8 @@
 export const siteConfig = {
   name: "Dr. Varun's Dental Clinic",
   shortName: "Dr. Varun's",
-  tagline: "Gentle modern dental care for confident, healthy smiles and lasting comfort",
+  tagline:
+    "Gentle, modern dental care with clear guidance, advanced treatment planning, and a calm clinic experience for confident, healthy smiles at every visit.",
   url: "https://www.drvarundental.com",
   domainPlaceholder: true,
   locale: "en_IN",
@@ -148,12 +149,12 @@ export const siteConfig = {
     {
       name: "Dr. Varun Tomke",
       role: "Dental Surgeon and Implantologist",
-      image: "/images/gallery/dr-varun-pocket-hands.png",
+      image: "/images/gallery/dr-varun-tomke-pocket-hands-viman-nagar.webp",
       alt: "Dr. Varun Tomke, dental surgeon and implantologist",
       summary:
         "Dr. Varun Tomke brings more than 17 years of experience in advanced dentistry with a strong focus on implants, smile makeovers, full mouth rehabilitation, and patient-first care.",
       highlights: [
-        "17+ years serving Viman Nagar and Wagholi",
+        "17+ years serving Viman Nagar, Kalyani Nagar and Kharadi area",
         "Best Dentist recognition in 2017 and 2022",
         "President, IDA Pune East branch"
       ]
@@ -162,7 +163,7 @@ export const siteConfig = {
   testimonials: [
     {
       name: "Shreyas Ambhaikar",
-      image: "/images/testimonial/shreyas.jpg",
+      image: "/images/testimonial/shreyas-ambhaikar-review.webp",
       alt: "Shreyas Ambhaikar testimonial profile photo",
       rating: 5,
       quote:
@@ -170,7 +171,7 @@ export const siteConfig = {
     },
     {
       name: "Sheetal Joshi",
-      image: "/images/testimonial/sheetal.png",
+      image: "/images/testimonial/sheetal-joshi-review.webp",
       alt: "Sheetal Joshi testimonial profile photo",
       rating: 5,
       quote:
@@ -178,7 +179,7 @@ export const siteConfig = {
     },
     {
       name: "Swati Tirpude",
-      image: "/images/testimonial/swati.png",
+      image: "/images/testimonial/swati-tirpude-review.webp",
       alt: "Swati Tirpude testimonial profile photo",
       rating: 5,
       quote:
@@ -186,7 +187,7 @@ export const siteConfig = {
     },
     {
       name: "Rahul Dalal",
-      image: "/images/testimonial/rahul.png",
+      image: "/images/testimonial/rahul-dalal-review.webp",
       alt: "Rahul Dalal testimonial profile photo",
       rating: 5,
       quote:
@@ -221,26 +222,26 @@ export const siteConfig = {
     }
   ],
   images: {
-    logo: "/images/varun-dental-logo.png",
-    heroCheckup: "/images/hero-checkup.jpg",
-    childPatient: "/images/child-checkup.jpg",
-    smilingPatient: "/images/smiling-patient.jpg",
-    smileBefore: "/images/smile-before-new.png",
-    smileAfter: "/images/smile-after-new.png",
-    confidentSmile: "/images/confident-smile.jpg",
-    doctorRalph: "/images/doctor-ralph.jpg",
-    doctorShelley: "/images/doctor-shelley.jpg",
-    faqTreatment: "/images/faq-treatment.jpg",
-    smilePill: "/images/smile-pill.jpg",
-    tooth3d: "/images/tooth-3d.jpg",
-    ctaPillOne: "/images/cta-pill-1.jpg",
-    ctaAvatar: "/images/cta-avatar.jpg",
-    ctaPillTwo: "/images/cta-pill-2.jpg",
+    logo: "/images/dr-varun-dental-clinic-logo.webp",
+    heroCheckup: "/images/home-dental-clinic-hero-viman-nagar.webp",
+    childPatient: "/images/child-dental-checkup-viman-nagar.webp",
+    smilingPatient: "/images/smiling-dental-patient-viman-nagar.webp",
+    smileBefore: "/images/smile-before-correction-viman-nagar.webp",
+    smileAfter: "/images/smile-after-correction-viman-nagar.webp",
+    confidentSmile: "/images/confident-smile-dental-care-viman-nagar.webp",
+    doctorRalph: "/images/dental-team-ralph-viman-nagar.webp",
+    doctorShelley: "/images/dental-team-shelley-viman-nagar.webp",
+    faqTreatment: "/images/dental-faq-consultation-viman-nagar.webp",
+    smilePill: "/images/smile-care-pill-viman-nagar.webp",
+    tooth3d: "/images/dental-tooth-3d-viman-nagar.webp",
+    ctaPillOne: "/images/dental-care-cta-pill-one-viman-nagar.webp",
+    ctaAvatar: "/images/dental-cta-patient-avatar-viman-nagar.webp",
+    ctaPillTwo: "/images/dental-care-cta-pill-two-viman-nagar.webp",
     avatars: [
-      "/images/avatar-1.jpg",
-      "/images/avatar-2.jpg",
-      "/images/avatar-3.jpg",
-      "/images/avatar-4.jpg"
+      "/images/dental-patient-avatar-1.webp",
+      "/images/dental-patient-avatar-2.webp",
+      "/images/dental-patient-avatar-3.webp",
+      "/images/dental-patient-avatar-4.webp"
     ]
   }
 } as const;

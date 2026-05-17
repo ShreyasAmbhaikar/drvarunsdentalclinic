@@ -12,7 +12,7 @@ export const bracesTreatment: TreatmentPageData = {
   heroBadge: "Teeth alignment care",
   heroIntro:
     "Dental braces consultation and treatment guidance for straighter teeth, better bite alignment, and a more confident smile.",
-  heroImage: "/images/braces-treatment-viman-nagar.jpg",
+  heroImage: "/images/braces-treatment-viman-nagar.webp",
   heroAlt: "Braces treatment in Viman Nagar at Dr. Varun's Dental Clinic",
   heroObjectPosition: "50% 45%",
   ctaLabel: "Call for Braces Consultation",
@@ -84,7 +84,7 @@ export const bracesTreatment: TreatmentPageData = {
       text: "Once teeth reach the desired position, braces are removed and retainers are given to help maintain the new alignment."
     }
   ],
-  procedureImage: "/images/braces-treatment-viman-nagar.jpg",
+  procedureImage: "/images/braces-adjustment-viman-nagar.webp",
   procedureImageAlt: "Dental braces near me for crooked teeth in Viman Nagar Pune",
   procedureNoteTitle: "Is braces treatment painful?",
   procedureNoteText:
@@ -143,12 +143,7 @@ export const bracesTreatment: TreatmentPageData = {
   faqTitle: "Braces questions patients usually ask first.",
   faqs: [
     {
-      question: "What is braces treatment?",
-      answer:
-        "Braces treatment is an orthodontic treatment used to straighten crooked teeth, close gaps, correct crowding, and improve bite alignment by applying gentle pressure over time."
-    },
-    {
-      question: "Who needs dental braces?",
+      question: "What problems can braces treatment fix?",
       answer:
         "Patients with crowded teeth, crooked teeth, gaps, forwardly placed teeth, overbite, underbite, crossbite, open bite, or uneven smile alignment may need braces."
     },
@@ -158,7 +153,7 @@ export const bracesTreatment: TreatmentPageData = {
         "Braces treatment is not usually painful, but mild soreness or pressure can happen after braces placement or adjustment and usually settles within a few days."
     },
     {
-      question: "What is the best age for braces?",
+      question: "What is the best age for braces, and can adults get them too?",
       answer:
         "Teenage years are commonly preferred, but adults can also get braces if their teeth and gums are healthy. Early evaluation may help children with bite or jaw concerns."
     },
@@ -166,11 +161,6 @@ export const bracesTreatment: TreatmentPageData = {
       question: "How long does braces treatment take?",
       answer:
         "Treatment time depends on misalignment severity, bite correction needs, age, treatment type, and patient cooperation. Some cases take several months, while complex cases can take longer."
-    },
-    {
-      question: "Are ceramic braces better than metal braces?",
-      answer:
-        "Ceramic braces are less visible, while metal braces are strong and effective for many cases. The best option depends on your dental condition and preference."
     },
     {
       question: "Do I need tooth extraction before braces?",
@@ -183,10 +173,10 @@ export const bracesTreatment: TreatmentPageData = {
         "Retainers help maintain the new position of teeth after braces are removed. Without retainers, teeth may slowly shift back."
     },
     {
-      question: "Where can I get braces treatment in Viman Nagar?",
+      question: "What is the approximate cost of braces treatment in Viman Nagar?",
       answer:
-        "You can visit Dr. Varun's Dental Clinic in Viman Nagar, Pune for braces consultation, teeth alignment guidance, gap correction, and smile improvement planning."
-    }
+        "In India, metal braces commonly fall around Rs. 25,000 to Rs. 55,000, while ceramic braces are often around Rs. 48,000 to Rs. 75,000 or more. Self-ligating systems and complex bite-correction cases can cost higher, depending on treatment duration and retainer planning."
+      }
   ],
   ctaKicker: "Braces treatment near me in Viman Nagar",
   ctaTitle: "Crooked teeth, gaps, crowding, or bite concerns can be checked early.",
@@ -216,7 +206,7 @@ export const invisalignTreatment: TreatmentPageData = {
   heroBadge: "Clear aligner care",
   heroIntro:
     "Transparent, removable aligner treatment guidance for patients who want straighter teeth without visible metal braces.",
-  heroImage: "/images/invisalign-clear-aligners-viman-nagar.jpg",
+  heroImage: "/images/invisalign-clear-aligners-viman-nagar.webp",
   heroAlt: "Invisalign treatment in Viman Nagar at Dr. Varun's Dental Clinic",
   heroObjectPosition: "52% 48%",
   ctaLabel: "Call for Aligner Consultation",
@@ -288,7 +278,7 @@ export const invisalignTreatment: TreatmentPageData = {
       text: "After treatment, retainers are advised to help maintain the new tooth position."
     }
   ],
-  procedureImage: "/images/invisalign-clear-aligners-viman-nagar.jpg",
+  procedureImage: "/images/clear-aligner-consultation-viman-nagar.webp",
   procedureImageAlt: "Clear aligners near me for teeth straightening in Viman Nagar Pune",
   procedureNoteTitle: "Can I eat with clear aligners?",
   procedureNoteText:
@@ -347,29 +337,14 @@ export const invisalignTreatment: TreatmentPageData = {
   faqTitle: "Clear aligner questions patients usually ask first.",
   faqs: [
     {
-      question: "What is Invisalign treatment?",
+      question: "Who is a good candidate for clear aligners?",
       answer:
-        "Invisalign treatment uses clear removable aligner trays to gradually move teeth into better positions without traditional metal brackets and wires."
+        "Clear aligners usually suit mild to moderate crowding, small gaps, selected bite issues, and patients who can wear trays consistently for the recommended hours every day."
     },
     {
-      question: "Are clear aligners and Invisalign the same?",
-      answer:
-        "Invisalign is a well-known clear aligner system. Clear aligners is the broader term for transparent removable trays used for orthodontic tooth movement."
-    },
-    {
-      question: "Is Invisalign better than braces?",
+      question: "Are Invisalign or clear aligners better than braces?",
       answer:
         "It depends on the case. Clear aligners may suit mild to moderate cases and patients who want a discreet removable option, while braces may be better for more complex tooth or bite movement."
-    },
-    {
-      question: "Is clear aligner treatment painful?",
-      answer:
-        "Clear aligners are not usually painful, but mild pressure or tightness is common when a new tray starts moving the teeth."
-    },
-    {
-      question: "How long does Invisalign treatment take?",
-      answer:
-        "Treatment time depends on alignment severity, number of aligners, bite correction needs, and how consistently the aligners are worn."
     },
     {
       question: "How many hours should I wear clear aligners daily?",
@@ -377,9 +352,14 @@ export const invisalignTreatment: TreatmentPageData = {
         "Patients usually need to wear aligners for most of the day as advised by the dentist. Removing them for long periods can slow or affect treatment."
     },
     {
-      question: "Can I eat with clear aligners?",
+      question: "Can I eat or drink with clear aligners on?",
       answer:
         "Aligners should usually be removed before eating or drinking anything except water to prevent damage, staining, or trapped food."
+    },
+    {
+      question: "How long does Invisalign treatment take?",
+      answer:
+        "Treatment time depends on alignment severity, number of aligners, bite correction needs, and how consistently the aligners are worn."
     },
     {
       question: "Are retainers needed after Invisalign treatment?",
@@ -387,10 +367,10 @@ export const invisalignTreatment: TreatmentPageData = {
         "Yes. Retainers help maintain the new tooth position after clear aligner treatment is completed."
     },
     {
-      question: "Where can I get Invisalign treatment in Viman Nagar?",
+      question: "What is the approximate cost of Invisalign or clear aligners in Viman Nagar?",
       answer:
-        "You can visit Dr. Varun's Dental Clinic in Viman Nagar, Pune for clear aligner consultation, Invisalign guidance, and teeth straightening planning."
-    }
+        "In India, clear aligner treatment commonly starts around Rs. 60,000 and can go above Rs. 3,00,000, depending on complexity, brand, refinements, and treatment length. Invisalign plans are often in the higher part of that range."
+    },
   ],
   ctaKicker: "Clear aligners near me in Viman Nagar",
   ctaTitle: "Want straighter teeth without visible metal braces?",
@@ -420,7 +400,7 @@ export const wisdomToothExtraction: TreatmentPageData = {
   heroBadge: "Third molar care",
   heroIntro:
     "Careful wisdom tooth evaluation and removal planning for pain, swelling, infection, impacted teeth, and chewing discomfort.",
-  heroImage: "/images/wisdom-tooth-extraction-viman-nagar.jpg",
+  heroImage: "/images/wisdom-tooth-extraction-viman-nagar.webp",
   heroAlt: "Wisdom tooth extraction in Viman Nagar at Dr. Varun's Dental Clinic",
   heroObjectPosition: "48% 50%",
   ctaLabel: "Call for Wisdom Tooth Visit",
@@ -492,7 +472,7 @@ export const wisdomToothExtraction: TreatmentPageData = {
       text: "You receive guidance on bleeding control, food, medicines, cleaning, follow-up, and dry socket prevention."
     }
   ],
-  procedureImage: "/images/wisdom-tooth-extraction-viman-nagar.jpg",
+  procedureImage: "/images/wisdom-tooth-xray-consultation-viman-nagar.webp",
   procedureImageAlt: "Wisdom tooth removal near me for tooth pain in Viman Nagar Pune",
   procedureNoteTitle: "Is wisdom tooth extraction painful?",
   procedureNoteText:
@@ -551,11 +531,6 @@ export const wisdomToothExtraction: TreatmentPageData = {
   faqTitle: "Wisdom tooth questions patients usually ask first.",
   faqs: [
     {
-      question: "What is wisdom tooth extraction?",
-      answer:
-        "Wisdom tooth extraction is a procedure to remove the third molar when it causes pain, swelling, infection, impaction, food trapping, or risk to nearby teeth."
-    },
-    {
       question: "When should a wisdom tooth be removed?",
       answer:
         "Removal may be recommended if there is pain, repeated infection, swelling, decay, gum flap problems, pressure on nearby teeth, or an impacted tooth."
@@ -576,25 +551,20 @@ export const wisdomToothExtraction: TreatmentPageData = {
         "No. Wisdom teeth that erupt properly, remain healthy, and do not affect nearby teeth may not need removal. A dentist can confirm after examination."
     },
     {
-      question: "How long does wisdom tooth extraction take?",
-      answer:
-        "The time depends on whether the tooth is fully erupted or impacted, root shape, infection, mouth opening, and surgical complexity."
-    },
-    {
       question: "What should I eat after wisdom tooth removal?",
       answer:
         "Soft and easy-to-chew foods are usually advised initially. Avoid hot, hard, spicy, or crunchy foods until the dentist says it is comfortable."
     },
     {
-      question: "What is dry socket after extraction?",
+      question: "What is dry socket, and how do I avoid it?",
       answer:
-        "Dry socket is a painful condition that can happen if the blood clot in the extraction socket is disturbed or does not form properly. It needs dental care."
+        "Dry socket is a painful condition that can happen if the blood clot in the extraction socket is disturbed or does not form properly. Avoid spitting forcefully, smoking, using a straw, or rinsing vigorously too soon after extraction."
     },
     {
-      question: "Where can I get wisdom tooth extraction in Viman Nagar?",
+      question: "What is the approximate cost of wisdom tooth extraction in Viman Nagar?",
       answer:
-        "You can visit Dr. Varun's Dental Clinic in Viman Nagar, Pune for wisdom tooth pain evaluation, impacted wisdom tooth diagnosis, and third molar removal."
-    }
+        "Simple erupted wisdom tooth removal in India is often around Rs. 1,500 to Rs. 5,000 per tooth, while impacted or surgical wisdom tooth extraction commonly falls around Rs. 5,000 to Rs. 18,000 or more. The final cost depends on tooth position, X-ray findings, infection, and surgical difficulty."
+      }
   ],
   ctaKicker: "Wisdom tooth removal near me in Viman Nagar",
   ctaTitle: "Pain, swelling, jaw stiffness, or repeated back-tooth infection needs attention.",
@@ -624,7 +594,7 @@ export const dentalToothFilling: TreatmentPageData = {
   heroBadge: "Cavity repair care",
   heroIntro:
     "Careful dental filling treatment for cavities, sensitivity, chipped teeth, minor tooth damage, and old damaged fillings.",
-  heroImage: "/images/dental-tooth-filling-viman-nagar.jpg",
+  heroImage: "/images/dental-tooth-filling-viman-nagar.webp",
   heroAlt: "Dental tooth filling in Viman Nagar at Dr. Varun's Dental Clinic",
   heroObjectPosition: "50% 45%",
   ctaLabel: "Call for Filling Appointment",
@@ -696,7 +666,7 @@ export const dentalToothFilling: TreatmentPageData = {
       text: "The filling is polished and aftercare guidance is given for eating, brushing, sensitivity, and follow-up."
     }
   ],
-  procedureImage: "/images/dental-tooth-filling-viman-nagar.jpg",
+  procedureImage: "/images/tooth-colored-filling-consultation-viman-nagar.webp",
   procedureImageAlt: "Cavity filling near me for tooth decay in Viman Nagar Pune",
   procedureNoteTitle: "Is dental filling painful?",
   procedureNoteText:
@@ -755,11 +725,6 @@ export const dentalToothFilling: TreatmentPageData = {
   faqTitle: "Dental filling questions patients usually ask first.",
   faqs: [
     {
-      question: "What is a dental filling?",
-      answer:
-        "A dental filling repairs a tooth damaged by cavity, decay, minor fracture, or wear. The decayed part is cleaned and the space is filled with a suitable material."
-    },
-    {
       question: "When do I need a tooth filling?",
       answer:
         "You may need a filling if you have a cavity, food lodgement, sensitivity, visible hole, black spot, chipped tooth, cracked surface, or broken old filling."
@@ -770,9 +735,9 @@ export const dentalToothFilling: TreatmentPageData = {
         "Dental filling is usually comfortable, especially when the cavity is treated early. If the cavity is deep, the dentist may numb the area."
     },
     {
-      question: "What is a tooth-coloured filling?",
+      question: "What is a tooth-coloured filling, and is it better than a silver filling?",
       answer:
-        "A tooth-coloured filling is designed to match the natural shade of your teeth and is commonly used for visible teeth and aesthetic cavity restoration."
+        "A tooth-coloured filling is designed to match the natural shade of your teeth and is commonly used for visible teeth and aesthetic cavity restoration. The better option depends on the cavity size, tooth position, bite forces, and your preference."
     },
     {
       question: "Can a dental filling stop tooth sensitivity?",
@@ -785,20 +750,20 @@ export const dentalToothFilling: TreatmentPageData = {
         "Ignoring a cavity can allow decay to spread deeper, causing pain, infection, root canal treatment, crown need, or extraction in severe cases."
     },
     {
-      question: "Can an old filling be replaced?",
+      question: "How long does a dental filling last?",
       answer:
-        "Yes. Old fillings that are cracked, leaking, broken, discoloured, or causing food lodgement can be replaced after dental examination."
+        "Small fillings can last for several years, but lifespan depends on the material used, cavity size, bite pressure, brushing habits, and whether you grind your teeth. The dentist checks old fillings during routine follow-ups."
     },
     {
-      question: "Is dental filling better than root canal?",
+      question: "Is a filling enough, or do I need a root canal?",
       answer:
         "A filling is suitable for small to moderate cavities that have not reached the tooth nerve. Root canal is needed when decay or infection reaches the pulp."
     },
     {
-      question: "Where can I get dental filling in Viman Nagar?",
+      question: "What is the approximate cost of dental filling in Viman Nagar?",
       answer:
-        "You can visit Dr. Varun's Dental Clinic in Viman Nagar, Pune for dental tooth filling, cavity filling, tooth-coloured filling, chipped tooth repair, and old filling replacement."
-    }
+        "In India, routine tooth-coloured or composite fillings often fall around Rs. 800 to Rs. 5,000 per tooth, with many small to medium fillings commonly around Rs. 1,000 to Rs. 2,500. The final cost depends on cavity depth, tooth position, material, and whether X-rays are needed."
+      }
   ],
   ctaKicker: "Dental filling near me in Viman Nagar",
   ctaTitle: "Sensitivity, food lodgement, black spots, or chipped teeth should be checked early.",

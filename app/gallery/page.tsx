@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: `${siteConfig.url}/gallery`,
     images: [
       {
-        url: "/images/gallery/pic1.jpg",
+        url: "/images/gallery/dr-varun-dental-clinic-exterior-viman-nagar.webp",
         width: 1200,
         height: 630,
         alt: `${siteConfig.name} gallery`
@@ -27,27 +27,27 @@ export const metadata: Metadata = {
 
 const galleryImages = [
   {
-    src: "/images/gallery/pic1.jpg",
+    src: "/images/gallery/dr-varun-dental-clinic-exterior-viman-nagar.webp",
     alt: "Exterior view of Dr. Varun's Dental Clinic"
   },
   {
-    src: "/images/gallery/pic7.jpg",
+    src: "/images/gallery/dr-varun-dental-clinic-reception-viman-nagar.webp",
     alt: "Clinic reception area at Dr. Varun's Dental Clinic"
   },
   {
-    src: "/images/gallery/pic6.jpg",
+    src: "/images/gallery/modern-dental-operatory-viman-nagar.webp",
     alt: "Dental operatory at Dr. Varun's Dental Clinic"
   },
   {
-    src: "/images/gallery/pic5.webp",
+    src: "/images/gallery/dental-consultation-room-viman-nagar.webp",
     alt: "Consultation room at Dr. Varun's Dental Clinic"
   },
   {
-    src: "/images/gallery/pic2.jpg",
+    src: "/images/gallery/dental-treatment-chair-viman-nagar.webp",
     alt: "Treatment chair at Dr. Varun's Dental Clinic"
   },
   {
-    src: "/images/gallery/pic9.jpg",
+    src: "/images/gallery/dental-clinic-workspace-viman-nagar.webp",
     alt: "Clinic workspace at Dr. Varun's Dental Clinic"
   },
   {

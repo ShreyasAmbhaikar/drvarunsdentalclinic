@@ -36,6 +36,12 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+@media (min-width: 1024px) {
+  body {
+    zoom: 0.9;
+  }
+}
+
 img {
   max-width: 100%;
 }
@@ -45,7 +51,7 @@ a {
 }
 
 section {
-  scroll-margin-top: 96px;
+  scroll-margin-top: 88px;
 }
 
 summary {

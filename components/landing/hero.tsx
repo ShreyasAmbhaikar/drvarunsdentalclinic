@@ -4,15 +4,15 @@ import { siteConfig } from "@/lib/site-config";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-white px-6 pb-20 pt-14 md:px-14 lg:pb-24 lg:pt-16">
-      <div className="mx-auto grid max-w-[1180px] items-center gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,418px)] lg:gap-8 xl:grid-cols-[minmax(0,1fr)_minmax(0,430px)] xl:gap-10">
+    <section className="relative overflow-hidden bg-white px-6 pb-12 pt-8 md:px-10 lg:px-14 lg:pb-14 lg:pt-10">
+      <div className="mx-auto grid max-w-[1180px] items-center gap-8 md:grid-cols-[minmax(0,1fr)_minmax(280px,38vw)] lg:grid-cols-[minmax(0,1fr)_minmax(0,410px)] lg:gap-7 xl:grid-cols-[minmax(0,1fr)_minmax(0,430px)] xl:gap-8">
         {/* Left Content */}
-        <div className="relative z-20 max-w-[590px]">
-          <h1 className="font-hero-heading text-[38px] font-extrabold leading-[1.08] text-text-dark sm:text-[48px] lg:text-[54px]">
+        <div className="relative z-20 flex max-w-[590px] flex-col">
+          <h1 className="font-hero-heading text-[36px] font-extrabold leading-[1.08] text-text-dark sm:text-[44px] md:text-[42px] lg:text-[50px]">
             <span className="block">
               Best Dental Clinic{" "}
               <Sparkles
-                className="mb-2 inline-block h-9 w-9 fill-current text-cyan-soft"
+                className="mb-1 inline-block h-8 w-8 fill-current text-cyan-soft"
                 aria-hidden="true"
               />
             </span>
@@ -21,23 +21,23 @@ export function Hero() {
             </span>
           </h1>
 
-          <p className="mt-7 max-w-[520px] font-body-main text-[15px] leading-8 text-text-muted">
+          <p className="mt-6 max-w-[520px] font-body-main text-[15px] leading-7 text-text-muted md:max-w-[44ch] lg:max-w-[520px] lg:text-[16px]">
             Visit Dr. Varun Tomke, an experienced dental surgeon and
             implantologist, for gentle root canal treatment, dental implants,
-            smile makeovers, and family dental care in Viman Nagar and Wagholi.
+            smile makeovers, dental venners, dental aligners and family dental care near Viman Nagar, Wadgaon Sheri, Kalyani Nagar and Kharadi area.
           </p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-7 hidden flex-col gap-3 sm:flex-row md:flex">
             <a
               href="#services"
-              className="inline-flex h-[48px] items-center justify-center rounded-[14px] bg-primary-container px-8 font-label-sm text-sm font-semibold text-white shadow-[0_14px_28px_rgba(184,95,13,0.22)] transition-colors duration-200 hover:bg-primary-dark"
+              className="inline-flex h-[46px] items-center justify-center rounded-[14px] bg-primary-container px-8 font-label-sm text-sm font-semibold text-white shadow-[0_14px_28px_rgba(184,95,13,0.22)] transition-colors duration-200 hover:bg-primary-dark"
             >
               View Services
             </a>
 
             <a
               href="tel:+919822952573"
-              className="inline-flex h-[48px] items-center justify-center rounded-[14px] border-2 border-primary-container px-8 font-label-sm text-sm font-semibold text-primary-container transition-colors duration-200 hover:bg-primary-container/8"
+              className="inline-flex h-[46px] items-center justify-center rounded-[14px] border-2 border-primary-container px-8 font-label-sm text-sm font-semibold text-primary-container transition-colors duration-200 hover:bg-primary-container/8"
             >
               Schedule a Call
             </a>
@@ -45,26 +45,26 @@ export function Hero() {
         </div>
 
         {/* Image Story */}
-        <div className="relative flex min-h-[400px] items-center justify-center sm:min-h-[470px] lg:min-h-0 lg:justify-end">
-          <div className="relative mx-auto w-[77%] max-w-[350px] sm:w-[71%] sm:max-w-[380px] lg:mx-0 lg:w-full lg:max-w-[418px]">
+        <div className="order-2 relative flex min-h-[320px] items-center justify-center sm:min-h-[390px] md:min-h-[360px] md:justify-end lg:min-h-0 lg:order-none">
+          <div className="relative mx-auto w-[78%] max-w-[340px] sm:w-[68%] sm:max-w-[360px] md:mx-0 md:w-full md:max-w-[360px] lg:max-w-[400px]">
             <div
-              className="absolute -left-5 -top-5 hidden h-full w-full rounded-[30px] bg-[rgba(255,243,228,0.92)] shadow-[0_42px_110px_rgba(184,95,13,0.08)] blur-[2px] lg:block"
+              className="absolute -left-4 -top-4 hidden h-full w-full rounded-[30px] bg-[rgba(255,243,228,0.92)] shadow-[0_42px_110px_rgba(184,95,13,0.08)] blur-[2px] md:block"
               aria-hidden="true"
             />
 
-            <div className="relative aspect-[10/11] overflow-hidden rounded-[30px] border border-primary-container/28 bg-surface-container-low shadow-[0_30px_70px_rgba(108,60,17,0.13)]">
+            <div className="relative aspect-[10/11] overflow-hidden rounded-[30px] border border-primary-container/28 bg-surface-container-low shadow-[0_30px_70px_rgba(108,60,17,0.13)] md:aspect-[9/11] lg:aspect-[10/11]">
               <Image
                 src={siteConfig.images.heroCheckup}
-                alt="Dental team caring for a patient in a modern clinic"
+                alt="Dentist explaining dental care to a patient in a modern clinic"
                 fill
-                sizes="(min-width: 1024px) 402px, (min-width: 640px) 380px, 77vw"
-                className="object-cover object-[64%_50%]"
+                sizes="(min-width: 1024px) 402px, (min-width: 768px) 360px, (min-width: 640px) 380px, 78vw"
+                className="object-cover object-[48%_50%]"
                 priority
               />
             </div>
 
             {/* Trust Badge */}
-            <div className="absolute bottom-0 right-0 z-30 flex h-[84px] w-[84px] translate-x-[38%] translate-y-[34%] items-center justify-center rounded-full bg-[linear-gradient(145deg,#c96a12_0%,#9d4e08_100%)] text-white shadow-[0_18px_38px_rgba(157,78,8,0.28)] ring-[3px] ring-white sm:h-[88px] sm:w-[88px] lg:h-[92px] lg:w-[92px]">
+            <div className="absolute bottom-0 right-0 z-30 flex h-[74px] w-[74px] translate-x-[24%] translate-y-[24%] items-center justify-center rounded-full bg-[linear-gradient(145deg,#c96a12_0%,#9d4e08_100%)] text-white shadow-[0_18px_38px_rgba(157,78,8,0.28)] ring-[3px] ring-white sm:h-[82px] sm:w-[82px] md:translate-x-[20%] md:translate-y-[20%] lg:h-[88px] lg:w-[88px] lg:translate-x-[32%] lg:translate-y-[28%]">
               <svg
                 className="rotating-badge absolute h-full w-full"
                 viewBox="0 0 120 120"
@@ -81,7 +81,7 @@ export function Hero() {
                   lengthAdjust="spacing"
                 >
                   <textPath href="#heroTrustBadgePath" startOffset="0%">
-                    Dr Varun Clinic - 17+ Years Care -
+                    Dr Varun&apos;s Dental Clinic - 17+ Years Care -
                   </textPath>
                 </text>
               </svg>
@@ -100,6 +100,22 @@ export function Hero() {
               </span>
             </div>
           </div>
+        </div>
+
+        <div className="order-3 flex flex-col gap-3 sm:flex-row md:hidden">
+          <a
+            href="#services"
+            className="inline-flex h-[46px] items-center justify-center rounded-[14px] bg-primary-container px-8 font-label-sm text-sm font-semibold text-white shadow-[0_14px_28px_rgba(184,95,13,0.22)] transition-colors duration-200 hover:bg-primary-dark"
+          >
+            View Services
+          </a>
+
+          <a
+            href="tel:+919822952573"
+            className="inline-flex h-[46px] items-center justify-center rounded-[14px] border-2 border-primary-container px-8 font-label-sm text-sm font-semibold text-primary-container transition-colors duration-200 hover:bg-primary-container/8"
+          >
+            Schedule a Call
+          </a>
         </div>
       </div>
     </section>

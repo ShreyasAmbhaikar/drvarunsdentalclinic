@@ -127,15 +127,19 @@ function ContactCard({
 
   const content = (
     <div className="h-full rounded-[18px] border border-white/70 bg-white/[0.07] px-4 py-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] transition-colors group-hover:bg-white/[0.11]">
-      <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white text-primary-container shadow-[0_8px_20px_rgba(37,20,6,0.14)]">
-        {isMapLink ? <Route className="h-5 w-5" aria-hidden="true" /> : icon}
-      </span>
-      <span className="mt-4 block font-card-title text-[17px] font-bold leading-6 text-white">
-        {label}
-      </span>
-      <span className="mt-2 block break-words font-body-main text-[13px] leading-5 text-white/88">
-        {value}
-      </span>
+      <div className="flex items-start gap-3">
+        <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-primary-container shadow-[0_8px_20px_rgba(37,20,6,0.14)]">
+          {isMapLink ? <Route className="h-5 w-5" aria-hidden="true" /> : icon}
+        </span>
+        <span className="block min-w-0">
+          <span className="block font-card-title text-[17px] font-bold leading-6 text-white">
+            {label}
+          </span>
+          <span className="mt-2 block break-words font-body-main text-[13px] leading-5 text-white/88">
+            {value}
+          </span>
+        </span>
+      </div>
     </div>
   );
 

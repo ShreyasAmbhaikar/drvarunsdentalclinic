@@ -13,7 +13,7 @@ export default function NotFound() {
             aria-hidden="true"
           />
           <Image
-            src="/images/404-tooth-cutout.png"
+            src="/images/404-tooth-cutout.webp"
             alt="404 dental illustration with a smiling tooth"
             width={1149}
             height={457}

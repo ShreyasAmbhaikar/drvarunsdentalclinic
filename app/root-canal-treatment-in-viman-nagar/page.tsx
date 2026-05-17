@@ -18,7 +18,7 @@ const rootCanalTreatment: TreatmentPageData = {
   heroBadge: "Tooth-saving RCT in Viman Nagar",
   heroIntro:
     "Painless, careful root canal treatment at Dr. Varun's Dental Clinic to relieve tooth pain, control infection, and help save your natural tooth.",
-  heroImage: "/images/root-canal-treatment-clinic.jpg",
+  heroImage: "/images/root-canal-treatment-clinic.webp",
   heroAlt: "Dentist performing painless root canal treatment in Viman Nagar Pune",
   ogImageAlt: "Root canal treatment in Viman Nagar at Dr. Varun's Dental Clinic",
   heroGradientClassName:
@@ -43,7 +43,7 @@ const rootCanalTreatment: TreatmentPageData = {
   overviewParagraphs: [
     "Root canal treatment, also called RCT, treats infection inside the tooth. Every tooth has soft inner tissue called pulp, which contains nerves and blood vessels. Deep decay, cracks, trauma, or repeated dental problems can inflame or infect this pulp.",
     "During treatment, the infected pulp is removed, the canals are cleaned and disinfected, and the tooth is sealed before being restored with a filling or crown. The aim is simple: save your natural tooth instead of removing it.",
-    "If you are searching for a dentist near me for root canal treatment, painless root canal treatment in Viman Nagar, or a trusted dental clinic near PNG Jewellers, Dr. Varun's Dental Clinic offers experienced care in a clean, patient-friendly environment."
+    "If you are searching for a dentist near me for root canal treatment, root canal specialist, painless root canal treatment in Viman Nagar, or a trusted dental clinic near PNG Jewellers, Dr. Varun's Dental Clinic offers experienced care in a clean, patient-friendly environment."
   ],
   reasonsTitle: "Root canal care that feels clear, calm, and carefully planned.",
   reasonsDescription:
@@ -89,8 +89,8 @@ const rootCanalTreatment: TreatmentPageData = {
       text: "The tooth is restored with a filling, and in many molars or premolars a dental crown is recommended for long-term chewing strength."
     }
   ],
-  procedureImage: "/images/root-canal-clinic-room.jpg",
-  procedureImageAlt: "Dental clinic in Viman Nagar for root canal and crown treatment",
+  procedureImage: "/images/root-canal-procedure-viman-nagar.webp",
+  procedureImageAlt: "Dentist performing root canal treatment in Viman Nagar",
   procedureNoteTitle: "Is RCT painful?",
   procedureNoteText:
     "The tooth area is numbed before treatment, so most patients feel comfortable during the procedure.",
@@ -130,9 +130,9 @@ const rootCanalTreatment: TreatmentPageData = {
   faqTitle: "Root canal questions patients usually ask first.",
   faqs: [
     {
-      question: "What is root canal treatment?",
+      question: "How do I know if I need a root canal?",
       answer:
-        "Root canal treatment is a dental procedure used to treat infection inside the tooth. The infected pulp is removed, the root canals are cleaned and disinfected, and the tooth is sealed and restored."
+        "You may need a root canal if you have continuous tooth pain, swelling, sensitivity to hot or cold, pain while chewing, a deep cavity, gum boil, or tooth discoloration. A dentist can confirm this after examination and X-ray."
     },
     {
       question: "Is root canal treatment painful?",
@@ -140,24 +140,19 @@ const rootCanalTreatment: TreatmentPageData = {
         "Modern root canal treatment is usually comfortable because the tooth area is numbed before the procedure. The treatment is designed to remove the source of pain caused by infection."
     },
     {
-      question: "How do I know if I need a root canal?",
-      answer:
-        "You may need a root canal if you have continuous tooth pain, swelling, sensitivity to hot or cold, pain while chewing, a deep cavity, gum boil, or tooth discoloration. A dentist can confirm this after examination and X-ray."
-    },
-    {
-      question: "Can root canal treatment save my tooth?",
-      answer:
-        "Yes. The main purpose of root canal treatment is to save the natural tooth by removing infection from inside it. If the tooth structure is still restorable, RCT can help avoid extraction."
-    },
-    {
       question: "How many sittings are required for root canal treatment?",
       answer:
         "Some cases can be completed in one sitting, while others need two or more visits depending on infection, swelling, tooth condition, and canal complexity."
     },
     {
-      question: "Do I need a cap after root canal treatment?",
+      question: "Do I need a cap or crown after root canal treatment?",
       answer:
         "A dental cap or crown is commonly recommended after root canal treatment, especially for back teeth or weak teeth. It helps protect the tooth from fracture and restores chewing strength."
+    },
+    {
+      question: "Can root canal treatment save my tooth, or is extraction better?",
+      answer:
+        "Yes. The main purpose of root canal treatment is to save the natural tooth by removing infection from inside it. If the tooth structure is still restorable, RCT can help avoid extraction."
     },
     {
       question: "What happens if I delay root canal treatment?",
@@ -165,19 +160,9 @@ const rootCanalTreatment: TreatmentPageData = {
         "Delaying treatment can allow infection to spread, causing more pain, swelling, pus formation, bone loss, or tooth loss. Early treatment usually gives better outcomes."
     },
     {
-      question: "Is root canal better than tooth extraction?",
+      question: "What is the approximate cost of root canal treatment in Viman Nagar?",
       answer:
-        "If the tooth can be saved, root canal treatment is usually preferred because it preserves your natural tooth. Extraction may be needed only when the tooth is too badly damaged to restore."
-    },
-    {
-      question: "What is the cost of root canal treatment in Viman Nagar?",
-      answer:
-        "The cost depends on the tooth type, number of canals, infection severity, treatment complexity, and whether a crown is required. A proper dental checkup is needed for an accurate estimate."
-    },
-    {
-      question: "Where can I get root canal treatment in Viman Nagar?",
-      answer:
-        "You can visit Dr. Varun's Dental Clinic at Shop No. 3, Ideal Landmark, Besides PNG Jewellers, Viman Nagar, Pune, Maharashtra 411014."
+        "In private clinics in India, root canal treatment commonly ranges from about Rs. 2,000 to Rs. 12,000 per tooth. Molars, retreatment cases, specialist care, and the dental crown after RCT can increase the total cost."
     }
   ],
   ctaKicker: "Root canal treatment near me in Viman Nagar",

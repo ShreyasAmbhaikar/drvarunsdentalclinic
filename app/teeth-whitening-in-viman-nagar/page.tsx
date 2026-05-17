@@ -19,7 +19,7 @@ const teethWhitening: TreatmentPageData = {
   heroBadgeIcon: "sparkles",
   heroIntro:
     "Professional whitening to help brighten yellow or dull-looking teeth after proper dental evaluation.",
-  heroImage: "/images/teeth-whitening-viman-nagar.jpg",
+  heroImage: "/images/teeth-whitening-viman-nagar.webp",
   heroAlt: "Professional teeth whitening near me in Viman Nagar Pune",
   ogImageAlt: "Teeth whitening in Viman Nagar at Dr. Varun's Dental Clinic",
   heroObjectPosition: "62% 48%",
@@ -95,8 +95,8 @@ const teethWhitening: TreatmentPageData = {
       text: "The result is reviewed and you receive guidance on food habits, sensitivity care, brushing, and follow-up maintenance."
     }
   ],
-  procedureImage: "/images/smile-after.jpg",
-  procedureImageAlt: "Yellow teeth treatment and smile whitening at Dr. Varun's Dental Clinic",
+  procedureImage: "/images/teeth-whitening-consultation-viman-nagar.webp",
+  procedureImageAlt: "Professional teeth whitening consultation at Dr. Varun's Dental Clinic",
   procedureImageObjectPosition: "50% 50%",
   procedureNoteTitle: "Cleaning and whitening are different",
   procedureNoteText:
@@ -154,29 +154,9 @@ const teethWhitening: TreatmentPageData = {
   faqTitle: "Teeth whitening questions patients usually ask first.",
   faqs: [
     {
-      question: "What is teeth whitening?",
-      answer:
-        "Teeth whitening is a cosmetic dental treatment that helps lighten the shade of natural teeth and reduce yellowish discoloration or stains. It can make your smile look brighter and fresher."
-    },
-    {
       question: "Is teeth whitening safe?",
       answer:
         "Professional teeth whitening is generally safe when done after a dental examination and under dentist supervision. The dentist checks for cavities, gum disease, sensitivity, enamel concerns, and existing restorations before recommending treatment."
-    },
-    {
-      question: "Is teeth whitening painful?",
-      answer:
-        "Teeth whitening is usually not painful. Some patients may experience temporary sensitivity during or after treatment, but this usually settles with proper care and dentist-recommended instructions."
-    },
-    {
-      question: "Does teeth whitening remove all stains?",
-      answer:
-        "Teeth whitening works well for many yellow stains and natural tooth discoloration, but it may not remove all types of stains. Deep stains, fluorosis, trauma-related discoloration, crowns, veneers, and fillings may need different cosmetic treatment options."
-    },
-    {
-      question: "What is the difference between teeth cleaning and teeth whitening?",
-      answer:
-        "Teeth cleaning removes plaque, tartar, and external deposits from the tooth surface. Teeth whitening improves the natural shade of teeth and makes them look brighter. Cleaning is preventive, while whitening is cosmetic."
     },
     {
       question: "How long do teeth whitening results last?",
@@ -184,14 +164,14 @@ const teethWhitening: TreatmentPageData = {
         "Whitening results may last for several months or longer depending on oral hygiene, tea or coffee intake, smoking, tobacco use, food habits, and routine dental cleaning. Good maintenance helps results last longer."
     },
     {
-      question: "Can teeth whitening damage enamel?",
+      question: "Does teeth whitening hurt or cause sensitivity?",
       answer:
-        "Professional teeth whitening does not usually damage healthy enamel when done correctly under dentist guidance. However, overuse of whitening products or improper home whitening can cause sensitivity and gum irritation."
+        "Teeth whitening is usually not painful, but some patients experience temporary sensitivity during or after treatment. This usually settles with proper care and dentist-recommended instructions."
     },
     {
-      question: "Can I get teeth whitening if I have cavities?",
+      question: "Does teeth whitening remove all stains?",
       answer:
-        "If you have untreated cavities, gum infection, or severe sensitivity, the dentist may first treat those problems before whitening. Whitening should be done only after confirming that your teeth and gums are suitable."
+        "Teeth whitening works well for many yellow stains and natural tooth discoloration, but it may not remove all types of stains. Deep stains, fluorosis, trauma-related discoloration, crowns, veneers, and fillings may need different cosmetic treatment options."
     },
     {
       question: "Will whitening work on crowns, veneers, or fillings?",
@@ -199,9 +179,14 @@ const teethWhitening: TreatmentPageData = {
         "No, whitening does not change the shade of dental crowns, veneers, or tooth-coloured fillings. If these are present in visible areas, the dentist will explain whether whitening may create shade mismatch."
     },
     {
-      question: "Where can I get teeth whitening in Viman Nagar?",
+      question: "What is the difference between cleaning and whitening?",
       answer:
-        "You can visit Dr. Varun's Dental Clinic in Viman Nagar, Pune for professional teeth whitening, smile brightening, yellow teeth treatment, teeth cleaning, polishing, and cosmetic dental consultation."
+        "Teeth cleaning removes plaque, tartar, and external deposits from the tooth surface. Teeth whitening improves the natural shade of teeth and makes them look brighter. Cleaning is preventive, while whitening is cosmetic."
+    },
+    {
+      question: "What is the approximate cost of teeth whitening in Viman Nagar?",
+      answer:
+        "In-clinic professional teeth whitening in India commonly falls around Rs. 10,000 to Rs. 30,000, with many quality private-clinic treatments often landing near the middle of that range. The final cost depends on stain severity, number of whitening cycles, and whether cleaning is needed first."
     }
   ],
   ctaKicker: "Teeth whitening near me in Viman Nagar",

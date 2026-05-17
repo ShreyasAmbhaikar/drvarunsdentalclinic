@@ -14,9 +14,6 @@ export default function OurServicesPage() {
   return (
     <main className="bg-surface-container-lowest px-6 pb-20 pt-[136px] md:px-14 md:pb-24">
       <section className="mx-auto max-w-[1180px] rounded-[28px] bg-white p-8 shadow-soft md:p-12">
-        <p className="font-label-sm text-[13px] font-semibold uppercase tracking-[0.18em] text-primary-container">
-          Our Treatments
-        </p>
         <h1 className="mt-4 font-hero-heading text-[38px] font-extrabold leading-[1.08] text-text-dark md:text-[58px]">
           Our Treatments
         </h1>

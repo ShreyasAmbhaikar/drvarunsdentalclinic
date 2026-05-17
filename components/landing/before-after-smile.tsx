@@ -10,23 +10,23 @@ export function BeforeAfterSmile() {
   const [position, setPosition] = useState(50);
 
   return (
-    <section id="smile-results" className="overflow-hidden bg-section-light px-6 py-20 md:px-14">
+    <section id="smile-results" className="overflow-hidden bg-section-light px-6 py-14 md:px-14 md:py-16">
       <div className="mx-auto w-full max-w-[1140px]">
-        <div className="mx-auto mb-10 w-full max-w-[720px] text-center">
+        <div className="mx-auto mb-7 w-full max-w-[720px] text-center">
           <p className="mb-3 font-label-sm text-[14px] font-extrabold uppercase tracking-[0.18em] text-cyan">
             Smile Results
           </p>
-          <h2 className="break-words font-section-heading text-[31px] font-extrabold leading-[1.12] text-text-dark md:text-[40px]">
+          <h2 className="break-words font-section-heading text-[29px] font-extrabold leading-[1.12] text-text-dark md:text-[40px]">
             See the Difference a Straighter Smile Can Make
           </h2>
-          <p className="mx-auto mt-5 max-w-[640px] font-body-main text-[15px] leading-7 text-text-muted">
+          <p className="mx-auto mt-4 max-w-[620px] font-body-main text-[15px] leading-7 text-text-muted">
             A visual look at how smile correction can improve crooked front
             teeth, balance spacing, and create a more even smile.
           </p>
         </div>
 
         <div
-          className="group relative mx-auto h-[300px] w-full max-w-[980px] overflow-hidden rounded-[24px] bg-primary-container shadow-card sm:aspect-[16/9] sm:h-auto md:max-h-[552px]"
+          className="group relative mx-auto h-[250px] w-full max-w-[980px] overflow-hidden rounded-[24px] bg-primary-container shadow-card sm:aspect-[16/9] sm:h-auto md:max-h-[500px]"
           aria-label="Before and after crooked teeth smile correction comparison"
           style={{ "--slider-position": `${position}%` } as CSSProperties}
         >
@@ -82,7 +82,7 @@ export function BeforeAfterSmile() {
           />
         </div>
 
-        <p className="mx-auto mt-5 max-w-[680px] text-center font-body-main text-[13px] leading-6 text-text-muted">
+        <p className="mx-auto mt-4 max-w-[680px] text-center font-body-main text-[13px] leading-6 text-text-muted">
           Individual smile correction results vary after clinical examination,
           treatment planning, tooth position, and oral health condition.
         </p>

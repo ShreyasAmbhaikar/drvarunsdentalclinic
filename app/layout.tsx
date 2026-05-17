@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: "/images/hero-checkup.jpg",
+        url: "/images/home-dental-clinic-hero-viman-nagar.webp",
         width: 1200,
         height: 630,
         alt: `${siteConfig.name} dental clinic`
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.seoTitle,
     description: siteConfig.seoDescription,
-    images: ["/images/hero-checkup.jpg"]
+    images: ["/images/home-dental-clinic-hero-viman-nagar.webp"]
   },
   icons: {
     icon: [

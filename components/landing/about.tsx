@@ -14,10 +14,10 @@ const aboutImageMask =
 
 export function About() {
   return (
-    <section id="about" className="bg-white px-6 py-20 md:px-14">
-      <div className="mx-auto grid max-w-[1140px] grid-cols-1 items-center gap-14 md:grid-cols-2">
+    <section id="about" className="bg-white px-6 py-14 md:px-14 md:py-16">
+      <div className="mx-auto grid max-w-[1140px] grid-cols-1 items-center gap-8 md:grid-cols-2 lg:gap-10">
         <div className="relative flex items-center justify-center">
-          <div className="relative aspect-[1.08] w-full max-w-[470px] drop-shadow-[0_26px_50px_rgba(140,87,31,0.10)]">
+          <div className="relative aspect-[1.08] w-full max-w-[430px] drop-shadow-[0_26px_50px_rgba(140,87,31,0.10)]">
             <div
               className="relative h-full w-full overflow-hidden bg-surface-container-low"
               style={{
@@ -30,8 +30,8 @@ export function About() {
               }}
             >
               <Image
-                src={siteConfig.images.heroCheckup}
-                alt="Dental team treating a patient during a clinic visit"
+                src={siteConfig.images.confidentSmile}
+                alt="Patient smiling confidently after a dental care consultation"
                 fill
                 sizes="(min-width: 768px) 500px, 100vw"
                 className="object-cover object-[43%_50%]"
@@ -41,19 +41,19 @@ export function About() {
         </div>
 
         <div className="flex flex-col">
-          <h2 className="mb-5 font-section-heading text-[31px] font-extrabold leading-[1.12] text-text-dark md:text-[40px]">
+          <h2 className="mb-4 font-section-heading text-[29px] font-extrabold leading-[1.12] text-text-dark md:text-[38px]">
             Achieve a Confident
             <br />
             Smile With Us
           </h2>
-          <p className="mb-7 font-body-main text-[15px] leading-7 text-text-muted">
+          <p className="mb-6 font-body-main text-[15px] leading-7 text-text-muted">
             At {siteConfig.name}, we combine advanced dental care with a warm,
             friendly approach. Our skilled team focuses on comfort, precision,
             and personalized treatment so every patient can enjoy a healthier,
             brighter smile.
           </p>
 
-          <div className="mb-10 flex flex-col gap-4">
+          <div className="mb-7 flex flex-col gap-3">
             {strengths.map((strength) => (
               <div key={strength} className="flex items-center gap-3">
                 <CheckCircle2 className="h-5 w-5 text-cyan-soft" aria-hidden="true" />

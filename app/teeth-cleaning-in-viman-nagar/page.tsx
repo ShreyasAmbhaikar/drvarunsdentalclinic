@@ -19,7 +19,7 @@ const teethCleaning: TreatmentPageData = {
   heroBadgeIcon: "sparkles",
   heroIntro:
     "Professional dental scaling and polishing to remove tartar, reduce bad breath, and support healthier gums.",
-  heroImage: "/images/teeth-cleaning-viman-nagar.jpg",
+  heroImage: "/images/teeth-cleaning-viman-nagar.webp",
   heroAlt: "Dental scaling near me for tartar removal in Viman Nagar Pune",
   ogImageAlt: "Teeth cleaning in Viman Nagar at Dr. Varun's Dental Clinic",
   heroObjectPosition: "48% 50%",
@@ -91,7 +91,7 @@ const teethCleaning: TreatmentPageData = {
       text: "The dentist may guide you on brushing technique, flossing, interdental brushes, mouthwash, gum care, and follow-up intervals."
     }
   ],
-  procedureImage: "/images/root-canal-treatment-clinic.jpg",
+  procedureImage: "/images/teeth-cleaning-scaling-viman-nagar.webp",
   procedureImageAlt: "Dentist performing professional teeth cleaning in Viman Nagar",
   procedureImageObjectPosition: "48% 50%",
   procedureNoteTitle: "Does cleaning whiten teeth?",
@@ -154,9 +154,9 @@ const teethCleaning: TreatmentPageData = {
   faqTitle: "Teeth cleaning questions patients usually ask first.",
   faqs: [
     {
-      question: "What is teeth cleaning or dental scaling?",
+      question: "How often should I get teeth cleaning done?",
       answer:
-        "Teeth cleaning, also called dental scaling, is a professional dental procedure used to remove plaque, tartar, stains, and bacterial deposits from the teeth and gumline. It helps maintain clean teeth, healthy gums, and fresh breath."
+        "Most patients should get professional teeth cleaning every six months. Patients with gum disease, smoking habits, diabetes, braces, implants, crowns, bridges, or heavy tartar may need more frequent cleaning."
     },
     {
       question: "Is teeth cleaning painful?",
@@ -164,9 +164,9 @@ const teethCleaning: TreatmentPageData = {
         "Teeth cleaning is usually not painful. Most patients feel mild vibration or pressure. If there is heavy tartar, gum swelling, or sensitivity, slight discomfort may be felt in some areas, but it is generally manageable."
     },
     {
-      question: "How often should I get teeth cleaning done?",
+      question: "Can scaling damage enamel?",
       answer:
-        "Most patients should get professional teeth cleaning every six months. Patients with gum disease, smoking habits, diabetes, braces, implants, crowns, bridges, or heavy tartar may need more frequent cleaning."
+        "No. Professional teeth cleaning does not damage healthy enamel when done correctly. It removes plaque and tartar deposits from the tooth surface and gumline."
     },
     {
       question: "Does dental scaling make teeth white?",
@@ -174,34 +174,19 @@ const teethCleaning: TreatmentPageData = {
         "Dental scaling removes external stains and tartar, so teeth may look cleaner and brighter after the procedure. It does not change the natural shade of teeth like professional teeth whitening."
     },
     {
-      question: "Can teeth cleaning damage enamel?",
-      answer:
-        "No. Professional teeth cleaning does not damage healthy enamel when done correctly. It removes plaque and tartar deposits from the tooth surface and gumline."
-    },
-    {
       question: "Why do gums bleed during or after cleaning?",
       answer:
         "Gums may bleed during cleaning if they are already inflamed due to plaque, tartar, or gum infection. After proper cleaning and improved oral hygiene, gum bleeding usually reduces over time."
     },
     {
-      question: "Can teeth cleaning remove bad breath?",
-      answer:
-        "Yes, teeth cleaning can help reduce bad breath caused by plaque, tartar, gum infection, or bacterial deposits. If bad breath continues, the dentist may check for cavities, gum disease, tongue coating, or other causes."
-    },
-    {
-      question: "What is the difference between teeth cleaning and deep cleaning?",
+      question: "What is the difference between routine cleaning and deep cleaning?",
       answer:
         "Routine teeth cleaning removes plaque and tartar from the tooth surface and gumline. Deep cleaning may be needed when gum disease has created deeper pockets around teeth."
     },
     {
-      question: "Is polishing included after teeth cleaning?",
+      question: "What is the approximate cost of teeth cleaning in Viman Nagar?",
       answer:
-        "In many cases, polishing is done after scaling to smoothen the tooth surface and remove minor external stains. The dentist will advise whether polishing is suitable based on your teeth and gum condition."
-    },
-    {
-      question: "Where can I get teeth cleaning in Viman Nagar?",
-      answer:
-        "You can visit Dr. Varun's Dental Clinic in Viman Nagar, Pune for teeth cleaning, dental scaling, teeth polishing, bad breath care, bleeding gums evaluation, and preventive dental checkups."
+        "Routine scaling and polishing in India commonly falls around Rs. 800 to Rs. 3,000. If there is heavy tartar, gum infection, or deeper periodontal cleaning required, the cost can be higher."
     }
   ],
   ctaKicker: "Teeth cleaning near me in Viman Nagar",
