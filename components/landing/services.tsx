@@ -6,7 +6,7 @@ const icons = [Sparkles, ShieldCheck, HeartPulse];
 
 export function Services() {
   return (
-    <section id="services" className="bg-primary-container px-6 py-14 md:px-14 md:py-16">
+    <section id="services" className="deferred-section bg-primary-container px-6 py-14 md:px-14 md:py-16">
       <h2 className="mb-9 text-center font-section-heading text-[29px] font-extrabold text-white md:text-[38px]">
         Our Dental Services
       </h2>

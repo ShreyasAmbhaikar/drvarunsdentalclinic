@@ -87,7 +87,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={siteConfig.language}>
-      <body>
+      <body id="page-top">
+        <a href="#main-content" className="skip-link">
+          Skip to content
+        </a>
         <div className="canvas-wrapper relative">
           <Header />
           {children}

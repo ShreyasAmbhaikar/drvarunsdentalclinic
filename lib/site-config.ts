@@ -64,10 +64,11 @@ export const siteConfig = {
   businessListingUrl:
     "https://www.google.com/maps/place/DR+VARUN'S+DENTAL+CLINIC+IN+VIMAN+NAGAR+%7C+DENTIST+IN+VIMAN+NAGAR/@18.565329,73.9167066,17z/data=!4m14!1m7!3m6!1s0x3bc2c146e7b76cad:0x82c459f5b366b2ba!2sDR+VARUN'S+DENTAL+CLINIC+IN+VIMAN+NAGAR+%7C+DENTIST+IN+VIMAN+NAGAR!8m2!3d18.565329!4d73.9167066!16s%2Fg%2F1vyxgw67!3m5!1s0x3bc2c146e7b76cad:0x82c459f5b366b2ba!8m2!3d18.565329!4d73.9167066!16s%2Fg%2F1vyxgw67?hl=en&entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D",
   nav: [
-    { label: "Home", href: "/" },
+    { label: "Home", href: "/dental-clinic-viman-nagar" },
     { label: "About", href: "/about" },
     { label: "Our Treatments", href: "/our-services" },
     { label: "Gallery", href: "/gallery" },
+    { label: "Testimonials", href: "/testimonials" },
     { label: "Contact Us", href: "/contact-us" }
   ],
   treatments: [
@@ -84,10 +85,10 @@ export const siteConfig = {
         "Stable replacement planning for one or more missing teeth with natural-looking restorative support."
     },
     {
-      title: "Teeth Cleaning",
-      href: "/teeth-cleaning-in-viman-nagar",
+      title: "All Gum Care",
+      href: "/all-gum-care-in-viman-nagar",
       description:
-        "Professional scaling and polishing to remove tartar, reduce gum irritation, and freshen the smile."
+        "Deep cleaning, root planing, curettage, and flap surgery to protect gums from bleeding and recession."
     },
     {
       title: "Teeth Whitening",
@@ -108,16 +109,70 @@ export const siteConfig = {
         "Clear aligner consultation for discreet teeth straightening and selected alignment concerns."
     },
     {
-      title: "Wisdom Tooth Extraction",
-      href: "/wisdom-tooth-extraction-in-viman-nagar",
+      title: "Wisdom Tooth Surgery",
+      href: "/wisdom-tooth-surgery-in-viman-nagar",
       description:
-        "Careful evaluation and removal planning for wisdom tooth pain, swelling, infection, and impaction."
+        "Advanced oral surgery for impacted, painful, or infected wisdom teeth with precise planning."
     },
     {
       title: "Dental Tooth Filling",
       href: "/dental-tooth-filling-in-viman-nagar",
       description:
         "Cavity filling, tooth-coloured restoration, chipped tooth repair, and old filling replacement."
+    },
+    {
+      title: "Dentures Treatment",
+      href: "/dentures-treatment-in-viman-nagar",
+      description:
+        "Custom complete, partial, and flexible dentures to restore chewing, speaking, and smile confidence."
+    },
+    {
+      title: "Crowns and Bridges",
+      href: "/crowns-and-bridges-in-viman-nagar",
+      description:
+        "Durable, custom-fit crowns and bridges to protect damaged teeth and fill missing dental gaps."
+    },
+    {
+      title: "Dental Jewellery",
+      href: "/dental-jewellery-in-viman-nagar",
+      description:
+        "Add sparkle to your smile with safe, non-invasive, and painless tooth crystals and gems."
+    },
+    {
+      title: "Full Mouth Rehabilitation (FMR)",
+      href: "/full-mouth-rehabilitation-in-viman-nagar",
+      description:
+        "Comprehensive restoration of dental function, comfort, and aesthetics for the entire mouth."
+    },
+    {
+      title: "Smile Designing",
+      href: "/smile-designing-in-viman-nagar",
+      description:
+        "Personalized cosmetic smile makeovers combining laminates, veneers, alignment, and brightening."
+    },
+    {
+      title: "Pediatric Dentistry",
+      href: "/pediatric-dentistry-in-viman-nagar",
+      description:
+        "Gentle, friendly child dental care, pediatric checkups, fluoride application, and cavity protection."
+    },
+    {
+      title: "Restricted Mouth Surgery",
+      href: "/restricted-mouth-surgery-in-viman-nagar",
+      description:
+        "Specialized surgical therapy for restricted mouth opening (OSMF) caused by gutka or betel nut habits."
+    },
+    {
+      title: "Extraction",
+      href: "/extraction-in-viman-nagar",
+      description:
+        "Gentle, painless tooth extraction for severely decayed, broken, or orthodontic crowded teeth."
+    },
+    {
+      title: "Miscellaneous Treatments",
+      href: "/miscellaneous-treatments-in-viman-nagar",
+      description:
+        "Minor oral surgeries (jaw fractures, small tumors) and preventive care (fluoride, sealants)."
     }
   ],
   services: [
@@ -158,6 +213,20 @@ export const siteConfig = {
         "Best Dentist recognition in 2017 and 2022",
         "President, IDA Pune East branch"
       ]
+    },
+    {
+      name: "Dr. Priyanka Tidke",
+      role: "Medical Cosmetologist & Facial Aesthetics Specialist",
+      image: "/images/gallery/dr-priyanka-tidke.webp",
+      alt: "Dr. Priyanka Tidke, hair & skin expert and medical cosmetologist",
+      summary:
+        "Dr. Priyanka Tidke is a cosmetic dental surgeon and medical cosmetologist with over 17 years of experience, specializing in facial aesthetics, anti-aging treatments, and smile design.",
+      highlights: [
+        "17+ years of experience in cosmetology and facial aesthetics",
+        "Masters in Facial Aesthetics & Micropigmentation (Permanent Makeup)",
+        "Postgraduate in Medical Cosmetology & Trichology (IIC)",
+        "Advanced dermatology training from the British Association of Dermatologists"
+      ]
     }
   ],
   testimonials: [
@@ -192,6 +261,54 @@ export const siteConfig = {
       rating: 5,
       quote:
         "I had to undergo a root canal treatment. Dr. Varun is patient and good with the analysis of the problem. The clinic is very neat and punctual with the timings as well. The best thing I came across was that they explain things in detail and do not hurry or force us to make a decision. Recommended."
+    },
+    {
+      name: "Devon Lane",
+      image: "/images/dental-patient-avatar-1.webp",
+      alt: "Devon Lane testimonial profile photo",
+      rating: 5,
+      quote:
+        "Outstanding clinical treatment and patient-first approach. Every step of my alignment procedure was explained transparently. Dr. Varun is highly professional and the clinic hygiene standards are top-notch."
+    },
+    {
+      name: "Jane Cooper",
+      image: "/images/dental-patient-avatar-2.webp",
+      alt: "Jane Cooper testimonial profile photo",
+      rating: 5,
+      quote:
+        "Dr. Priyanka Tidke is absolutely incredible. I visited her for hair and skin care treatment, and the cosmetological results have exceeded my expectations. She is patient, extremely thorough, and very gentle."
+    },
+    {
+      name: "Eleanor Pena",
+      image: "/images/dental-patient-avatar-3.webp",
+      alt: "Eleanor Pena testimonial profile photo",
+      rating: 5,
+      quote:
+        "I had my root canal and dental filling done at Dr. Varun's Dental Clinic. The procedure was completely painless. Dr. Varun's gentle touch and reassuring care made a stressful visit very comfortable."
+    },
+    {
+      name: "Robert Fox",
+      image: "/images/dental-patient-avatar-4.webp",
+      alt: "Robert Fox testimonial profile photo",
+      rating: 5,
+      quote:
+        "Exceptional care. The team is warm and welcoming, and the clinic is equipped with the latest modern dental technologies. My smile makeover has given me a massive boost in confidence."
+    },
+    {
+      name: "Leslie Alexander",
+      image: "/images/dental-patient-avatar-1.webp",
+      alt: "Leslie Alexander testimonial profile photo",
+      rating: 5,
+      quote:
+        "Very professional and punctual with timings. The dental implant procedure was handled with absolute precision. Reassuring post-treatment support and clean, sanitized clinic space in Viman Nagar."
+    },
+    {
+      name: "Jerome Bell",
+      image: "/images/dental-patient-avatar-2.webp",
+      alt: "Jerome Bell testimonial profile photo",
+      rating: 5,
+      quote:
+        "Highly recommended dental and cosmetic clinic in Pune. Both Dr. Varun and Dr. Priyanka are leaders in their fields, providing excellent medical advice and compassionate treatments."
     }
   ],
   faqs: [
@@ -247,3 +364,48 @@ export const siteConfig = {
 } as const;
 
 export type SiteConfig = typeof siteConfig;
+
+export const categorizedTreatments = [
+  {
+    name: "General & Preventive",
+    items: [
+      { title: "Dental Tooth Filling", href: "/dental-tooth-filling-in-viman-nagar" },
+      { title: "All Gum Care", href: "/all-gum-care-in-viman-nagar" },
+      { title: "Pediatric Dentistry", href: "/pediatric-dentistry-in-viman-nagar" },
+      { title: "Miscellaneous Treatments", href: "/miscellaneous-treatments-in-viman-nagar" }
+    ]
+  },
+  {
+    name: "Restorative & Implants",
+    items: [
+      { title: "Dental Implant Treatment", href: "/dental-implant-in-viman-nagar" },
+      { title: "Crowns and Bridges", href: "/crowns-and-bridges-in-viman-nagar" },
+      { title: "Dentures Treatment", href: "/dentures-treatment-in-viman-nagar" },
+      { title: "Root Canal Treatment", href: "/root-canal-treatment-in-viman-nagar" },
+      { title: "Full Mouth Rehabilitation (FMR)", href: "/full-mouth-rehabilitation-in-viman-nagar" }
+    ]
+  },
+  {
+    name: "Orthodontics",
+    items: [
+      { title: "Braces Treatment", href: "/braces-treatment-in-viman-nagar" },
+      { title: "Invisalign Treatment", href: "/invisalign-treatment-in-viman-nagar" }
+    ]
+  },
+  {
+    name: "Cosmetic Dentistry",
+    items: [
+      { title: "Smile Designing", href: "/smile-designing-in-viman-nagar" },
+      { title: "Teeth Whitening", href: "/teeth-whitening-in-viman-nagar" },
+      { title: "Dental Jewellery", href: "/dental-jewellery-in-viman-nagar" }
+    ]
+  },
+  {
+    name: "Surgical & Oral Care",
+    items: [
+      { title: "Extraction", href: "/extraction-in-viman-nagar" },
+      { title: "Wisdom Tooth Surgery", href: "/wisdom-tooth-surgery-in-viman-nagar" },
+      { title: "Restricted Mouth Surgery", href: "/restricted-mouth-surgery-in-viman-nagar" }
+    ]
+  }
+] as const;

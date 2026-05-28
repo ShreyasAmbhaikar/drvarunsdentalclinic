@@ -22,7 +22,7 @@ const rootCanalTreatment: TreatmentPageData = {
   heroAlt: "Dentist performing painless root canal treatment in Viman Nagar Pune",
   ogImageAlt: "Root canal treatment in Viman Nagar at Dr. Varun's Dental Clinic",
   heroGradientClassName:
-    "absolute inset-0 bg-[linear-gradient(90deg,rgba(72,39,10,0.88)_0%,rgba(108,60,17,0.58)_45%,rgba(255,248,239,0.05)_100%)]",
+    "absolute inset-0 bg-[linear-gradient(90deg,rgba(52,27,7,0.94)_0%,rgba(90,47,11,0.74)_45%,rgba(255,248,239,0.10)_100%)]",
   ctaLabel: "Call for RCT Consultation",
   quickTreatment: "Single or multiple visits depending on infection and tooth condition",
   symptomsKicker: "Common warning signs",

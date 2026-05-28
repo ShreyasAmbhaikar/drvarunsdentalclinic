@@ -14,32 +14,8 @@ const aboutImageMask =
 
 export function About() {
   return (
-    <section id="about" className="bg-white px-6 py-14 md:px-14 md:py-16">
+    <section id="about" className="deferred-section bg-white px-6 py-14 md:px-14 md:py-16">
       <div className="mx-auto grid max-w-[1140px] grid-cols-1 items-center gap-8 md:grid-cols-2 lg:gap-10">
-        <div className="relative flex items-center justify-center">
-          <div className="relative aspect-[1.08] w-full max-w-[430px] drop-shadow-[0_26px_50px_rgba(140,87,31,0.10)]">
-            <div
-              className="relative h-full w-full overflow-hidden bg-surface-container-low"
-              style={{
-                WebkitMaskImage: aboutImageMask,
-                maskImage: aboutImageMask,
-                WebkitMaskRepeat: "no-repeat",
-                maskRepeat: "no-repeat",
-                WebkitMaskSize: "100% 100%",
-                maskSize: "100% 100%"
-              }}
-            >
-              <Image
-                src={siteConfig.images.confidentSmile}
-                alt="Patient smiling confidently after a dental care consultation"
-                fill
-                sizes="(min-width: 768px) 500px, 100vw"
-                className="object-cover object-[43%_50%]"
-              />
-            </div>
-          </div>
-        </div>
-
         <div className="flex flex-col">
           <h2 className="mb-4 font-section-heading text-[29px] font-extrabold leading-[1.12] text-text-dark md:text-[38px]">
             Achieve a Confident
@@ -70,6 +46,30 @@ export function About() {
           >
             Learn More
           </a>
+        </div>
+
+        <div className="relative flex items-center justify-center md:justify-end">
+          <div className="relative aspect-[1.08] w-full max-w-[430px] drop-shadow-[0_26px_50px_rgba(140,87,31,0.10)]">
+            <div
+              className="relative h-full w-full overflow-hidden bg-surface-container-low"
+              style={{
+                WebkitMaskImage: aboutImageMask,
+                maskImage: aboutImageMask,
+                WebkitMaskRepeat: "no-repeat",
+                maskRepeat: "no-repeat",
+                WebkitMaskSize: "100% 100%",
+                maskSize: "100% 100%"
+              }}
+            >
+              <Image
+                src={siteConfig.images.confidentSmile}
+                alt="Patient smiling confidently after a dental care consultation"
+                fill
+                sizes="(min-width: 768px) 500px, 100vw"
+                className="object-cover object-[43%_50%]"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

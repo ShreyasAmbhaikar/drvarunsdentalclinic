@@ -7,17 +7,18 @@ import {
   MapPin,
   Phone
 } from "lucide-react";
-import { siteConfig } from "@/lib/site-config";
+import { siteConfig, categorizedTreatments } from "@/lib/site-config";
 
 const phoneHref = `tel:${siteConfig.phone.replace(/[^\d+]/g, "")}`;
 const agencyWhatsappHref = "https://wa.me/919284394722";
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-primary-container pb-5 pt-14">
+    <footer className="relative overflow-hidden bg-primary-container pb-5 pt-14 text-white">
       <div className="relative z-10 mx-auto max-w-[1440px] px-6 md:px-10 lg:px-14">
-        <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:gap-x-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.7fr)_minmax(0,0.95fr)_minmax(0,1fr)]">
-          <div className="col-span-2 min-w-0 lg:col-span-1">
+        {/* Top Section: Brand Info, Quick Links & Contact Details */}
+        <div className="grid grid-cols-1 gap-x-12 gap-y-10 pb-10 border-b border-[#f3d2ac]/20 md:grid-cols-3">
+          <div className="min-w-0">
             <div className="mb-5 flex min-w-0 items-center gap-3">
               <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/95 p-1 shadow-soft">
                 <Image
@@ -32,70 +33,89 @@ export function Footer() {
                 <span className="break-words font-section-heading text-[20px] font-extrabold tracking-tight text-white sm:text-[22px]">
                   Dr. Varun&apos;s
                 </span>
-                <span className="mt-1 font-label-sm text-[11px] font-semibold uppercase tracking-[0.2em] text-white/75">
+                <span className="mt-1 font-label-sm text-[11px] font-extrabold uppercase tracking-[0.2em] text-[#f3d2ac]">
                   Dental Clinic
                 </span>
               </span>
             </div>
-            <p className="max-w-[320px] font-body-main text-[14px] leading-6 text-white/75">
+            <p className="max-w-[320px] font-body-main text-[14px] leading-6 text-white/80">
               {siteConfig.tagline}
             </p>
           </div>
 
-          <FooterColumn title="Quick Links" className="min-w-0 lg:pl-6">
+          <FooterColumn title="Quick Links" className="min-w-0">
             {siteConfig.nav.map((item) => (
               <li key={item.href}>
-                <Link className="transition-colors hover:text-white" href={item.href}>
+                <Link className="text-white/80 transition-colors hover:text-white" href={item.href}>
                   {item.label}
                 </Link>
               </li>
             ))}
           </FooterColumn>
 
-          <FooterColumn title="Our Treatments" className="min-w-0">
-            {siteConfig.treatments.map((treatment) => (
-              <li key={treatment.href}>
-                <Link className="transition-colors hover:text-white" href={treatment.href}>
-                  {treatment.title}
-                </Link>
-              </li>
-            ))}
-          </FooterColumn>
-
-          <FooterColumn title="Contact" className="col-span-2 min-w-0 lg:col-span-1">
-            <li className="flex min-w-0 gap-3">
-              <Phone className="mt-1 h-4 w-4 shrink-0" aria-hidden="true" />
-              <a href={phoneHref} className="break-words transition-colors hover:text-white">
+          <FooterColumn title="Contact Us" className="min-w-0">
+            <li className="flex min-w-0 gap-3 text-white/80">
+              <Phone className="mt-1 h-4 w-4 shrink-0 text-white/70" aria-hidden="true" />
+              <a href={phoneHref} className="text-white/80 break-words transition-colors hover:text-white">
                 {siteConfig.phone}
               </a>
             </li>
-            <li className="flex min-w-0 gap-3">
-              <Mail className="mt-1 h-4 w-4 shrink-0" aria-hidden="true" />
-              <a href={`mailto:${siteConfig.email}`} className="break-words transition-colors hover:text-white">
+            <li className="flex min-w-0 gap-3 text-white/80">
+              <Mail className="mt-1 h-4 w-4 shrink-0 text-white/70" aria-hidden="true" />
+              <a href={`mailto:${siteConfig.email}`} className="text-white/80 break-words transition-colors hover:text-white">
                 {siteConfig.email}
               </a>
             </li>
-            <li className="flex min-w-0 gap-3">
-              <MapPin className="mt-1 h-4 w-4 shrink-0" aria-hidden="true" />
+            <li className="flex min-w-0 gap-3 text-white/80">
+              <MapPin className="mt-1 h-4 w-4 shrink-0 text-white/70" aria-hidden="true" />
               <a
                 href={siteConfig.businessListingUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="break-words transition-colors hover:text-white"
+                className="text-white/80 break-words transition-colors hover:text-white"
               >
                 {siteConfig.address.streetAddress}, {siteConfig.address.addressLocality}
               </a>
             </li>
-            <li className="flex min-w-0 gap-3">
-              <Clock className="mt-1 h-4 w-4 shrink-0" aria-hidden="true" />
+            <li className="flex min-w-0 gap-3 text-white/80">
+              <Clock className="mt-1 h-4 w-4 shrink-0 text-white/70" aria-hidden="true" />
               <span className="break-words">{siteConfig.hours}</span>
             </li>
           </FooterColumn>
         </div>
 
-        <div className="mt-10 border-t border-[#f3d2ac]/38 pt-4 text-center font-body-main text-[14px] leading-6 text-white/90">
-          <p>&copy; 2026 {siteConfig.name}. All Rights Reserved.</p>
-          <p className="mt-0.5 flex flex-wrap items-center justify-center gap-1.5">
+        {/* Middle Section: Categorized Treatments */}
+        <div className="py-10 border-b border-[#f3d2ac]/20">
+          <h3 className="mb-6 font-card-title text-[18px] font-bold text-[#f3d2ac] uppercase tracking-wider">
+            Our Treatments
+          </h3>
+          <div className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            {categorizedTreatments.map((category) => (
+              <div key={category.name} className="space-y-4 border-t border-[#f3d2ac]/10 pt-6 sm:border-t-0 sm:pt-0">
+                <h4 className="font-card-title text-[13px] font-bold uppercase tracking-wider text-[#f3d2ac]/90">
+                  {category.name}
+                </h4>
+                <ul className="space-y-2.5 font-body-main text-[13.5px] leading-5 text-white/80">
+                  {category.items.map((treatment) => (
+                    <li key={treatment.href}>
+                      <Link
+                        className="transition-colors hover:text-white hover:underline underline-offset-4"
+                        href={treatment.href}
+                      >
+                        {treatment.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Bottom Section: Copyright */}
+        <div className="pt-6 text-center font-body-main text-[14px] leading-6 text-white/90">
+          <p className="text-white/80">&copy; 2026 {siteConfig.name}. All Rights Reserved.</p>
+          <p className="mt-0.5 flex flex-wrap items-center justify-center gap-1.5 text-white/80">
             <span>Developed with</span>
             <Heart className="h-3.5 w-3.5 fill-current text-[#ff4f4f]" aria-hidden="true" />
             <span>by</span>
@@ -125,8 +145,8 @@ function FooterColumn({
 }) {
   return (
     <div className={className}>
-      <h3 className="mb-3 font-card-title text-[18px] font-bold text-white">{title}</h3>
-      <ul className="space-y-2 font-body-main text-[15px] leading-6 text-white/70">
+      <h3 className="mb-4 font-card-title text-[18px] font-bold text-[#f3d2ac] uppercase tracking-wider">{title}</h3>
+      <ul className="space-y-2.5 font-body-main text-[14px] leading-6 text-white/90">
         {children}
       </ul>
     </div>

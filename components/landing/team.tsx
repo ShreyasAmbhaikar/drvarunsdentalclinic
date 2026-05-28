@@ -3,17 +3,17 @@ import { Award, BadgeCheck, Cross, Sparkles } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
 export function Team() {
-  const [doctor] = siteConfig.team;
-
   return (
     <section
       id="team"
-      className="relative overflow-hidden bg-primary-container px-6 pb-14 pt-14 md:px-14 md:pb-16 md:pt-16"
+      className="deferred-section relative overflow-hidden bg-primary-container px-6 pb-14 pt-14 md:px-14 md:pb-16 md:pt-16"
     >
       <div className="absolute right-[-6%] top-20 h-56 w-56 rounded-full bg-white/6 blur-3xl" />
 
-      <div className="relative mx-auto max-w-[1140px]">
-        <DoctorProfile doctor={doctor} />
+      <div className="relative mx-auto max-w-[1140px] space-y-16 lg:space-y-24">
+        {siteConfig.team.map((doctor, index) => (
+          <DoctorProfile key={doctor.name} doctor={doctor} imageRight={index % 2 === 1} />
+        ))}
       </div>
     </section>
   );
@@ -21,12 +21,12 @@ export function Team() {
 
 type Doctor = (typeof siteConfig.team)[number];
 
-function DoctorProfile({ doctor }: { doctor: Doctor }) {
+function DoctorProfile({ doctor, imageRight = false }: { doctor: Doctor; imageRight?: boolean }) {
   const highlightIcons = [Cross, Award, BadgeCheck] as const;
 
   return (
     <article className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:gap-10">
-      <div className="relative mx-auto w-full max-w-[380px]">
+      <div className={`relative mx-auto w-full ${doctor.name.includes("Priyanka") ? "max-w-[420px]" : "max-w-[380px]"} ${imageRight ? "lg:order-last" : ""}`}>
         <div className="pointer-events-none absolute -left-6 -top-6 z-[15] h-[84px] w-[84px] rounded-full border-2 border-dashed border-[rgba(243,224,196,0.9)] sm:-left-7 sm:-top-7 sm:h-[92px] sm:w-[92px]" />
         <div className="pointer-events-none absolute -bottom-6 right-1 z-[15] h-[76px] w-[76px] rounded-full border-2 border-dashed border-[rgba(214,151,38,0.72)] sm:-bottom-8 sm:right-[-10px] sm:h-[88px] sm:w-[88px]" />
         <div className="absolute inset-x-6 bottom-8 top-12 rounded-[42px] bg-[linear-gradient(145deg,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.04)_100%)]" />
@@ -45,19 +45,19 @@ function DoctorProfile({ doctor }: { doctor: Doctor }) {
 
         <div className="absolute bottom-6 left-4 z-20 rounded-full border border-white/12 bg-[rgba(255,255,255,0.92)] px-4 py-3 shadow-[0_16px_36px_rgba(37,20,6,0.18)]">
           <span className="font-label-sm text-[11px] font-semibold uppercase tracking-[0.18em] text-primary-container">
-            Dental Surgeon and Implantologist
+            {doctor.role.split("&")[0].trim()}
           </span>
         </div>
       </div>
 
-      <div className="text-white lg:pl-4">
+      <div className={`text-white ${imageRight ? "lg:pr-4" : "lg:pl-4"}`}>
         <h3 className="font-card-title text-[32px] font-extrabold leading-tight text-white md:text-[50px]">
           {doctor.name}
         </h3>
-        <p className="mt-4 font-label-sm text-[13px] font-semibold uppercase tracking-[0.18em] text-white/74">
+        <p className="mt-4 font-label-sm text-[13px] font-semibold uppercase tracking-[0.18em] text-white/90">
           {doctor.role}
         </p>
-        <p className="mt-4 max-w-[580px] font-body-main text-[16px] leading-7 text-white/84">
+        <p className="mt-4 max-w-[580px] font-body-main text-[16px] leading-7 text-white/96">
           {doctor.summary}
         </p>
 
@@ -73,7 +73,7 @@ function DoctorProfile({ doctor }: { doctor: Doctor }) {
                 <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-primary-container shadow-[0_12px_28px_rgba(37,20,6,0.16)]">
                   <Icon className="h-5 w-5" aria-hidden="true" />
                 </span>
-                <p className="font-body-main text-[15px] leading-6 text-white/88">
+                <p className="font-body-main text-[15px] leading-6 text-white/96">
                   {highlight}
                 </p>
               </div>
@@ -83,8 +83,8 @@ function DoctorProfile({ doctor }: { doctor: Doctor }) {
 
         <div className="mt-7 flex items-center gap-4">
           <div className="h-px flex-1 bg-[linear-gradient(90deg,rgba(255,255,255,0.38)_0%,rgba(255,255,255,0)_100%)]" />
-          <p className="font-label-sm text-[12px] font-semibold uppercase tracking-[0.24em] text-white/66">
-            Personal care | Modern dentistry
+          <p className="font-label-sm text-[12px] font-semibold uppercase tracking-[0.24em] text-white/88">
+            Personal care | Modern cosmetology & dentistry
           </p>
         </div>
       </div>

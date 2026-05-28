@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { ChevronDown, Menu, Phone, X } from "lucide-react";
-import { siteConfig } from "@/lib/site-config";
+import { ChevronDown, ChevronRight, Menu, Phone, X } from "lucide-react";
+import { siteConfig, categorizedTreatments } from "@/lib/site-config";
 
 const phoneHref = `tel:${siteConfig.phone.replace(/[^\d+]/g, "")}`;
 
@@ -13,9 +13,13 @@ export function Header() {
   const pathname = usePathname();
   const [isTreatmentsOpen, setIsTreatmentsOpen] = useState(false);
   const [isMobileTreatmentsOpen, setIsMobileTreatmentsOpen] = useState(false);
+  const [activeCategoryIndex, setActiveCategoryIndex] = useState(0);
+  const [openMobileCategoryIndex, setOpenMobileCategoryIndex] = useState<number | null>(null);
   const mobileMenuRef = useRef<HTMLDetailsElement>(null);
+
   const isActive = (href: string) =>
     href === "/" ? pathname === href : pathname === href || pathname.startsWith(`${href}/`);
+
   const closeMenus = () => {
     setIsTreatmentsOpen(false);
     setIsMobileTreatmentsOpen(false);
@@ -31,6 +35,18 @@ export function Header() {
       mobileMenuRef.current.open = false;
     }
   }, [pathname]);
+
+  useEffect(() => {
+    if (!isTreatmentsOpen) {
+      setActiveCategoryIndex(0);
+    }
+  }, [isTreatmentsOpen]);
+
+  useEffect(() => {
+    if (!isMobileTreatmentsOpen) {
+      setOpenMobileCategoryIndex(null);
+    }
+  }, [isMobileTreatmentsOpen]);
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur-md">
@@ -48,13 +64,13 @@ export function Header() {
             <span className="font-section-heading text-[16px] font-extrabold tracking-tight text-text-dark sm:text-[19px]">
               Dr. Varun&apos;s
             </span>
-            <span className="mt-1 font-label-sm text-[10px] font-semibold uppercase tracking-[0.22em] text-primary-container sm:text-[11px]">
+            <span className="mt-1 font-label-sm text-[10px] font-extrabold uppercase tracking-[0.22em] text-primary-container sm:text-[11px]">
               Dental Clinic
             </span>
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-3 font-label-sm text-[13px] font-medium tracking-tight lg:flex xl:gap-6">
+        <nav aria-label="Primary navigation" className="hidden items-center gap-1.5 font-label-sm text-[13px] font-medium tracking-tight lg:flex xl:gap-3">
           {siteConfig.nav.map((item) =>
             item.href === "/our-services" ? (
               <div
@@ -88,24 +104,46 @@ export function Header() {
                 </div>
 
                 <div
-                  className={`absolute left-0 top-full z-50 mt-3 w-[280px] rounded-[22px] border border-slate-100 bg-white p-3 shadow-card transition-all duration-150 ${
+                  className={`absolute left-0 top-full z-50 mt-3 flex w-[520px] rounded-[24px] border border-slate-100 bg-white p-2 shadow-card transition-all duration-150 ${
                     isTreatmentsOpen
                       ? "visible translate-y-0 opacity-100"
                       : "invisible -translate-y-1 opacity-0"
                   }`}
                 >
-                  {siteConfig.treatments.map((treatment) => (
-                    <Link
-                      key={treatment.href}
-                      href={treatment.href}
-                      onClick={() => setIsTreatmentsOpen(false)}
-                      className="block rounded-[18px] px-4 py-3 transition-colors hover:bg-section-light"
-                    >
-                      <span className="block font-card-title text-[15px] font-bold text-text-dark">
-                        {treatment.title}
-                      </span>
-                    </Link>
-                  ))}
+                  {/* Left Column: Categories list */}
+                  <div className="w-[220px] shrink-0 border-r border-slate-100 pr-2 space-y-0.5">
+                    {categorizedTreatments.map((category, catIndex) => (
+                      <button
+                        key={category.name}
+                        type="button"
+                        onMouseEnter={() => setActiveCategoryIndex(catIndex)}
+                        className={`flex w-full items-center justify-between rounded-[16px] px-3.5 py-2.5 text-left transition-colors font-bold text-[13px] leading-tight ${
+                          activeCategoryIndex === catIndex
+                            ? "bg-section-light text-primary-container"
+                            : "text-text-dark hover:bg-section-light/50 hover:text-primary-container"
+                        }`}
+                      >
+                        <span>{category.name}</span>
+                        <ChevronRight className="h-3.5 w-3.5 shrink-0 opacity-70" aria-hidden="true" />
+                      </button>
+                    ))}
+                  </div>
+
+                  {/* Right Column: Treatments in selected category */}
+                  <div className="flex-1 pl-2 space-y-0.5">
+                    {categorizedTreatments[activeCategoryIndex]?.items.map((treatment) => (
+                      <Link
+                        key={treatment.href}
+                        href={treatment.href}
+                        onClick={() => setIsTreatmentsOpen(false)}
+                        className="block rounded-[16px] px-4 py-2.5 transition-colors hover:bg-[#fff0da]"
+                      >
+                        <span className="block font-card-title text-[14px] font-bold text-text-dark">
+                          {treatment.title}
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </div>
             ) : (
@@ -160,16 +198,37 @@ export function Header() {
                     />
                   </button>
                   {isMobileTreatmentsOpen ? (
-                    <div className="mt-2 space-y-1 pl-4">
-                      {siteConfig.treatments.map((treatment) => (
-                        <Link
-                          key={treatment.href}
-                          href={treatment.href}
-                          onClick={closeMenus}
-                          className="block rounded-[16px] px-4 py-3 font-body-main text-[13px] font-medium leading-5 text-text-muted transition-colors hover:bg-section-light hover:text-primary-container"
-                        >
-                          {treatment.title}
-                        </Link>
+                    <div className="mt-2 space-y-1.5 pl-3">
+                      {categorizedTreatments.map((category, catIndex) => (
+                        <div key={category.name} className="border-l border-slate-100 pl-2.5">
+                          <button
+                            type="button"
+                            onClick={() => setOpenMobileCategoryIndex(openMobileCategoryIndex === catIndex ? null : catIndex)}
+                            className="flex w-full items-center justify-between py-1.5 text-left font-label-sm text-[11px] font-bold uppercase tracking-wider text-text-muted hover:text-primary-container"
+                          >
+                            <span>{category.name}</span>
+                            <ChevronDown
+                              className={`h-3.5 w-3.5 shrink-0 transition-transform ${
+                                openMobileCategoryIndex === catIndex ? "rotate-180" : ""
+                              }`}
+                              aria-hidden="true"
+                            />
+                          </button>
+                          {openMobileCategoryIndex === catIndex ? (
+                            <div className="mt-1 space-y-1">
+                              {category.items.map((treatment) => (
+                                <Link
+                                  key={treatment.href}
+                                  href={treatment.href}
+                                  onClick={closeMenus}
+                                  className="block rounded-[12px] px-3 py-2 font-body-main text-[13px] font-medium leading-5 text-text-dark transition-colors hover:bg-section-light hover:text-primary-container"
+                                >
+                                  {treatment.title}
+                                </Link>
+                              ))}
+                            </div>
+                          ) : null}
+                        </div>
                       ))}
                     </div>
                   ) : null}

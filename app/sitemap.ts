@@ -4,66 +4,29 @@ import { siteConfig } from "@/lib/site-config";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const mainPages = [
+    { url: siteConfig.url, priority: 1.0, changeFrequency: "monthly" as const },
+    { url: `${siteConfig.url}/about`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${siteConfig.url}/our-services`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${siteConfig.url}/gallery`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${siteConfig.url}/testimonials`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${siteConfig.url}/contact-us`, priority: 0.8, changeFrequency: "monthly" as const }
+  ];
+
+  const treatmentPages = siteConfig.treatments.map((t) => ({
+    url: `${siteConfig.url}${t.href}`,
+    lastModified: siteConfig.lastUpdated,
+    changeFrequency: "monthly" as const,
+    priority: 0.9
+  }));
+
   return [
-    {
-      url: siteConfig.url,
+    ...mainPages.map((p) => ({
+      url: p.url,
       lastModified: siteConfig.lastUpdated,
-      changeFrequency: "monthly",
-      priority: 1
-    },
-    {
-      url: `${siteConfig.url}/gallery`,
-      lastModified: siteConfig.lastUpdated,
-      changeFrequency: "monthly",
-      priority: 0.8
-    },
-    {
-      url: `${siteConfig.url}/root-canal-treatment-in-viman-nagar`,
-      lastModified: siteConfig.lastUpdated,
-      changeFrequency: "monthly",
-      priority: 0.9
-    },
-    {
-      url: `${siteConfig.url}/dental-implant-in-viman-nagar`,
-      lastModified: siteConfig.lastUpdated,
-      changeFrequency: "monthly",
-      priority: 0.9
-    },
-    {
-      url: `${siteConfig.url}/teeth-cleaning-in-viman-nagar`,
-      lastModified: siteConfig.lastUpdated,
-      changeFrequency: "monthly",
-      priority: 0.9
-    },
-    {
-      url: `${siteConfig.url}/teeth-whitening-in-viman-nagar`,
-      lastModified: siteConfig.lastUpdated,
-      changeFrequency: "monthly",
-      priority: 0.9
-    },
-    {
-      url: `${siteConfig.url}/braces-treatment-in-viman-nagar`,
-      lastModified: siteConfig.lastUpdated,
-      changeFrequency: "monthly",
-      priority: 0.9
-    },
-    {
-      url: `${siteConfig.url}/invisalign-treatment-in-viman-nagar`,
-      lastModified: siteConfig.lastUpdated,
-      changeFrequency: "monthly",
-      priority: 0.9
-    },
-    {
-      url: `${siteConfig.url}/wisdom-tooth-extraction-in-viman-nagar`,
-      lastModified: siteConfig.lastUpdated,
-      changeFrequency: "monthly",
-      priority: 0.9
-    },
-    {
-      url: `${siteConfig.url}/dental-tooth-filling-in-viman-nagar`,
-      lastModified: siteConfig.lastUpdated,
-      changeFrequency: "monthly",
-      priority: 0.9
-    }
+      changeFrequency: p.changeFrequency,
+      priority: p.priority
+    })),
+    ...treatmentPages
   ];
 }

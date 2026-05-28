@@ -47,14 +47,14 @@ export function getStructuredData() {
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Dental services",
-      itemListElement: siteConfig.services.map((service) => ({
+      itemListElement: siteConfig.treatments.map((treatment) => ({
         "@type": "Offer",
-        url: absoluteUrl(service.href),
+        url: absoluteUrl(treatment.href),
         itemOffered: {
           "@type": "Service",
-          name: service.title,
-          description: service.description,
-          url: absoluteUrl(service.href),
+          name: treatment.title,
+          description: treatment.description,
+          url: absoluteUrl(treatment.href),
           provider: {
             "@id": `${siteConfig.url}/#dentist`
           }

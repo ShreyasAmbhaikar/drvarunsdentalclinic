@@ -22,7 +22,7 @@ const mapEmbedUrl = `https://maps.google.com/maps?q=${siteConfig.geo.latitude},$
 
 export default function ContactUsPage() {
   return (
-    <main className="bg-surface-container-lowest px-6 pb-20 pt-[136px] md:px-14 md:pb-24">
+    <main id="main-content" className="bg-surface-container-lowest px-6 pb-20 pt-[136px] md:px-14 md:pb-24">
       <section className="mx-auto max-w-[1180px]">
         <div className="mb-10 text-center">
           <p className="font-label-sm text-[13px] font-semibold uppercase tracking-[0.18em] text-primary-container">
@@ -42,7 +42,7 @@ export default function ContactUsPage() {
             <h2 className="max-w-[360px] font-section-heading text-[30px] font-extrabold leading-[1.12] md:text-[36px]">
               Find us easily.
             </h2>
-            <p className="mt-3 max-w-[430px] font-body-main text-[15px] leading-7 text-white/82">
+            <p className="mt-3 max-w-[430px] font-body-main text-[15px] leading-7 text-white/96">
               Call, email, or visit the clinic directly with the details below.
             </p>
 
@@ -135,7 +135,7 @@ function ContactCard({
           <span className="block font-card-title text-[17px] font-bold leading-6 text-white">
             {label}
           </span>
-          <span className="mt-2 block break-words font-body-main text-[13px] leading-5 text-white/88">
+          <span className="mt-2 block break-words font-body-main text-[13px] leading-5 text-white/96">
             {value}
           </span>
         </span>

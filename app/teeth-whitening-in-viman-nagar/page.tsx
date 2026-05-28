@@ -24,7 +24,7 @@ const teethWhitening: TreatmentPageData = {
   ogImageAlt: "Teeth whitening in Viman Nagar at Dr. Varun's Dental Clinic",
   heroObjectPosition: "62% 48%",
   heroGradientClassName:
-    "absolute inset-0 bg-[linear-gradient(90deg,rgba(72,39,10,0.9)_0%,rgba(108,60,17,0.56)_43%,rgba(255,248,239,0.04)_100%)]",
+    "absolute inset-0 bg-[linear-gradient(90deg,rgba(52,27,7,0.94)_0%,rgba(90,47,11,0.74)_43%,rgba(255,248,239,0.10)_100%)]",
   ctaLabel: "Call for Whitening Consultation",
   quickTreatment: "Smile whitening, polishing guidance, and cosmetic dental evaluation",
   symptomsKicker: "You may consider whitening if",
@@ -194,7 +194,7 @@ const teethWhitening: TreatmentPageData = {
   ctaText:
     "Visit Dr. Varun's Dental Clinic for professional teeth whitening, smile brightening, yellow teeth treatment, polishing guidance, and cosmetic dental consultation in Viman Nagar.",
   internalLinks: [
-    { href: "/teeth-cleaning-in-viman-nagar", label: "professional teeth cleaning before whitening" },
+    { href: "/all-gum-care-in-viman-nagar", label: "all gum care for bleeding and pocket treatments" },
     { href: "/our-services", label: "smile designing for cosmetic smile improvement" },
     { href: "/our-services", label: "complete smile makeover treatment" },
     { href: "/our-services", label: "dental checkup before teeth whitening" },

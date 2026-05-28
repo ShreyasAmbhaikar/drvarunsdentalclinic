@@ -10,7 +10,7 @@ export function BeforeAfterSmile() {
   const [position, setPosition] = useState(50);
 
   return (
-    <section id="smile-results" className="overflow-hidden bg-section-light px-6 py-14 md:px-14 md:py-16">
+    <section id="smile-results" className="deferred-section overflow-hidden bg-section-light px-6 py-14 md:px-14 md:py-16">
       <div className="mx-auto w-full max-w-[1140px]">
         <div className="mx-auto mb-7 w-full max-w-[720px] text-center">
           <p className="mb-3 font-label-sm text-[14px] font-extrabold uppercase tracking-[0.18em] text-cyan">

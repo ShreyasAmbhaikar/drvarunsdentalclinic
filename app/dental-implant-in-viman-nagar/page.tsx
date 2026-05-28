@@ -22,7 +22,7 @@ const dentalImplant: TreatmentPageData = {
   heroAlt: "Dental implant treatment in Viman Nagar at Dr. Varun's Dental Clinic",
   heroObjectPosition: "52% 50%",
   heroGradientClassName:
-    "absolute inset-0 bg-[linear-gradient(90deg,rgba(72,39,10,0.9)_0%,rgba(108,60,17,0.62)_46%,rgba(255,248,239,0.08)_100%)]",
+    "absolute inset-0 bg-[linear-gradient(90deg,rgba(52,27,7,0.94)_0%,rgba(90,47,11,0.76)_46%,rgba(255,248,239,0.12)_100%)]",
   ctaLabel: "Call for Implant Consultation",
   quickTreatment: "Single tooth, multiple teeth, and implant-supported denture planning",
   symptomsKicker: "You may need implants for",

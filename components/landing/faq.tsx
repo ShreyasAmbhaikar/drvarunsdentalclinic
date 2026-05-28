@@ -1,18 +1,13 @@
-"use client";
-
-import { useState } from "react";
-import Image from "next/image";
 import { Minus, Plus } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
-const faqImageMask =
-  "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 450'%3E%3Cpath fill='white' d='M48 0H350C376 0 398 18 404 42C409 62 427 78 448 78H472C499 78 520 99 520 126V402C520 429 499 450 472 450H142C115 450 94 429 94 402V390C94 362 72 340 44 340C20 340 0 320 0 296V48C0 21 21 0 48 0Z'/%3E%3C/svg%3E\")";
+
+
+const mapEmbedUrl = `https://maps.google.com/maps?q=${siteConfig.geo.latitude},${siteConfig.geo.longitude}&z=17&output=embed`;
 
 export function Faq() {
-  const [openIndex, setOpenIndex] = useState(-1);
-
   return (
-    <section id="faq" className="bg-white px-6 pb-12 pt-10 md:px-14 md:pb-14 md:pt-[52px]">
+    <section id="faq" className="deferred-section bg-white px-6 pb-12 pt-10 md:px-14 md:pb-14 md:pt-[52px]">
       <div className="mx-auto mb-8 max-w-[760px] text-center">
         <h2 className="mb-4 font-section-heading text-[29px] font-extrabold text-text-dark md:text-[38px]">
           Frequently Asked
@@ -27,68 +22,42 @@ export function Faq() {
       </div>
 
       <div className="mx-auto grid max-w-[1140px] grid-cols-1 items-start gap-7 md:grid-cols-2">
-        <div
-          className="relative h-[280px] overflow-hidden bg-surface-container-low md:h-[380px]"
-          style={{
-            WebkitMaskImage: faqImageMask,
-            maskImage: faqImageMask,
-            WebkitMaskRepeat: "no-repeat",
-            maskRepeat: "no-repeat",
-            WebkitMaskSize: "100% 100%",
-            maskSize: "100% 100%",
-          }}
-        >
-          <Image
-            src={siteConfig.images.faqTreatment}
-            alt="Dentist answering patient questions during a dental consultation"
-            fill
-            sizes="(min-width: 768px) 500px, 100vw"
-            className="object-cover"
-          />
-        </div>
-
         <div className="w-full max-w-[520px] space-y-3">
-          {siteConfig.faqs.map((faq, index) => (
-            <div
+          {siteConfig.faqs.map((faq) => (
+            <details
               key={faq.question}
-              className={`rounded-[18px] shadow-soft transition-colors ${
-                openIndex === index ? "bg-primary-container text-white" : "bg-white text-text-dark"
-              }`}
+              className="group rounded-[18px] bg-white text-text-dark shadow-soft transition-colors open:bg-primary-container open:text-white"
             >
-              <button
-                type="button"
-                onClick={() => setOpenIndex((currentIndex) => (currentIndex === index ? -1 : index))}
-                className="flex w-full cursor-pointer items-center justify-between gap-4 p-5 text-left"
-                aria-expanded={openIndex === index}
-              >
+              <summary className="flex cursor-pointer items-center justify-between gap-4 p-5 text-left">
                 <span className="flex items-center gap-4">
                   <FaqToothIcon
-                    className={`h-5 w-5 shrink-0 ${
-                      openIndex === index ? "text-white" : "text-primary-container"
-                    }`}
+                    className="h-5 w-5 shrink-0 text-primary-container group-open:text-white"
                     aria-hidden="true"
                   />
-                  <span className="font-card-title text-[16px] font-bold md:text-[18px]">
+                  <span className="font-card-title text-[14px] font-bold md:text-[16px]">
                     {faq.question}
                   </span>
                 </span>
-                <span
-                  className={`shrink-0 ${openIndex === index ? "text-white" : "text-text-muted"}`}
-                >
-                  {openIndex === index ? (
-                    <Minus className="h-5 w-5" aria-hidden="true" />
-                  ) : (
-                    <Plus className="h-5 w-5" aria-hidden="true" />
-                  )}
+                <span className="shrink-0 text-text-muted group-open:text-white">
+                  <Plus className="h-5 w-5 group-open:hidden" aria-hidden="true" />
+                  <Minus className="hidden h-5 w-5 group-open:block" aria-hidden="true" />
                 </span>
-              </button>
-              {openIndex === index ? (
-                <p className="-mt-1 px-5 pb-5 font-body-main text-[15px] leading-7 text-white/90">
-                  {faq.answer}
-                </p>
-              ) : null}
-            </div>
+              </summary>
+              <p className="-mt-1 px-5 pb-5 font-body-main text-[15px] leading-7 text-white/96 group-open:text-white/96">
+                {faq.answer}
+              </p>
+            </details>
           ))}
+        </div>
+
+        <div className="relative h-[280px] overflow-hidden rounded-[22px] border border-slate-100 bg-surface-container-low shadow-soft md:h-[380px]">
+          <iframe
+            title={`${siteConfig.name} location map`}
+            src={mapEmbedUrl}
+            className="absolute inset-0 h-full w-full border-0"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
       </div>
     </section>

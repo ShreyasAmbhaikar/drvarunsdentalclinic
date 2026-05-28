@@ -11,13 +11,14 @@ function truncateQuote(text: string, maxLength: number) {
 }
 
 export function Testimonials() {
-  const leftColumn = siteConfig.testimonials.filter((_, index) => index % 2 === 0);
-  const rightColumn = siteConfig.testimonials.filter((_, index) => index % 2 === 1);
+  const homeTestimonials = siteConfig.testimonials.slice(0, 4);
+  const leftColumn = homeTestimonials.filter((_, index) => index % 2 === 0);
+  const rightColumn = homeTestimonials.filter((_, index) => index % 2 === 1);
 
   return (
     <section
       id="testimonials"
-      className="overflow-hidden bg-[linear-gradient(180deg,#fff9f1_0%,#fff4e7_56%,#fff9f1_100%)] px-6 pb-8 pt-10 md:px-10 md:pb-10 md:pt-12 lg:px-14"
+      className="deferred-section overflow-hidden bg-[linear-gradient(180deg,#fff3e7_0%,#fff4e7_56%,#fff3e7_100%)] px-6 pb-8 pt-10 md:px-10 md:pb-10 md:pt-12 lg:px-14"
     >
       <div className="mx-auto grid max-w-[1140px] grid-cols-1 gap-7 lg:grid-cols-12 lg:gap-7">
         <div className="lg:col-span-5 lg:pt-6">
@@ -46,21 +47,26 @@ export function Testimonials() {
         </div>
 
         <div className="relative lg:col-span-7">
-          <div className="pointer-events-none absolute inset-x-0 top-0 z-10 hidden h-24 bg-gradient-to-b from-[#fff9f1] via-[#fff9f1]/80 to-transparent lg:block" />
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 hidden h-28 bg-gradient-to-t from-[#fff9f1] via-[#fff9f1]/88 to-transparent md:h-32 lg:block" />
+          <div className="pointer-events-none absolute inset-x-0 top-0 z-10 hidden h-24 bg-gradient-to-b from-[#fff3e7] via-[#fff3e7]/80 to-transparent lg:block" />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 hidden h-28 bg-gradient-to-t from-[#fff3e7] via-[#fff3e7]/88 to-transparent md:h-32 lg:block" />
 
           <div className="grid gap-5 sm:grid-cols-2">
             <div className="space-y-5 md:pt-3">
-              {leftColumn.map((testimonial) => (
-                <TestimonialCard key={testimonial.name} testimonial={testimonial} />
+              {leftColumn.map((testimonial, index) => (
+                <TestimonialCard
+                  key={testimonial.name}
+                  testimonial={testimonial}
+                  fadedBottom={index === leftColumn.length - 1}
+                />
               ))}
             </div>
 
             <div className="space-y-5 sm:pt-10">
-              {rightColumn.map((testimonial) => (
+              {rightColumn.map((testimonial, index) => (
                 <TestimonialCard
                   key={testimonial.name}
                   testimonial={testimonial}
+                  fadedBottom={index === rightColumn.length - 1}
                 />
               ))}
             </div>
@@ -81,15 +87,15 @@ function TestimonialCard({
   const fadeMask = fadedBottom
     ? {
         WebkitMaskImage:
-          "linear-gradient(to bottom, #000 0%, #000 56%, rgba(0,0,0,0.62) 74%, transparent 100%)",
+          "linear-gradient(to bottom, #000 0%, #000 80%, rgba(0,0,0,0.3) 92%, transparent 100%)",
         maskImage:
-          "linear-gradient(to bottom, #000 0%, #000 56%, rgba(0,0,0,0.62) 74%, transparent 100%)"
+          "linear-gradient(to bottom, #000 0%, #000 80%, rgba(0,0,0,0.3) 92%, transparent 100%)"
       }
     : undefined;
 
   return (
     <article
-      className="relative overflow-hidden rounded-[24px] border border-[#f2e1cb] bg-white/96 p-5 shadow-[0_24px_44px_rgba(133,82,32,0.08)] backdrop-blur md:p-6"
+      className="relative overflow-hidden rounded-[24px] border border-[#ecd7bd] bg-[#fff3e7] p-5 shadow-[0_24px_44px_rgba(133,82,32,0.08)] backdrop-blur md:p-6"
       style={fadeMask}
     >
       <div className="mb-4 flex items-start justify-between gap-4">
@@ -134,7 +140,6 @@ function TestimonialCard({
       <p className="font-body-main text-[14px] leading-7 text-text-muted">
         {truncateQuote(testimonial.quote, 220)}
       </p>
-
     </article>
   );
 }

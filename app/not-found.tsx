@@ -4,7 +4,7 @@ import { Home, Phone } from "lucide-react";
 
 export default function NotFound() {
   return (
-    <main className="bg-page-bg px-6 pb-16 pt-[108px] md:px-14 md:pb-20 md:pt-[132px]">
+    <main id="main-content" className="bg-page-bg px-6 pb-16 pt-[108px] md:px-14 md:pb-20 md:pt-[132px]">
       <section className="mx-auto flex min-h-[68vh] max-w-[980px] flex-col items-center justify-center text-center">
         <div className="relative flex w-full max-w-[680px] items-center justify-center">
           <div

@@ -59,7 +59,7 @@ const galleryImages = [
 
 export default function GalleryPage() {
   return (
-    <main className="bg-surface-container-lowest px-6 pb-20 pt-[136px] md:px-14 md:pb-24">
+    <main id="main-content" className="bg-surface-container-lowest px-6 pb-20 pt-[136px] md:px-14 md:pb-24">
       <section className="mx-auto max-w-[1180px]">
         <div className="mb-10 text-center">
           <p className="font-label-sm text-[13px] font-semibold uppercase tracking-[0.18em] text-primary-container">

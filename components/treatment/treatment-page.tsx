@@ -218,7 +218,7 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
 
   return (
     <>
-      <main className="bg-surface-container-lowest pt-[68px]">
+      <main id="main-content" className="bg-surface-container-lowest pt-[68px]">
         <section className="relative overflow-hidden bg-[#fff8ef]">
           <div className="absolute inset-0">
             <Image
@@ -230,7 +230,7 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
               style={{ objectPosition: data.heroObjectPosition ?? "50% 50%" }}
               priority
             />
-            <div className={data.heroGradientClassName ?? "absolute inset-0 bg-[linear-gradient(90deg,rgba(72,39,10,0.9)_0%,rgba(108,60,17,0.62)_46%,rgba(255,248,239,0.07)_100%)]"} />
+            <div className={data.heroGradientClassName ?? "absolute inset-0 bg-[linear-gradient(90deg,rgba(52,27,7,0.94)_0%,rgba(90,47,11,0.76)_46%,rgba(255,248,239,0.12)_100%)]"} />
           </div>
 
           <div className="relative mx-auto grid min-h-[520px] w-full max-w-[1360px] items-end gap-7 px-4 pb-8 pt-14 sm:px-6 md:px-14 lg:grid-cols-[minmax(0,1fr)_390px] lg:pb-12">
@@ -246,7 +246,7 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
                   </span>
                 ))}
               </h1>
-              <p className="mt-6 max-w-[32ch] font-body-main text-[16px] leading-8 text-white/84 sm:max-w-[34ch] md:max-w-[700px] md:text-[19px] md:leading-9">
+              <p className="mt-6 max-w-[32ch] font-body-main text-[16px] leading-8 text-white/96 sm:max-w-[34ch] md:max-w-[700px] md:text-[19px] md:leading-9">
                 {data.heroIntro}
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
@@ -288,11 +288,11 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
           </div>
         </section>
 
-        <section className="px-4 py-12 sm:px-6 md:px-14 md:py-14">
+        <section className="deferred-section px-4 py-12 sm:px-6 md:px-14 md:py-14">
           <div className="mx-auto grid max-w-[1120px] gap-8 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] lg:items-start">
             <aside className="min-w-0 lg:sticky lg:top-24">
               <div className="w-full min-w-0 max-w-none rounded-[28px] bg-primary-container p-7 text-white shadow-[0_20px_52px_rgba(108,60,17,0.18)]">
-                <p className="font-label-sm text-[12px] font-bold uppercase tracking-[0.18em] text-white/68">
+                <p className="font-label-sm text-[12px] font-bold uppercase tracking-[0.18em] text-white/88">
                   {data.symptomsKicker}
                 </p>
                 <h2 className="mt-3 font-section-heading text-[28px] font-extrabold leading-[1.12] md:text-[30px]">
@@ -300,7 +300,7 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
                 </h2>
                 <ul className="mt-6 space-y-3">
                   {data.symptoms.slice(0, data.symptomsVisibleCount ?? 7).map((symptom) => (
-                    <li key={symptom} className="flex min-w-0 gap-3 font-body-main text-[14px] leading-6 text-white/84">
+                    <li key={symptom} className="flex min-w-0 gap-3 font-body-main text-[14px] leading-6 text-white/96">
                       <CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-cyan-soft" aria-hidden="true" />
                       <span>{symptom}</span>
                     </li>
@@ -337,7 +337,7 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
           </div>
         </section>
 
-        <section className="bg-section-light px-6 py-12 md:px-14 md:py-14">
+        <section className="deferred-section bg-section-light px-6 py-12 md:px-14 md:py-14">
           <div className="mx-auto max-w-[1120px]">
             <div className="mb-10 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
               <div>
@@ -373,7 +373,7 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
           </div>
         </section>
 
-        <section className="px-6 py-12 md:px-14 md:py-14">
+        <section className="deferred-section px-6 py-12 md:px-14 md:py-14">
           <div className="mx-auto grid max-w-[1120px] gap-8 lg:grid-cols-[1fr_0.92fr] lg:items-center">
             <div>
               <SectionKicker>The Procedure</SectionKicker>
@@ -430,10 +430,10 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
           </div>
         </section>
 
-        <section className="bg-primary-container px-6 py-12 text-white md:px-14 md:py-14">
+        <section className="deferred-section bg-primary-container px-6 py-12 text-white md:px-14 md:py-14">
           <div className="mx-auto grid max-w-[1120px] gap-7 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
             <div>
-              <p className="font-label-sm text-[12px] font-bold uppercase tracking-[0.18em] text-white/68">
+              <p className="font-label-sm text-[12px] font-bold uppercase tracking-[0.18em] text-white/88">
                 {data.highlightKicker}
               </p>
               <h2 className="mt-3 font-section-heading text-[34px] font-extrabold leading-[1.08] md:text-[46px]">
@@ -450,7 +450,7 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
         </section>
 
         {data.comparison ? (
-          <section className={data.comparison.sectionClassName ?? "px-6 py-12 md:px-14 md:py-14"}>
+          <section className={data.comparison.sectionClassName ?? "deferred-section px-6 py-12 md:px-14 md:py-14"}>
             <div className="mx-auto max-w-[1120px]">
               <div className="grid gap-8 lg:grid-cols-[0.96fr_1.04fr] lg:items-start">
                 <div>
@@ -469,7 +469,7 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
           </section>
         ) : null}
 
-        <section className={data.benefitsSectionClassName ?? "px-6 py-12 md:px-14 md:py-14"}>
+        <section className={data.benefitsSectionClassName ?? "deferred-section px-6 py-12 md:px-14 md:py-14"}>
           <div className="mx-auto grid max-w-[1120px] gap-8 lg:grid-cols-[0.94fr_1.06fr]">
             <div>
               <SectionKicker>Benefits</SectionKicker>
@@ -494,7 +494,7 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
         </section>
 
         {data.extra ? (
-          <section className={data.extra.sectionClassName ?? "bg-section-light px-6 py-12 md:px-14 md:py-14"}>
+          <section className={data.extra.sectionClassName ?? "deferred-section bg-section-light px-6 py-12 md:px-14 md:py-14"}>
             <div className="mx-auto grid max-w-[1120px] gap-7 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
               <div>
                 <SectionKicker>{data.extra.kicker}</SectionKicker>
@@ -511,7 +511,7 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
                   <h3 className="mt-4 font-card-title text-[20px] font-bold">
                     {data.extra.estimateTitle}
                   </h3>
-                  <p className="mt-3 font-body-main text-[14px] leading-7 text-white/76">
+                  <p className="mt-3 font-body-main text-[14px] leading-7 text-white/92">
                     {data.extra.estimateText}
                   </p>
                 </div>
@@ -533,7 +533,7 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
           </section>
         ) : null}
 
-        <section className={data.faqSectionClassName ?? "px-6 py-12 md:px-14 md:py-14"}>
+        <section className={data.faqSectionClassName ?? "deferred-section px-6 py-12 md:px-14 md:py-14"}>
           <div className="mx-auto max-w-[1120px]">
             <div className="mb-10 text-center">
               <SectionKicker>Frequently Asked Questions</SectionKicker>
@@ -600,7 +600,7 @@ function HeroDetail({
         {icon}
       </span>
       <span className="min-w-0">
-        <span className="block font-label-sm text-[11px] font-bold uppercase tracking-[0.16em] text-primary-container/74">
+        <span className="block font-label-sm text-[11px] font-bold uppercase tracking-[0.16em] text-primary-container">
           {label}
         </span>
         <span className="mt-1 block break-words font-body-main text-[14px] font-semibold leading-6 text-text-dark">
@@ -628,7 +628,7 @@ function InfoTile({ data }: { data: InfoTileData }) {
       <h3 className="mt-5 font-card-title text-[18px] font-bold leading-6 text-white">
         {data.title}
       </h3>
-      <p className="mt-3 font-body-main text-[14px] leading-7 text-white/76">
+      <p className="mt-3 font-body-main text-[14px] leading-7 text-white/92">
         {data.text}
       </p>
     </article>

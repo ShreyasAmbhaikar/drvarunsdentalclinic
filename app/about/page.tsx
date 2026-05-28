@@ -65,9 +65,48 @@ const achievements = [
   }
 ] as const;
 
+const priyankaAchievements = [
+  {
+    title: "17+ Years",
+    detail: "Cosmetology expert",
+    icon: Sparkles,
+    className:
+      "left-[-2%] top-[11%] sm:left-[-5%] sm:top-[12%] lg:left-[-8%]",
+    delay: "0s",
+    duration: "4.2s"
+  },
+  {
+    title: "NHS England",
+    detail: "Dermatology training",
+    icon: BadgeCheck,
+    className:
+      "right-[-1%] top-[11%] sm:right-[-5%] sm:top-[12%] lg:right-[-8%]",
+    delay: "1s",
+    duration: "4.8s"
+  },
+  {
+    title: "Facial Sculptor",
+    detail: "Anti-aging expert",
+    icon: Award,
+    className:
+      "left-[-1%] bottom-[13%] sm:left-[-5%] sm:bottom-[15%] lg:left-[-8%]",
+    delay: "1.8s",
+    duration: "4.4s"
+  },
+  {
+    title: "Smile Design",
+    detail: "Aesthetics master",
+    icon: SmilePlus,
+    className:
+      "right-[0%] bottom-[14%] sm:right-[-3%] sm:bottom-[16%] lg:right-[-5%]",
+    delay: "2.5s",
+    duration: "5.1s"
+  }
+] as const;
+
 export default function AboutPage() {
   return (
-    <main className="bg-surface-container-lowest px-6 pb-14 pt-[88px] md:px-14 md:pb-16 md:pt-[104px]">
+    <main id="main-content" className="bg-surface-container-lowest px-6 pb-14 pt-[88px] md:px-14 md:pb-16 md:pt-[104px]">
       <section className="mx-auto max-w-[1080px]">
         <div className="relative mb-14 md:mb-16">
           <div className="relative grid gap-7 lg:grid-cols-[0.94fr_1.06fr] lg:items-start lg:gap-8">
@@ -254,6 +293,106 @@ export default function AboutPage() {
                 patient outcomes.
               </p>
             </div>
+          </div>
+        </div>
+
+        <div className="my-16 border-t border-slate-100 md:my-20" />
+
+        <div className="grid gap-7 lg:grid-cols-[1.02fr_0.98fr] lg:items-center lg:gap-8">
+          <div className="lg:hidden">
+            <h2 className="font-hero-heading text-[32px] font-extrabold leading-[1.06] text-text-dark sm:text-[36px] md:text-[42px]">
+              Dr. Priyanka Tidke
+            </h2>
+            <p className="mt-4 font-label-sm text-[12px] font-bold uppercase tracking-[0.16em] text-primary-container sm:text-[13px] md:text-[14px]">
+              Medical Cosmetologist & Facial Aesthetics Specialist
+            </p>
+          </div>
+
+          <div className="max-w-[540px] lg:pr-4">
+            <h2 className="hidden font-hero-heading text-[34px] font-extrabold leading-[1.06] text-text-dark lg:block lg:text-[50px]">
+              Dr. Priyanka Tidke
+            </h2>
+            <p className="hidden font-label-sm text-[14px] font-bold uppercase tracking-[0.18em] text-primary-container lg:mt-6 lg:block">
+              Medical Cosmetologist & Facial Aesthetics Specialist
+            </p>
+
+            <div className="mt-2 flex flex-wrap gap-3 sm:mt-4 lg:mt-6">
+              {[
+                "Nonsurgical facelift",
+                "Botox & facial fillers",
+                "Smile designing",
+                "Advanced skin & hair care"
+              ].map((focus) => (
+                <span
+                  key={focus}
+                  className="inline-flex rounded-full border border-primary-container/10 bg-white px-4 py-2 font-body-main text-[14px] font-medium text-text-dark shadow-soft"
+                >
+                  {focus}
+                </span>
+              ))}
+            </div>
+
+            <div className="mt-7 space-y-4 font-body-main text-[16px] leading-7 text-text-dark/95">
+              <p>
+                Dr. Priyanka Tidke is a skilled cosmetic dental surgeon and medical cosmetologist with over 17 years of clinical experience. She completed her postgraduate diploma in medical cosmetology and trichology from the Indian Institute of Cosmetology, and holds a Master&apos;s in Facial Aesthetics & Micropigmentation (permanent makeup).
+              </p>
+              <p>
+                As a facial sculptor, smile designer, and anti-aging expert, she specializes in advanced non-surgical aesthetics, including non-surgical facelifts, Botox, and dermal fillers to deliver natural-looking, customized facial rejuvenation.
+              </p>
+              <p>
+                To bring global best practices to her patients, Dr. Priyanka also completed advanced training in dermatology under the British Association of Dermatologists (NHS Health Education England), combining clinical precision with aesthetic artistry.
+              </p>
+            </div>
+          </div>
+
+          <div className="relative mx-auto w-full max-w-[480px] px-3 pt-4 sm:px-4 lg:px-0 lg:pt-0">
+            <div className="absolute left-[8%] top-[10%] h-[72%] w-[72%] rounded-[42px] bg-white shadow-[0_28px_80px_rgba(108,60,17,0.14)]" />
+            <div className="absolute inset-[6%] rounded-[44px] border border-dashed border-white" />
+            <div className="absolute left-3 top-3 hidden h-20 w-20 items-center justify-center rounded-full border border-white/70 bg-white/85 shadow-soft md:flex">
+              <SmilePlus className="h-9 w-9 text-cyan-soft" aria-hidden="true" />
+            </div>
+
+            <div className="relative rounded-[44px] border border-white/85 bg-white/94 p-4 shadow-[0_26px_70px_rgba(108,60,17,0.18)] backdrop-blur-sm">
+              <div className="relative overflow-hidden rounded-[34px] border border-primary-container/10 bg-[linear-gradient(160deg,#fff7ef_0%,#fffdfa_100%)]">
+                <div className="absolute left-[-6%] top-[-3%] h-40 w-40 rounded-full bg-white/55 blur-3xl" />
+                <Image
+                  src="/images/gallery/dr-priyanka-tidke.webp"
+                  alt="Dr. Priyanka Tidke portrait"
+                  width={620}
+                  height={760}
+                  className="relative z-10 h-auto w-full object-cover"
+                />
+              </div>
+            </div>
+
+            {priyankaAchievements.map((achievement) => {
+              const Icon = achievement.icon;
+
+              return (
+                <div
+                  key={achievement.title}
+                  className={`about-bounce absolute z-20 w-[128px] rounded-[18px] border border-primary-container/10 bg-white px-2.5 py-2.5 shadow-[0_18px_36px_rgba(108,60,17,0.16)] sm:w-[174px] sm:rounded-[22px] sm:px-3.5 sm:py-3.5 ${achievement.className}`}
+                  style={{
+                    animationDelay: achievement.delay,
+                    animationDuration: achievement.duration
+                  }}
+                >
+                  <div className="flex items-start gap-3">
+                    <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary-container/10 text-primary-container sm:h-9 sm:w-9">
+                      <Icon className="h-3 w-3 sm:h-3.5 sm:w-3.5" aria-hidden="true" />
+                    </span>
+                    <div className="pt-0.5">
+                      <p className="font-body-main text-[10px] font-bold leading-4 text-primary-container sm:text-[13px] sm:leading-5">
+                        {achievement.title}
+                      </p>
+                      <p className="mt-0.5 font-body-main text-[9px] font-semibold leading-3.5 text-primary-container/82 sm:text-[12px] sm:leading-4">
+                        {achievement.detail}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

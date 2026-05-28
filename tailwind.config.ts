@@ -10,12 +10,12 @@ const config: Config = {
     extend: {
       colors: {
         "page-bg": "#FEFCFF",
-        "primary-container": "#B85F0D",
-        "primary-dark": "#8F4506",
+        "primary-container": "#A55308",
+        "primary-dark": "#7F3E04",
         "cyan-soft": "#F9A137",
         cyan: "#E57F1B",
-        "text-dark": "#6C3C11",
-        "text-muted": "#8B6645",
+        "text-dark": "#5A2F0B",
+        "text-muted": "#6A472A",
         "section-light": "#FFF6EA",
         "surface-container-lowest": "#FEFCFF",
         "surface-container-low": "#FFF0DA",
