@@ -222,27 +222,19 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
         rel="preload"
         as="image"
         href={data.heroImage}
-        imageSrcSet={`${data.heroImage.replace(/\.webp$/, "-mobile.webp")} 640w, ${data.heroImage} 1200w`}
-        imageSizes="(max-width: 640px) 640px, 1200px"
         fetchPriority="high"
       />
       <main id="main-content" className="bg-surface-container-lowest pt-[80px]">
         <section className="relative overflow-hidden bg-[#fff8ef]">
           <div className="absolute inset-0">
-            <picture>
-              <source
-                media="(max-width: 640px)"
-                srcSet={data.heroImage.replace(/\.webp$/, "-mobile.webp")}
-              />
-              <img
-                src={data.heroImage}
-                alt={data.heroAlt}
-                className="absolute inset-0 h-full w-full object-cover"
-                style={{ objectPosition: data.heroObjectPosition ?? "50% 50%" }}
-                fetchPriority="high"
-                loading="eager"
-              />
-            </picture>
+            <img
+              src={data.heroImage}
+              alt={data.heroAlt}
+              className="absolute inset-0 h-full w-full object-cover"
+              style={{ objectPosition: data.heroObjectPosition ?? "50% 50%" }}
+              fetchPriority="high"
+              loading="eager"
+            />
             <div className={data.heroGradientClassName ?? "absolute inset-0 bg-[linear-gradient(90deg,rgba(52,27,7,0.94)_0%,rgba(90,47,11,0.76)_46%,rgba(255,248,239,0.12)_100%)]"} />
           </div>
 

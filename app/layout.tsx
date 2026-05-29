@@ -9,7 +9,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
+import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import { BackToTopFloat } from "@/components/landing/back-to-top-float";
 import { Footer } from "@/components/landing/footer";
 import { Header } from "@/components/landing/header";
@@ -91,10 +91,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={siteConfig.language} data-scroll-behavior="smooth" className={plusJakartaSans.variable}>
-      <head>
-        {/* Analytics Temporarily Removed for Performance Debugging */}
-      </head>
+      <head />
       <body id="page-top" className={plusJakartaSans.className}>
+        <GoogleTagManager gtmId="GTM-PXN97FFN" />
+        <GoogleAnalytics gaId="G-5ZQYRLSYZZ" />
         <a href="#main-content" className="skip-link">
           Skip to content
         </a>

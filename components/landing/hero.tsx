@@ -8,8 +8,6 @@ export function Hero() {
         rel="preload"
         as="image"
         href={siteConfig.images.heroCheckup}
-        imageSrcSet={`${siteConfig.images.heroCheckup.replace(/\.webp$/, "-mobile.webp")} 640w, ${siteConfig.images.heroCheckup} 1200w`}
-        imageSizes="(max-width: 640px) 640px, 1200px"
         fetchPriority="high"
       />
       <section className="relative overflow-hidden bg-white px-6 pb-12 pt-8 md:px-10 lg:px-14 lg:pb-14 lg:pt-10">
@@ -61,19 +59,13 @@ export function Hero() {
             />
 
             <div className="relative aspect-[10/11] overflow-hidden rounded-[30px] border border-primary-container/28 bg-surface-container-low shadow-[0_30px_70px_rgba(108,60,17,0.13)] md:aspect-[9/11] lg:aspect-[10/11]">
-              <picture>
-                <source
-                  media="(max-width: 640px)"
-                  srcSet={siteConfig.images.heroCheckup.replace(/\.webp$/, "-mobile.webp")}
-                />
-                <img
-                  src={siteConfig.images.heroCheckup}
-                  alt="Dentist explaining dental care to a patient in a modern clinic"
-                  className="absolute inset-0 h-full w-full object-cover object-[48%_50%]"
-                  fetchPriority="high"
-                  loading="eager"
-                />
-              </picture>
+              <img
+                src={siteConfig.images.heroCheckup}
+                alt="Dentist explaining dental care to a patient in a modern clinic"
+                className="absolute inset-0 h-full w-full object-cover object-[48%_50%]"
+                fetchPriority="high"
+                loading="eager"
+              />
             </div>
 
             {/* Trust Badge */}
