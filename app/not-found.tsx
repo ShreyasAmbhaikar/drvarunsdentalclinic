@@ -6,9 +6,9 @@ export default function NotFound() {
   return (
     <main id="main-content" className="bg-page-bg px-6 pb-16 pt-[108px] md:px-14 md:pb-20 md:pt-[132px]">
       <section className="mx-auto flex min-h-[68vh] max-w-[980px] flex-col items-center justify-center text-center">
-        <div className="relative flex w-full max-w-[680px] items-center justify-center">
+        <div className="relative flex w-full max-w-[480px] items-center justify-center">
           <div
-            className="absolute left-1/2 top-1/2 h-[clamp(210px,34vw,360px)] w-[clamp(340px,92vw,760px)] -translate-x-1/2 -translate-y-1/2 bg-primary-container shadow-[0_28px_70px_rgba(184,95,13,0.22)]"
+            className="absolute left-1/2 top-1/2 h-[clamp(130px,22vw,220px)] w-[clamp(240px,68vw,460px)] -translate-x-1/2 -translate-y-1/2 bg-primary-container shadow-[0_24px_50px_rgba(184,95,13,0.18)]"
             style={{ borderRadius: "42% 58% 49% 51% / 56% 44% 58% 42%" }}
             aria-hidden="true"
           />
@@ -18,11 +18,11 @@ export default function NotFound() {
             width={1149}
             height={457}
             priority
-            className="tooth-float relative z-10 h-auto w-full max-w-[650px] drop-shadow-[0_22px_38px_rgba(108,60,17,0.22)]"
+            className="tooth-float relative z-10 h-auto w-full max-w-[340px] md:max-w-[420px] drop-shadow-[0_16px_28px_rgba(108,60,17,0.18)]"
           />
         </div>
 
-        <h1 className="mt-7 font-section-heading text-[34px] font-extrabold leading-tight text-text-dark md:mt-9 md:text-[48px]">
+        <h1 className="mt-14 font-section-heading text-[30px] font-extrabold leading-tight text-text-dark md:mt-20 md:text-[44px]">
           Sorry, page not found.
         </h1>
         <p className="mt-4 max-w-[620px] font-body-main text-[16px] leading-7 text-text-muted md:text-[17px]">

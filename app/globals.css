@@ -16,6 +16,28 @@
 
 * {
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #B85F0D #fff8f0;
+}
+
+/* Custom scrollbar styles matching site theme */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff8f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B85F0D;
+  border-radius: 9999px;
+  border: 2px solid #fff8f0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9c4f09;
 }
 
 html {

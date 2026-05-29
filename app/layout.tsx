@@ -86,7 +86,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang={siteConfig.language}>
+    <html lang={siteConfig.language} data-scroll-behavior="smooth">
       <body id="page-top">
         <a href="#main-content" className="skip-link">
           Skip to content

@@ -30,11 +30,6 @@ function getAvatarColor(name: string) {
 
 export default function TestimonialsPage() {
   const testimonials = siteConfig.testimonials;
-  
-  // Distribute testimonials across 3 columns to achieve a masonry grid effect
-  const col1 = testimonials.filter((_, idx) => idx % 3 === 0);
-  const col2 = testimonials.filter((_, idx) => idx % 3 === 1);
-  const col3 = testimonials.filter((_, idx) => idx % 3 === 2);
 
   return (
     <main
@@ -54,7 +49,7 @@ export default function TestimonialsPage() {
       <div className="absolute top-[8%] left-[-10%] h-[450px] w-[450px] rounded-full bg-[#fbdca7]/25 blur-[120px] pointer-events-none" />
       <div className="absolute top-[40%] right-[-12%] h-[600px] w-[600px] rounded-full bg-[#f9a137]/12 blur-[150px] pointer-events-none" />
       <div className="absolute bottom-[2%] left-[3%] h-[400px] w-[400px] rounded-full bg-[#ffd8a8]/22 blur-[110px] pointer-events-none" />
-
+ 
       <section className="relative z-10 mx-auto max-w-[1140px]">
         {/* Header Section */}
         <div className="mb-14 text-center">
@@ -65,68 +60,72 @@ export default function TestimonialsPage() {
             </span>
           </div>
           <h1 className="font-hero-heading text-[36px] font-extrabold leading-[1.08] text-text-dark md:text-[54px]">
-            More than 1,000+ Happy Customers
+            More than 10,000+ Happy Customers
           </h1>
           <p className="mx-auto mt-4 max-w-[620px] font-body-main text-[15px] leading-7 text-text-muted">
             Read authentic feedback from families who trust {siteConfig.name} for calm, 
             advanced dental care and implantologist treatments in Viman Nagar, Pune.
           </p>
         </div>
-
+ 
         {/* Masonry Columns Grid */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <div className="flex flex-col">
-            {col1.map((item) => (
-              <TestimonialCard key={item.name} item={item} />
-            ))}
-          </div>
-          <div className="flex flex-col">
-            {col2.map((item) => (
-              <TestimonialCard key={item.name} item={item} />
-            ))}
-          </div>
-          <div className="flex flex-col col-span-1 md:col-span-2 lg:col-span-1">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
-              {col3.map((item) => (
-                <TestimonialCard key={item.name} item={item} />
-              ))}
-            </div>
-          </div>
+        <div className="columns-1 gap-6 md:columns-2 lg:columns-3 [column-fill:_balance]">
+          {testimonials.map((item) => (
+            <TestimonialCard key={item.name} item={item} />
+          ))}
         </div>
       </section>
     </main>
   );
 }
 
+function truncateQuote(text: string, maxLength: number) {
+  if (text.length <= maxLength) {
+    return text;
+  }
+  return `${text.slice(0, maxLength).trimEnd()}...`;
+}
+
 function TestimonialCard({ item }: { item: typeof siteConfig.testimonials[number] }) {
+  const isLocalGuide = item.name.includes("Local Guide");
+  const displayName = item.name.replace(" (Local Guide)", "");
   const hasAvatarFile = item.image.startsWith("/images/testimonial/");
-  const initials = item.name.split(" ").map(n => n[0]).join("").toUpperCase();
-  const handle = `@${item.name.toLowerCase().replace(/\s+/g, "")}`;
+  const initials = displayName.split(" ").map(n => n[0]).join("").toUpperCase();
+  const handle = `@${displayName.toLowerCase().replace(/\s+/g, "")}`;
 
   return (
-    <article className="group mb-6 rounded-[22px] border border-[#f2e1cb] bg-white p-6 shadow-[0_16px_36px_rgba(133,82,32,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:bg-[#fffcf8] hover:border-[#e58a21]/50 hover:shadow-[0_24px_48px_rgba(165,83,8,0.12)]">
+    <article className="group mb-6 break-inside-avoid rounded-[22px] border border-[#f2e1cb] bg-white p-6 shadow-[0_16px_36px_rgba(133,82,32,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:bg-[#fffcf8] hover:border-[#e58a21]/50 hover:shadow-[0_24px_48px_rgba(165,83,8,0.12)]">
       {/* Top Row: Info & Rating */}
       <div className="mb-4 flex items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
+        <div className="flex min-w-0 items-center gap-3">
           {hasAvatarFile ? (
-            <div className="h-11 w-11 shrink-0 overflow-hidden rounded-full border border-[#ecd7bd] bg-[#fff4e8] transition-colors duration-300 group-hover:border-[#e58a21]">
+            <div className={`h-11 w-11 shrink-0 transition-colors duration-300 ${
+              isLocalGuide
+                ? "overflow-visible rounded-none border-0 bg-transparent"
+                : "overflow-hidden rounded-full border border-[#ecd7bd] bg-[#fff4e8] group-hover:border-[#e58a21]"
+            }`}>
               <Image
                 src={item.image}
-                alt={`${item.name} profile photo`}
+                alt={`${displayName} profile photo`}
                 width={44}
                 height={44}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
               />
             </div>
           ) : (
-            <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full font-bold text-[13px] transition-transform duration-300 group-hover:scale-105 ${getAvatarColor(item.name)}`}>
+            <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full font-bold text-[13px] transition-transform duration-300 group-hover:scale-105 ${getAvatarColor(displayName)}`}>
               {initials}
             </div>
           )}
           <div className="min-w-0">
             <h2 className="font-card-title text-[15px] font-bold leading-tight text-text-dark truncate">
-              {item.name}
+              {displayName}
             </h2>
+            {isLocalGuide && (
+              <p className="font-label-sm text-[9.5px] font-extrabold uppercase tracking-wider text-[#e58a21] mt-0.5">
+                Local Guide
+              </p>
+            )}
             <p className="font-body-main text-[11px] text-text-muted mt-0.5 truncate">
               {handle}
             </p>
@@ -154,10 +153,10 @@ function TestimonialCard({ item }: { item: typeof siteConfig.testimonials[number
           }}
         />
         <p 
-          className="relative z-10 font-body-main text-[14px] text-text-muted leading-[28px]"
+          className="relative z-10 font-body-main text-[14px] text-text-muted leading-[28px] whitespace-pre-line"
           style={{ paddingTop: "2px" }}
         >
-          {item.quote}
+          {truncateQuote(item.quote, 400)}
         </p>
       </div>
     </article>

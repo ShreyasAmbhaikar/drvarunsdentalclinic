@@ -19,26 +19,26 @@ export function Footer() {
         {/* Top Section: Brand Info, Quick Links & Contact Details */}
         <div className="grid grid-cols-1 gap-x-12 gap-y-10 pb-10 border-b border-[#f3d2ac]/20 md:grid-cols-3">
           <div className="min-w-0">
-            <div className="mb-5 flex min-w-0 items-center gap-3">
-              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/95 p-1 shadow-soft">
+            <div className="mb-5 flex min-w-0 items-center gap-3.5">
+              <span className="flex h-[68px] w-[68px] items-center justify-center rounded-full bg-white/95 p-2 shadow-soft">
                 <Image
                   src={siteConfig.images.logo}
-                  width={44}
-                  height={38}
+                  width={60}
+                  height={52}
                   alt={`${siteConfig.name} logo`}
-                  className="h-10 w-auto object-contain"
+                  className="h-[52px] w-auto object-contain"
                 />
               </span>
-              <span className="flex min-w-0 flex-col leading-none">
+              <span className="flex min-w-0 flex-col justify-center leading-tight">
                 <span className="break-words font-section-heading text-[20px] font-extrabold tracking-tight text-white sm:text-[22px]">
                   Dr. Varun&apos;s
                 </span>
-                <span className="mt-1 font-label-sm text-[11px] font-extrabold uppercase tracking-[0.2em] text-[#f3d2ac]">
+                <span className="break-words font-section-heading text-[20px] font-extrabold tracking-tight text-white sm:text-[22px]">
                   Dental Clinic
                 </span>
               </span>
             </div>
-            <p className="max-w-[320px] font-body-main text-[14px] leading-6 text-white/80">
+            <p className="max-w-[320px] font-body-main text-[14px] leading-6 text-white/90">
               {siteConfig.tagline}
             </p>
           </div>
@@ -46,7 +46,7 @@ export function Footer() {
           <FooterColumn title="Quick Links" className="min-w-0">
             {siteConfig.nav.map((item) => (
               <li key={item.href}>
-                <Link className="text-white/80 transition-colors hover:text-white" href={item.href}>
+                <Link className="text-[#FFF0DB] transition-colors hover:text-white hover:underline" href={item.href}>
                   {item.label}
                 </Link>
               </li>
@@ -54,52 +54,51 @@ export function Footer() {
           </FooterColumn>
 
           <FooterColumn title="Contact Us" className="min-w-0">
-            <li className="flex min-w-0 gap-3 text-white/80">
-              <Phone className="mt-1 h-4 w-4 shrink-0 text-white/70" aria-hidden="true" />
-              <a href={phoneHref} className="text-white/80 break-words transition-colors hover:text-white">
+            <li className="flex min-w-0 gap-3 text-white/90">
+              <Phone className="mt-1 h-4 w-4 shrink-0 text-[#FFF0DB]/95" aria-hidden="true" />
+              <a href={phoneHref} className="text-[#FFF0DB] break-words transition-colors hover:text-white hover:underline">
                 {siteConfig.phone}
               </a>
             </li>
-            <li className="flex min-w-0 gap-3 text-white/80">
-              <Mail className="mt-1 h-4 w-4 shrink-0 text-white/70" aria-hidden="true" />
-              <a href={`mailto:${siteConfig.email}`} className="text-white/80 break-words transition-colors hover:text-white">
+            <li className="flex min-w-0 gap-3 text-white/90">
+              <Mail className="mt-1 h-4 w-4 shrink-0 text-[#FFF0DB]/95" aria-hidden="true" />
+              <a href={`mailto:${siteConfig.email}`} className="text-[#FFF0DB] break-words transition-colors hover:text-white hover:underline">
                 {siteConfig.email}
               </a>
             </li>
-            <li className="flex min-w-0 gap-3 text-white/80">
-              <MapPin className="mt-1 h-4 w-4 shrink-0 text-white/70" aria-hidden="true" />
+            <li className="flex min-w-0 gap-3 text-white/90">
+              <MapPin className="mt-1 h-4 w-4 shrink-0 text-[#FFF0DB]/95" aria-hidden="true" />
               <a
                 href={siteConfig.businessListingUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="text-white/80 break-words transition-colors hover:text-white"
+                className="text-[#FFF0DB] break-words transition-colors hover:text-white hover:underline"
               >
                 {siteConfig.address.streetAddress}, {siteConfig.address.addressLocality}
               </a>
             </li>
-            <li className="flex min-w-0 gap-3 text-white/80">
-              <Clock className="mt-1 h-4 w-4 shrink-0 text-white/70" aria-hidden="true" />
-              <span className="break-words">{siteConfig.hours}</span>
+            <li className="flex min-w-0 gap-3 text-white/90">
+              <Clock className="mt-1 h-4 w-4 shrink-0 text-[#FFF0DB]/95" aria-hidden="true" />
+              <span className="break-words text-[#FFF0DB]">{siteConfig.hours}</span>
             </li>
           </FooterColumn>
         </div>
 
-        {/* Middle Section: Categorized Treatments */}
-        <div className="py-10 border-b border-[#f3d2ac]/20">
-          <h3 className="mb-6 font-card-title text-[18px] font-bold text-[#f3d2ac] uppercase tracking-wider">
+        <div className="py-10 border-b border-[#FFF0DB]/10">
+          <h3 className="mb-6 font-card-title text-[18px] font-extrabold text-[#FFF0DB] uppercase tracking-wider">
             Our Treatments
           </h3>
           <div className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
             {categorizedTreatments.map((category) => (
-              <div key={category.name} className="space-y-4 border-t border-[#f3d2ac]/10 pt-6 sm:border-t-0 sm:pt-0">
-                <h4 className="font-card-title text-[13px] font-bold uppercase tracking-wider text-[#f3d2ac]/90">
+              <div key={category.name} className="space-y-4 border-t border-[#FFF0DB]/10 pt-6 sm:border-t-0 sm:pt-0">
+                <h4 className="font-card-title text-[13px] font-bold uppercase tracking-wider text-white">
                   {category.name}
                 </h4>
-                <ul className="space-y-2.5 font-body-main text-[13.5px] leading-5 text-white/80">
+                <ul className="space-y-2.5 font-body-main text-[13.5px] leading-5">
                   {category.items.map((treatment) => (
                     <li key={treatment.href}>
                       <Link
-                        className="transition-colors hover:text-white hover:underline underline-offset-4"
+                        className="text-[#FFF0DB] transition-colors hover:text-white hover:underline underline-offset-4"
                         href={treatment.href}
                       >
                         {treatment.title}
@@ -145,8 +144,8 @@ function FooterColumn({
 }) {
   return (
     <div className={className}>
-      <h3 className="mb-4 font-card-title text-[18px] font-bold text-[#f3d2ac] uppercase tracking-wider">{title}</h3>
-      <ul className="space-y-2.5 font-body-main text-[14px] leading-6 text-white/90">
+      <h3 className="mb-4 font-card-title text-[18px] font-extrabold text-[#FFF0DB] uppercase tracking-wider">{title}</h3>
+      <ul className="space-y-2.5 font-body-main text-[14px] leading-6 text-white/95">
         {children}
       </ul>
     </div>

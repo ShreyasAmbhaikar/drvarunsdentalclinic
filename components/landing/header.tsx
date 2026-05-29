@@ -49,22 +49,22 @@ export function Header() {
   }, [isMobileTreatmentsOpen]);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur-md">
-      <div className="mx-auto flex h-[68px] max-w-[1440px] items-center justify-between px-5 sm:px-6 lg:px-14">
-        <Link href="/" className="flex min-w-0 items-center gap-2.5 sm:gap-3" aria-label={siteConfig.name}>
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-100/40 bg-white/95 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.05)]">
+      <div className="mx-auto flex h-[80px] max-w-[1440px] items-center justify-between px-5 sm:px-6 lg:px-14">
+        <Link href="/dental-clinic-viman-nagar" className="flex min-w-0 items-center gap-2.5 sm:gap-3" aria-label={siteConfig.name}>
           <Image
             src={siteConfig.images.logo}
-            width={52}
-            height={44}
+            width={56}
+            height={48}
             alt={`${siteConfig.name} logo`}
-            className="h-9 w-auto shrink-0 object-contain sm:h-10"
+            className="h-10 w-auto shrink-0 object-contain sm:h-12"
             priority
           />
-          <span className="flex flex-col leading-none">
-            <span className="font-section-heading text-[16px] font-extrabold tracking-tight text-text-dark sm:text-[19px]">
+          <span className="flex flex-col justify-center leading-tight">
+            <span className="font-section-heading text-[15px] font-extrabold tracking-tight text-text-dark sm:text-[17px]">
               Dr. Varun&apos;s
             </span>
-            <span className="mt-1 font-label-sm text-[10px] font-extrabold uppercase tracking-[0.22em] text-primary-container sm:text-[11px]">
+            <span className="font-section-heading text-[15px] font-extrabold tracking-tight text-text-dark sm:text-[17px]">
               Dental Clinic
             </span>
           </span>

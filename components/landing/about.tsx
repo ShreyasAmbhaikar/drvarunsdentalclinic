@@ -15,7 +15,7 @@ const aboutImageMask =
 export function About() {
   return (
     <section id="about" className="deferred-section bg-white px-6 py-14 md:px-14 md:py-16">
-      <div className="mx-auto grid max-w-[1140px] grid-cols-1 items-center gap-8 md:grid-cols-2 lg:gap-10">
+      <div className="mx-auto grid max-w-[980px] grid-cols-1 items-center gap-8 md:grid-cols-2 lg:gap-10">
         <div className="flex flex-col">
           <h2 className="mb-4 font-section-heading text-[29px] font-extrabold leading-[1.12] text-text-dark md:text-[38px]">
             Achieve a Confident

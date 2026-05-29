@@ -218,7 +218,7 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
 
   return (
     <>
-      <main id="main-content" className="bg-surface-container-lowest pt-[68px]">
+      <main id="main-content" className="bg-surface-container-lowest pt-[80px]">
         <section className="relative overflow-hidden bg-[#fff8ef]">
           <div className="absolute inset-0">
             <Image

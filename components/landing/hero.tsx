@@ -4,8 +4,8 @@ import { siteConfig } from "@/lib/site-config";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-white px-6 pb-12 pt-8 md:px-10 lg:px-14 lg:pb-14 lg:pt-10">
-      <div className="mx-auto grid max-w-[1180px] items-center gap-8 md:grid-cols-[minmax(0,1fr)_minmax(280px,38vw)] lg:grid-cols-[minmax(0,1fr)_minmax(0,410px)] lg:gap-7 xl:grid-cols-[minmax(0,1fr)_minmax(0,430px)] xl:gap-8">
+    <section className="relative flex min-h-[calc(100vh-80px)] items-center justify-center overflow-hidden bg-white px-6 pb-12 pt-8 md:px-10 lg:px-14 lg:pb-14 lg:pt-10">
+      <div className="mx-auto grid w-full max-w-[1180px] items-center gap-8 md:grid-cols-[minmax(0,1fr)_minmax(280px,38vw)] lg:grid-cols-[minmax(0,1fr)_minmax(0,410px)] lg:gap-7 xl:grid-cols-[minmax(0,1fr)_minmax(0,430px)] xl:gap-8">
         {/* Left Content */}
         <div className="relative z-20 flex max-w-[590px] flex-col">
           <h1 className="font-hero-heading text-[36px] font-extrabold leading-[1.08] text-text-dark sm:text-[44px] md:text-[42px] lg:text-[50px]">

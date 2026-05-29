@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <>
-      <main id="main-content" className="pt-[68px]">
+      <main id="main-content" className="pt-[80px]">
         <Hero />
         <Services />
         <BeforeAfterSmile />

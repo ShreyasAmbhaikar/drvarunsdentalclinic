@@ -255,60 +255,60 @@ export const siteConfig = {
         "Satisfied with the overall root canal treatment. Doctor was very supportive and knowledgeable. Thank you so much."
     },
     {
-      name: "Rahul Dalal",
+      name: "Rahul Dalal (Local Guide)",
       image: "/images/testimonial/rahul-dalal-review.webp",
-      alt: "Rahul Dalal testimonial profile photo",
+      alt: "Rahul Dalal (Local Guide) testimonial profile photo",
       rating: 5,
       quote:
         "I had to undergo a root canal treatment. Dr. Varun is patient and good with the analysis of the problem. The clinic is very neat and punctual with the timings as well. The best thing I came across was that they explain things in detail and do not hurry or force us to make a decision. Recommended."
     },
     {
-      name: "Devon Lane",
-      image: "/images/dental-patient-avatar-1.webp",
-      alt: "Devon Lane testimonial profile photo",
+      name: "Shantanu Jagirdar official",
+      image: "/images/testimonial/shantanu-jagirdar.webp",
+      alt: "Shantanu Jagirdar official testimonial profile photo",
       rating: 5,
       quote:
-        "Outstanding clinical treatment and patient-first approach. Every step of my alignment procedure was explained transparently. Dr. Varun is highly professional and the clinic hygiene standards are top-notch."
+        "I had a wonderful experience with Dr. Varun Tomke and I'm genuinely happy with the results. The dental cap work done for me is absolutely excellent — the shape, fitting, and appearance look so natural.\n\nThroughout the treatment, Dr. Varun was professional, patient, and explained everything clearly. The clinic was very hygienic and well-managed. I would highly recommend Dr. Varun Tomke to anyone looking for quality dental aesthetics!✨🦷"
     },
     {
-      name: "Jane Cooper",
-      image: "/images/dental-patient-avatar-2.webp",
-      alt: "Jane Cooper testimonial profile photo",
+      name: "Newton Khaira (Local Guide)",
+      image: "/images/testimonial/newton-khaira.webp",
+      alt: "Newton Khaira (Local Guide) testimonial profile photo",
       rating: 5,
       quote:
-        "Dr. Priyanka Tidke is absolutely incredible. I visited her for hair and skin care treatment, and the cosmetological results have exceeded my expectations. She is patient, extremely thorough, and very gentle."
+        "This was one of the most peaceful, painless and professional dental treatment I have ever had. There was pus and other issues. It needed 5-6 sittings. It was all extremely well managed by Dr Varun Tomke. Thanks."
     },
     {
-      name: "Eleanor Pena",
-      image: "/images/dental-patient-avatar-3.webp",
-      alt: "Eleanor Pena testimonial profile photo",
+      name: "Santosh Sandbhor (Local Guide)",
+      image: "/images/testimonial/santosh-sandbhor.webp",
+      alt: "Santosh Sandbhor (Local Guide) testimonial profile photo",
       rating: 5,
       quote:
-        "I had my root canal and dental filling done at Dr. Varun's Dental Clinic. The procedure was completely painless. Dr. Varun's gentle touch and reassuring care made a stressful visit very comfortable."
+        "If it is a dental issue it needs to be Dr. Varun's Dental Clinic for me and my family. Very good treatment and advice. I did a root canal"
     },
     {
-      name: "Robert Fox",
-      image: "/images/dental-patient-avatar-4.webp",
-      alt: "Robert Fox testimonial profile photo",
+      name: "Tushar Tanpure",
+      image: "/images/testimonial/tushar-tanpure.webp",
+      alt: "Tushar Tanpure testimonial profile photo",
       rating: 5,
       quote:
-        "Exceptional care. The team is warm and welcoming, and the clinic is equipped with the latest modern dental technologies. My smile makeover has given me a massive boost in confidence."
+        "I had a great experience at Dr. Varun's Dental Clinic in Viman Nagar, Pune. I visited for my Root Canal Treatment. Dr. Varun is extremely professional and explains the treatment clearly. The clinic is very clean and well-maintained. If you are looking for the best dentist in Viman Nagar, I highly recommend this clinic for quality dental care."
     },
     {
-      name: "Leslie Alexander",
-      image: "/images/dental-patient-avatar-1.webp",
-      alt: "Leslie Alexander testimonial profile photo",
+      name: "Kaveri Lohar",
+      image: "/images/testimonial/kaveri-lohar.webp",
+      alt: "Kaveri Lohar testimonial profile photo",
       rating: 5,
       quote:
-        "Very professional and punctual with timings. The dental implant procedure was handled with absolute precision. Reassuring post-treatment support and clean, sanitized clinic space in Viman Nagar."
+        "I visited for my wisdom tooth extraction treatment. well maintained clinic and staff behaviour was also good. Highly recommended for your all dental treatments."
     },
     {
-      name: "Jerome Bell",
-      image: "/images/dental-patient-avatar-2.webp",
-      alt: "Jerome Bell testimonial profile photo",
+      name: "Prerana Tomke",
+      image: "/images/testimonial/prerana-tomke.webp",
+      alt: "Prerana Tomke testimonial profile photo",
       rating: 5,
       quote:
-        "Highly recommended dental and cosmetic clinic in Pune. Both Dr. Varun and Dr. Priyanka are leaders in their fields, providing excellent medical advice and compassionate treatments."
+        "Thank you Dr. Varun for returning my smile back.\n\nThis is the most comfortable dentist office I have ever been to. Thanks to Dr. Varun's absolutely experienced and professional service. Explained everything. I got my root canal, crowning and cleaning treatment which was painless and gentle experience. The clinic was so nice organized and very clean.\n\nI will definitely be returning with friends and family.\n\nI highly recommend the place."
     }
   ],
   faqs: [
@@ -367,7 +367,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const categorizedTreatments = [
   {
-    name: "General & Preventive",
+    name: "General & Preventive Dentistry",
     items: [
       { title: "Dental Tooth Filling", href: "/dental-tooth-filling-in-viman-nagar" },
       { title: "All Gum Care", href: "/all-gum-care-in-viman-nagar" },

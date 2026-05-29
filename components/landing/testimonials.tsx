@@ -93,6 +93,9 @@ function TestimonialCard({
       }
     : undefined;
 
+  const isLocalGuide = testimonial.name.includes("Local Guide");
+  const displayName = testimonial.name.replace(" (Local Guide)", "");
+
   return (
     <article
       className="relative overflow-hidden rounded-[24px] border border-[#ecd7bd] bg-[#fff3e7] p-5 shadow-[0_24px_44px_rgba(133,82,32,0.08)] backdrop-blur md:p-6"
@@ -100,19 +103,28 @@ function TestimonialCard({
     >
       <div className="mb-4 flex items-start justify-between gap-4">
         <div className="flex min-w-0 items-center gap-3">
-          <div className="shrink-0 overflow-hidden rounded-full border border-[#ecd7bd] bg-[#fff4e8]">
+          <div className={`shrink-0 ${
+            isLocalGuide
+              ? "overflow-visible rounded-none border-0 bg-transparent"
+              : "overflow-hidden rounded-full border border-[#ecd7bd] bg-[#fff4e8]"
+          }`}>
             <Image
               src={testimonial.image}
               alt={testimonial.alt}
               width={56}
               height={56}
-              className="h-14 w-14 shrink-0 object-cover"
+              className="h-14 w-14 shrink-0 object-contain"
             />
           </div>
           <div className="min-w-0">
             <h3 className="break-words font-card-title text-[18px] font-bold leading-tight text-text-dark md:text-[20px]">
-              {testimonial.name}
+              {displayName}
             </h3>
+            {isLocalGuide && (
+              <p className="font-label-sm text-[9.5px] font-extrabold uppercase tracking-wider text-[#e58a21] mt-1">
+                Local Guide
+              </p>
+            )}
             <div className="mt-2 flex gap-1.5">
               {Array.from({ length: 5 }, (_, index) => (
                 <Star
@@ -137,7 +149,7 @@ function TestimonialCard({
         </span>
       </div>
 
-      <p className="font-body-main text-[14px] leading-7 text-text-muted">
+      <p className="font-body-main text-[14px] leading-7 text-text-muted whitespace-pre-line">
         {truncateQuote(testimonial.quote, 220)}
       </p>
     </article>
