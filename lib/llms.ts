@@ -18,7 +18,7 @@ ${siteConfig.description}
 ${siteConfig.treatments.map((t) => `- **${t.title}** (${siteConfig.url}${t.href}): ${t.description}`).join("\n")}
 
 ## Useful Navigation Links
-- **Home**: ${siteConfig.url}/
+- **Home**: ${siteConfig.url}/dental-clinic-viman-nagar
 - **About the Clinic**: ${siteConfig.url}/about
 - **Our Services Directory**: ${siteConfig.url}/our-services
 - **Patient Testimonials**: ${siteConfig.url}/testimonials

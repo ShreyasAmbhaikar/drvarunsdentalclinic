@@ -6,201 +6,194 @@ import {
 
 const gumCare: TreatmentPageData = {
   pagePath: "/all-gum-care-in-viman-nagar",
-  metaTitle: "All Gum Care in Viman Nagar | Flap Surgery & Gum Clinic Near Me",
+  metaTitle: "All Gum Care & Preventative Care in Viman Nagar | Clinic Near Me",
   metaDescription:
-    "Get complete gum care in Viman Nagar at Dr. Varun's Dental Clinic. We offer expert tartar cleaning, deep scaling, root planing, curettage, and gum flap surgery.",
-  ogTitle: "All Gum Care & Periodontal Treatment in Viman Nagar, Pune",
+    "Get complete gum care, teeth cleaning, deep scaling, fluoride varnish, and pit & fissure sealants in Viman Nagar at Dr. Varun's Dental Clinic near you.",
+  ogTitle: "All Gum Care & Preventative Dentistry in Viman Nagar, Pune",
   ogDescription:
-    "Protect your smile from gum bleeding, recession, and bone loss. Professional deep curettage, scaling, and gum flap surgery in Viman Nagar, Pune.",
-  structuredPageName: "All Gum Care in Viman Nagar, Pune",
-  breadcrumbName: "Gum Care",
-  h1Lines: ["All Gum Care", "in Viman Nagar,", "Pune"],
-  heroBadge: "Periodontal Gum Protection",
+    "Protect your smile from gum bleeding and tooth decay. Professional scaling, flap surgery, deep curettage, fluoride application, and sealants in Viman Nagar, Pune.",
+  structuredPageName: "All Gum Care & Preventative Dentistry in Viman Nagar, Pune",
+  breadcrumbName: "Gum & Preventive Care",
+  h1Lines: ["All Gum Care", "& Prevention", "in Viman Nagar"],
+  heroBadge: "Gum Protection & Prevention",
   heroBadgeIcon: "sparkles",
   heroIntro:
-    "Protect your teeth from gum bleeding, recession, and bone loss with our complete range of scaling, deep curettage, and gum flap surgeries.",
+    "Protect your teeth from gum bleeding, recession, and cavities with our complete scaling, cleaning, and flap surgery treatments, combined with clinical fluoride varnish and fissure sealants.",
   heroImage: "/images/teeth-cleaning-viman-nagar.webp",
-  heroAlt: "Deep gum scaling and periodontal curettage in Viman Nagar Pune at Dr. Varun's Dental Clinic",
-  ogImageAlt: "Gum Care Treatment in Viman Nagar at Dr. Varun's Dental Clinic",
+  heroAlt: "Deep gum scaling, teeth cleaning, and fluoride application in Viman Nagar Pune at Dr. Varun's Dental Clinic",
+  ogImageAlt: "Gum Care & Preventive Dentistry in Viman Nagar at Dr. Varun's Dental Clinic",
   heroObjectPosition: "48% 50%",
   heroGradientClassName:
     "absolute inset-0 bg-[linear-gradient(90deg,rgba(52,27,7,0.96)_0%,rgba(90,47,11,0.80)_46%,rgba(255,248,239,0.12)_100%)]",
-  ctaLabel: "Book Gum Care Consultation",
-  quickTreatment: "Deep scaling, root planing, subgingival curettage, and surgical gum flap therapy",
-  symptomsKicker: "When should you seek gum care?",
-  symptomsTitle: "Gum infections (gingivitis and periodontitis) should not be left untreated.",
+  ctaLabel: "Book Gum & Preventive Care",
+  quickTreatment: "Teeth cleaning, deep scaling, flap surgery, fluoride varnish, and pit & fissure sealants",
+  symptomsKicker: "When should you seek gum & preventive care?",
+  symptomsTitle: "Preventing decay early and keeping gums healthy around the area.",
   symptomsVisibleCount: 6,
   symptoms: [
     "Bleeding gums while brushing, flossing, or eating hard foods",
     "Gums that look red, swollen, tender, or puffy",
     "Persistent bad breath (halitosis) or sour taste in mouth",
+    "High cavity risk, especially in children with deep grooves in back teeth",
+    "Tooth sensitivity to hot and cold due to enamel erosion",
     "Gum recession, making your teeth look longer",
     "Loose or shifting teeth due to loss of supporting bone",
-    "Pus discharge appearing between teeth and gums",
-    "Spaces or deep pockets developing between your gums and teeth",
-    "Soreness or dull pain deep within the gums"
+    "Visible yellow plaque or hard dark tartar build-up on teeth"
   ],
-  overviewKicker: "What Is All Gum Care?",
-  overviewTitle: "Protecting the foundation of your teeth—the gums and jawbone.",
+  overviewKicker: "What Is All Gum Care & Prevention?",
+  overviewTitle: "Protecting your gums and shielding enamel from decay.",
   overviewParagraphs: [
-    "Gum care (periodontics) focuses on treating infections of the gums, bone, and supporting tissues. Healthy gums form a tight seal around teeth, blocking bacteria. However, plaque and tartar build-up can lead to gingivitis (gum inflammation) and progress to periodontitis (bone loss).",
-    "For early gum disease, we perform deep scaling and root planing (cleaning below the gumline to smoothen root surfaces). For advanced cases where deep periodontal pockets have formed, we offer subgingival curettage (removing infected soft tissue) and gum flap surgery (folding back the gums to clean deep roots and repair bone).",
-    "Our goal is to stop gum infection, halt bone loss, eliminate bad breath, and save your natural teeth from loosening and falling out."
+    "Gum care (periodontics) and preventive dentistry form the core foundation of a lifelong healthy smile. Gums lock teeth securely into place, while enamel acts as a shell protecting them. However, bacterial plaque and tartar build-up can lead to gum infections (gingivitis and periodontitis) and deep cavities if not checked regularly.",
+    "At Dr. Varun's Dental Clinic, we provide complete, customized periodontal treatments including teeth cleaning, deep scaling, root planing (smoothing root surfaces to help gums reattach), subgingival curettage, and gum flap surgery to clean deep-seated bacteria and repair supporting bone.",
+    "To shield teeth from future decay, we also provide advanced preventive applications: clinical-strength fluoride varnish to remineralize weak spots and custom pit and fissure sealants to seal deep chewing grooves in molar teeth, blocking food and cavity-causing plaque from entering."
   ],
-  reasonsTitle: "Gentle, expert periodontal therapy to restore gum health.",
+  reasonsTitle: "Gentle, expert care for healthy gums and cavity-free teeth.",
   reasonsDescription:
-    "From routine scaling to advanced gum surgeries, we provide painless care with premium sterile instruments.",
+    "Patients receive thorough oral evaluations, sterile micro-cleaning, and premium preventive materials.",
   reasons: [
     {
       title: "17+ Years Experience",
-      text: "Dr. Varun Tomke provides comprehensive gum care, diagnosing and treating all stages of periodontal infection."
+      text: "Dr. Varun Tomke carefully diagnoses gum health, applying precise scaling or advanced flap surgery based on your pockets."
     },
     {
-      title: "Painless Gum Therapies",
-      text: "Deep cleaning, curettage, and flap surgeries are performed under local anesthesia for complete comfort."
+      title: "Sterile Teeth Cleaning",
+      text: "We perform professional scaling using advanced ultrasonic devices, clearing plaque and tartar comfortably."
     },
     {
-      title: "Advanced Gum Surgery",
-      text: "We specialize in micro-surgical flap therapy, gum grafting, and bone regeneration for advanced pocket depths."
+      title: "Premium Fluoride & Sealants",
+      text: "We use high-concentration, quick-setting fluoride varnish and durable resin sealants to provide maximum cavity defense."
     },
     {
-      title: "Clear Care Guidelines",
-      text: "Every patient receives personalized home-care guidance, custom mouthwashes, and regular follow-ups."
+      title: "Care Close to You",
+      text: "Our clinic is situated near PNG Jewellers in Viman Nagar, Pune, convenient for patients from nearby areas."
     }
   ],
-  stepsTitle: "Gum care procedures we perform.",
+  stepsTitle: "Our gum and preventive care workflow.",
   steps: [
     {
-      title: "Periodontal Examination & Pocket Charting",
-      text: "We check your gums for swelling and bleeding, and use a small probe to measure the depth of the space (pockets) between your gums and teeth."
+      title: "Detailed Examination & Mapping",
+      text: "We examine teeth for plaque, check gums for bleeding, and evaluate cavity risk and pocket depths using digital X-rays if needed."
     },
     {
-      title: "Deep Scaling & Root Planing",
-      text: "Under local anesthesia if needed, we remove tartar deposits from deep below the gumline and smoothen the root surfaces to help gums reattach."
+      title: "Professional Teeth Cleaning & Scaling",
+      text: "Using gentle ultrasonic scalers, we sweep away all plaque, tartar, and surface stains from your teeth and around the gumline."
     },
     {
-      title: "Subgingival Curettage",
-      text: "We gently remove the diseased soft tissue lining of the gum pockets using specialized curettes, stimulating healthy gum healing."
+      title: "Deep Root Planing & Curettage",
+      text: "If deep gum pockets exist, we clean deep below the gums and smoothen root surfaces under local anesthesia for comfort."
     },
     {
-      title: "Gum Flap Surgery",
-      text: "For deep, non-healing pockets, the gums are surgically separated from teeth to allow direct visualization for cleaning roots and reshaping damaged bone."
+      title: "Fluoride Varnish & Sealants Application",
+      text: "We paint quick-drying fluoride varnish on dry teeth to strengthen enamel, and flow sealants into molar grooves, curing them with a light."
     },
     {
-      title: "Suturing & Gum Dressing",
-      text: "The gums are positioned back and secured with fine dissolving stitches. A soothing protective pack is placed over the area to facilitate healing."
+      title: "Gum Flap Surgery (Only if Advanced)",
+      text: "For advanced bone loss, gums are reflected back to clean deep roots and reshape damaged bone, then secured with fine sutures."
     }
   ],
   procedureImage: "/images/teeth-cleaning-scaling-viman-nagar.webp",
-  procedureImageAlt: "Dentist performing deep gum scaling and cleaning in Viman Nagar",
+  procedureImageAlt: "Dentist performing scaling and teeth cleaning in Viman Nagar clinic",
   procedureImageObjectPosition: "48% 50%",
-  procedureNoteTitle: "How long does it take for gums to heal after surgery?",
+  procedureNoteTitle: "How effective are pit and fissure sealants?",
   procedureNoteText:
-    "Gum healing is very rapid. Stitches are typically removed after 7 to 10 days, and the gums fully mature and tighten around teeth within 3 to 4 weeks.",
-  highlightKicker: "Treatment options for healthy gums",
-  highlightTitle: "Halting infection and saving teeth from bone loss.",
+    "According to clinical studies, sealants prevent up to 80% of cavities in back teeth for several years by acting as a physical block against plaque.",
+  highlightKicker: "Preventive and gum care solutions",
+  highlightTitle: "Protecting the bone foundations and enamel coating of your smile.",
   infoTiles: [
     {
       icon: "shield",
-      title: "Root Planing",
-      text: "Smoothening root surfaces to prevent plaque bacteria from attaching, reducing gum pocket depths naturally."
+      title: "Fluoride Therapy",
+      text: "Clinical application of high-concentration fluoride varnish to remineralize weak spots and reverse early decay."
     },
     {
       icon: "smile",
       title: "Flap Surgery",
-      text: "Surgical access to deep-seated tartar and bone defects, essential for saving loose teeth in advanced periodontitis."
+      text: "Micro-surgical cleaning of deep gum pockets and bone defect repair to save loose teeth from extraction."
     },
     {
       icon: "clock",
-      title: "Deep Curettage",
-      text: "A non-surgical scraping of diseased gum pocket linings to promote clean, healthy tissue regeneration."
+      title: "Fissure Sealants",
+      text: "Durable protective barriers painted on molars to seal deep grooves and prevent food particles from trapping."
     }
   ],
-  benefitsTitle: "Stop gum bleeding, eliminate bad breath, and secure loose teeth.",
+  benefitsTitle: "Stop gum bleeding, prevent deep cavities, and relieve sensitivity.",
   benefitsDescription:
-    "Periodontal gum care protects the jawbone, eliminates chronic bad breath, and reduces the risk of system-wide inflammatory diseases.",
+    "Active gum treatments combined with enamel-strengthening shields prevent painful tooth infections and early extractions.",
   benefits: [
-    "Stops gum bleeding during brushing and eating",
-    "Improves persistent bad breath caused by gum bacteria",
-    "Tightens and secures loose or shifting teeth",
-    "Cleans hard-to-reach tartar deposits below the gumline",
-    "Halts bone loss around teeth, preventing early extractions",
-    "Reduces deep gum pockets, making home cleaning easier",
-    "Eliminates painful gum swelling and recurrent abscesses",
-    "Supports overall health by reducing chronic systemic inflammation"
+    "Stops gum bleeding and swelling while brushing or flossing",
+    "Reduces cavity risk in children and adults by up to 80%",
+    "Removes tough tartar build-up and yellow staining effectively",
+    "Restores bone stability and tightens loose teeth",
+    "Reverses early stages of enamel decay and tooth sensitivity",
+    "Eliminates bad breath by clearing deep bacteria pockets",
+    "Protects root surfaces exposed by gum recession",
+    "Provides a sterile, comfortable, and painless patient experience"
   ],
   extra: {
-    kicker: "Periodontal maintenance and support",
-    title: "Gum care requires persistent professional maintenance.",
+    kicker: "Enamel protection and gum maintenance guidelines",
+    title: "How to maintain your preventive shields and gum health.",
     text:
-      "Gums damaged by periodontitis are highly vulnerable to re-infection. Following deep cleaning or flap surgery, patients should visit us every 3 to 4 months for periodontal maintenance cleanings to prevent tartar from returning below the gums.",
-    estimateTitle: "What is the cost of gum treatment?",
+      "Scaling and teeth cleaning should be repeated every 6 months. Dental sealants and fluoride varnish are evaluated during these visits. Keep brushing twice daily and flossing to ensure your gums heal fully.",
+    estimateTitle: "What is the cost of these treatments?",
     estimateText:
-      "Deep scaling and root planing are very cost-effective. Surgical flap therapies, bone grafts, or tissue regeneration membranes depend on the number of quadrants treated and are estimated after probing pocket depths.",
-    listTitle: "Risk factors that accelerate gum disease",
+      "Teeth cleaning, fluoride varnish, and fissure sealants are highly affordable. Quadrant-wise deep root planing or surgical flap surgeries are estimated after checking your pocket depths.",
+    listTitle: "Guidelines to protect your teeth after fluoride application",
     list: [
-      "Poor oral hygiene and irregular flossing",
-      "Smoking, tobacco chewing, and gutka habits",
-      "Uncontrolled diabetes or systemic health issues",
-      "Hormonal changes during pregnancy",
-      "Crooked teeth that trap food and plaque",
-      "Genetic predisposition to weak bone support",
-      "Chronic stress or dry mouth"
+      "Avoid eating hard, sticky, or hot foods for at least 4 to 6 hours",
+      "Do not brush or floss your teeth until the next morning to let the varnish absorb",
+      "Stick to cool drinks and soft foods on the day of treatment",
+      "Keep visiting the clinic every 6 months for a clean, professional checkup",
+      "Avoid alcohol-containing mouthwashes for 24 hours"
     ],
-    listVisibleCount: 6
+    listVisibleCount: 5
   },
-  faqTitle: "Frequently asked questions about Gum Care & Flap Surgery.",
+  faqTitle: "Frequently asked questions about Gum & Preventive Care.",
   faqs: [
     {
-      question: "What is the difference between normal cleaning and deep scaling?",
+      question: "What is the difference between scaling and deep root planing?",
       answer:
-        "Normal cleaning (scaling) removes tartar from the visible tooth surfaces above the gumline. Deep scaling (root planing) goes beneath the gumline to clean root surfaces and remove bacteria causing gum inflammation and bone loss."
+        "Scaling is a routine teeth cleaning that removes plaque and tartar above the gumline. Deep root planing goes deep below the gums to clean root surfaces, removing bacteria that cause gum pocket depth and bone loss."
     },
     {
-      question: "Is gum flap surgery painful?",
+      question: "Are pit and fissure sealants painful to apply?",
       answer:
-        "No. Gum flap surgery is performed under local anesthesia, so you will feel no pain during the procedure. Post-treatment discomfort is typical for 3 to 5 days and is easily managed with prescribed painkillers and cold compresses."
+        "No. Applying sealants is completely non-invasive and painless. There is no drilling or scraping involved. The tooth is simply cleaned, prepared with a mild gel, coated with the sealant resin, and set with a curing light."
+    },
+    {
+      question: "How long does fluoride varnish stay on my teeth?",
+      answer:
+        "Fluoride varnish is painted on teeth and dries instantly when it contacts saliva. It remains in contact with the enamel for several hours, slowly absorbing. It is completely brushed off the following morning."
     },
     {
       question: "Can receding gums grow back after gum treatment?",
       answer:
-        "Gums that have receded due to bone loss cannot grow back naturally. However, gum care stops further recession. In cases of severe cosmetic concern or root exposure, we can perform gum grafting surgery to cover the exposed roots."
+        "Receded gums cannot grow back on their own. However, gum care stops the recession from worsening. For advanced cosmetic or sensitivity issues, we can plan gum grafting to recover the exposed root surfaces."
     },
     {
-      question: "How much does gum treatment and flap surgery cost in Viman Nagar?",
+      question: "Do you offer teeth cleaning near me in Viman Nagar?",
       answer:
-        "Deep scaling and root planing ranges from Rs. 3,500 to Rs. 6,000 for the entire mouth. Surgical gum flap therapy ranges from Rs. 5,000 to Rs. 12,000 per quadrant (quarter of the mouth), depending on whether bone graft materials are needed."
+        "Yes! Dr. Varun's Dental Clinic offers professional teeth cleaning, scaling, and advanced gum care for patients across Viman Nagar, Kalyani Nagar, Wadgaon Sheri, and surrounding Pune areas."
     },
     {
-      question: "Can gum disease cause teeth to fall out?",
+      question: "Are dental sealants suitable for adults?",
       answer:
-        "Yes. Advanced periodontitis destroys the jawbone that anchors teeth in place. As the bone dissolves, teeth lose support, become loose, and will eventually fall out or require extraction if left untreated."
-    },
-    {
-      question: "Why do my gums bleed when I brush, and is it normal?",
-      answer:
-        "Bleeding gums are NOT normal. It is a sign of gum inflammation (gingivitis) caused by accumulated plaque and tartar. Brushing harder will not fix it; you need professional dental scaling to remove the irritating deposits."
-    },
-    {
-      question: "What is periodontal curettage?",
-      answer:
-        "Periodontal curettage is a procedure where a dentist uses a small curette to gently scrape and clean the diseased soft tissue lining of a deep gum pocket. This allows healthy, new gum tissue to grow and attach closer to the tooth."
+        "Yes. While sealants are highly recommended for children as soon as their molars erupt, adults with deep grooves in their back teeth and no active decay can also get sealants to prevent future cavities."
     }
   ],
-  ctaKicker: "Gum specialist and flap surgery near me in Viman Nagar",
-  ctaTitle: "Stop gum bleeding and save your teeth before bone loss advances.",
+  ctaKicker: "Gum specialist and preventive care near me in Viman Nagar",
+  ctaTitle: "Keep your gums healthy and shield your teeth from cavities.",
   ctaText:
-    "Visit Dr. Varun's Dental Clinic for deep scaling, root planing, gum curettage, periodontal flap surgery, bone grafting, and professional gum care in Viman Nagar, Pune.",
+    "Visit Dr. Varun's Dental Clinic for professional teeth cleaning, deep scaling, gum flap surgery, fluoride varnish, and pit & fissure sealants in Viman Nagar, Pune.",
   internalLinks: [
-    { label: "professional teeth cleaning and scaling", href: "/our-services" },
-    { label: "dental implants to replace teeth lost to gum disease", href: "/dental-implant-in-viman-nagar" },
-    { label: "root canal treatment to treat infected teeth", href: "/root-canal-treatment-in-viman-nagar" },
-    { label: "dentures treatment for multiple missing teeth", href: "/dentures-treatment-in-viman-nagar" },
-    { label: "crowns and bridges for tooth stability", href: "/crowns-and-bridges-in-viman-nagar" }
+    { label: "gentle tooth extraction for severely decayed teeth", href: "/extraction-in-viman-nagar" },
+    { label: "dental implants to replace missing teeth", href: "/dental-implant-in-viman-nagar" },
+    { label: "minor oral surgeries for jaw and mouth growths", href: "/all-minor-surgeries-in-viman-nagar" },
+    { label: "root canal treatment to treat deep decay", href: "/root-canal-treatment-in-viman-nagar" },
+    { label: "wisdom tooth surgery for painful molars", href: "/wisdom-tooth-surgery-in-viman-nagar" }
   ],
-  structuredProcedureName: "Periodontal Gum Care & Flap Surgery",
+  structuredProcedureName: "Periodontal Gum Care & Preventive Dentistry",
   structuredHowPerformed:
-    "Gum pocket depths are evaluated, deep root scaling is performed, and surgical gum flap reflection is carried out under local anesthesia to remove deep-seated bacteria and facilitate bone healing."
+    "Teeth scaling is performed to remove tartar, deep root planing and flap surgery are done if pockets are deep, and fluoride varnish/sealants are applied to reinforce enamel."
 };
 
 export const metadata = createTreatmentMetadata(gumCare);

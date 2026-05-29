@@ -194,7 +194,7 @@ const restrictedMouthSurgery: TreatmentPageData = {
     { label: "wisdom tooth surgery for impacted back teeth", href: "/wisdom-tooth-surgery-in-viman-nagar" },
     { label: "all gum care for healthy mouth tissues", href: "/all-gum-care-in-viman-nagar" },
     { label: "routine dental checkups and diagnostic screening", href: "/our-services" },
-    { label: "miscellaneous treatments for minor oral surgeries", href: "/our-services" }
+    { label: "minor oral surgeries for jaw and mouth growths", href: "/all-minor-surgeries-in-viman-nagar" }
   ],
   structuredProcedureName: "Restricted Mouth Fibrotomy Surgery",
   structuredHowPerformed:

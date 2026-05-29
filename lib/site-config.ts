@@ -169,10 +169,10 @@ export const siteConfig = {
         "Gentle, painless tooth extraction for severely decayed, broken, or orthodontic crowded teeth."
     },
     {
-      title: "Miscellaneous Treatments",
-      href: "/miscellaneous-treatments-in-viman-nagar",
+      title: "All Minor Surgeries",
+      href: "/all-minor-surgeries-in-viman-nagar",
       description:
-        "Minor oral surgeries (jaw fractures, small tumors) and preventive care (fluoride, sealants)."
+        "Conservative jaw fracture wire stabilization, salivary cyst mucocele removal, and small oral tumor excision."
     }
   ],
   services: [
@@ -371,8 +371,7 @@ export const categorizedTreatments = [
     items: [
       { title: "Dental Tooth Filling", href: "/dental-tooth-filling-in-viman-nagar" },
       { title: "All Gum Care", href: "/all-gum-care-in-viman-nagar" },
-      { title: "Pediatric Dentistry", href: "/pediatric-dentistry-in-viman-nagar" },
-      { title: "Miscellaneous Treatments", href: "/miscellaneous-treatments-in-viman-nagar" }
+      { title: "Pediatric Dentistry", href: "/pediatric-dentistry-in-viman-nagar" }
     ]
   },
   {
@@ -405,7 +404,8 @@ export const categorizedTreatments = [
     items: [
       { title: "Extraction", href: "/extraction-in-viman-nagar" },
       { title: "Wisdom Tooth Surgery", href: "/wisdom-tooth-surgery-in-viman-nagar" },
-      { title: "Restricted Mouth Surgery", href: "/restricted-mouth-surgery-in-viman-nagar" }
+      { title: "Restricted Mouth Surgery", href: "/restricted-mouth-surgery-in-viman-nagar" },
+      { title: "All Minor Surgeries", href: "/all-minor-surgeries-in-viman-nagar" }
     ]
   }
 ] as const;
