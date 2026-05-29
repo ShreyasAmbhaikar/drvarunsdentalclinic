@@ -95,7 +95,7 @@ export default function RootLayout({
         {/* Google Tag Manager */}
         <Script
           id="gtm-script"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -110,11 +110,11 @@ export default function RootLayout({
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-5ZQYRLSYZZ"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
         <Script
           id="ga4-init"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
