@@ -1,9 +1,12 @@
-import "@fontsource/plus-jakarta-sans/latin-400.css";
-import "@fontsource/plus-jakarta-sans/latin-500.css";
-import "@fontsource/plus-jakarta-sans/latin-600.css";
-import "@fontsource/plus-jakarta-sans/latin-700.css";
-import "@fontsource/plus-jakarta-sans/latin-800.css";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-plus-jakarta-sans",
+  display: "swap",
+});
 
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
@@ -87,7 +90,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang={siteConfig.language} data-scroll-behavior="smooth">
+    <html lang={siteConfig.language} data-scroll-behavior="smooth" className={plusJakartaSans.variable}>
       <head>
         {/* Google Tag Manager */}
         <Script
@@ -122,7 +125,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body id="page-top">
+      <body id="page-top" className={plusJakartaSans.className}>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe

@@ -1,10 +1,18 @@
-import Image from "next/image";
 import { Sparkles } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-white px-6 pb-12 pt-8 md:px-10 lg:px-14 lg:pb-14 lg:pt-10">
+    <>
+      <link
+        rel="preload"
+        as="image"
+        href={siteConfig.images.heroCheckup}
+        imageSrcSet={`${siteConfig.images.heroCheckup.replace(/\.webp$/, "-mobile.webp")} 640w, ${siteConfig.images.heroCheckup} 1200w`}
+        imageSizes="(max-width: 640px) 640px, 1200px"
+        fetchPriority="high"
+      />
+      <section className="relative overflow-hidden bg-white px-6 pb-12 pt-8 md:px-10 lg:px-14 lg:pb-14 lg:pt-10">
       <div className="mx-auto grid max-w-[1180px] items-center gap-8 md:grid-cols-[minmax(0,1fr)_minmax(280px,38vw)] lg:grid-cols-[minmax(0,1fr)_minmax(0,410px)] lg:gap-7 xl:grid-cols-[minmax(0,1fr)_minmax(0,430px)] xl:gap-8">
         {/* Left Content */}
         <div className="relative z-20 flex max-w-[590px] flex-col">
@@ -53,14 +61,19 @@ export function Hero() {
             />
 
             <div className="relative aspect-[10/11] overflow-hidden rounded-[30px] border border-primary-container/28 bg-surface-container-low shadow-[0_30px_70px_rgba(108,60,17,0.13)] md:aspect-[9/11] lg:aspect-[10/11]">
-              <Image
-                src={siteConfig.images.heroCheckup}
-                alt="Dentist explaining dental care to a patient in a modern clinic"
-                fill
-                sizes="(min-width: 1024px) 402px, (min-width: 768px) 360px, (min-width: 640px) 380px, 78vw"
-                className="object-cover object-[48%_50%]"
-                priority
-              />
+              <picture>
+                <source
+                  media="(max-width: 640px)"
+                  srcSet={siteConfig.images.heroCheckup.replace(/\.webp$/, "-mobile.webp")}
+                />
+                <img
+                  src={siteConfig.images.heroCheckup}
+                  alt="Dentist explaining dental care to a patient in a modern clinic"
+                  className="absolute inset-0 h-full w-full object-cover object-[48%_50%]"
+                  fetchPriority="high"
+                  loading="eager"
+                />
+              </picture>
             </div>
 
             {/* Trust Badge */}
@@ -119,5 +132,6 @@ export function Hero() {
         </div>
       </div>
     </section>
+  </>
   );
 }

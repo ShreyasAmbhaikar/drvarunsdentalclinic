@@ -23,12 +23,12 @@ const config: Config = {
         "border-overlay": "rgba(255, 255, 255, 0.12)"
       },
       fontFamily: {
-        sans: ["Plus Jakarta Sans", "Inter", "system-ui", "sans-serif"],
-        "hero-heading": ["Plus Jakarta Sans", "Inter", "system-ui", "sans-serif"],
-        "section-heading": ["Plus Jakarta Sans", "Inter", "system-ui", "sans-serif"],
-        "card-title": ["Plus Jakarta Sans", "Inter", "system-ui", "sans-serif"],
-        "body-main": ["Plus Jakarta Sans", "Inter", "system-ui", "sans-serif"],
-        "label-sm": ["Plus Jakarta Sans", "Inter", "system-ui", "sans-serif"]
+        sans: ["var(--font-plus-jakarta-sans)", "Inter", "system-ui", "sans-serif"],
+        "hero-heading": ["var(--font-plus-jakarta-sans)", "Inter", "system-ui", "sans-serif"],
+        "section-heading": ["var(--font-plus-jakarta-sans)", "Inter", "system-ui", "sans-serif"],
+        "card-title": ["var(--font-plus-jakarta-sans)", "Inter", "system-ui", "sans-serif"],
+        "body-main": ["var(--font-plus-jakarta-sans)", "Inter", "system-ui", "sans-serif"],
+        "label-sm": ["var(--font-plus-jakarta-sans)", "Inter", "system-ui", "sans-serif"]
       },
       boxShadow: {
         card: "0 18px 50px rgba(108, 60, 17, 0.10)",
