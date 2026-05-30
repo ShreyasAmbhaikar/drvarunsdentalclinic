@@ -86,7 +86,7 @@ export function GalleryLightbox({
             ) : (
               <>
                 <img
-                  src={image.src}
+                  src={image.src.replace(/\.webp$/, "-thumb.webp")}
                   alt={image.alt}
                   className="block h-auto w-full transition-transform duration-500 group-hover:scale-[1.02]"
                   loading={index < 4 ? "eager" : "lazy"}

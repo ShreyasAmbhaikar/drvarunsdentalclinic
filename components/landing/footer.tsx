@@ -26,7 +26,7 @@ export function Footer() {
                   width={60}
                   height={52}
                   alt={`${siteConfig.name} logo`}
-                  className="h-[52px] w-auto object-contain"
+                  className="h-[52px] w-[61px] object-contain"
                 />
               </span>
               <span className="flex min-w-0 flex-col justify-center leading-tight">
@@ -124,7 +124,7 @@ export function Footer() {
               rel="noreferrer"
               className="font-semibold text-white underline decoration-white/35 underline-offset-4 transition-colors hover:text-white/80"
             >
-              QuantumReach Marketing
+              QuantumReach Media
             </a>
           </p>
         </div>

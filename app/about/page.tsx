@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+// import Image from "next/image";
 import { Award, BadgeCheck, Cross, SmilePlus, Sparkles } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
@@ -159,13 +159,20 @@ export default function AboutPage() {
 
               <div className="relative rounded-[30px] border border-white/85 bg-white/92 p-3 shadow-[0_24px_60px_rgba(108,60,17,0.15)] backdrop-blur-sm md:rounded-[38px]">
                 <div className="relative overflow-hidden rounded-[24px] md:rounded-[30px]">
-                  <Image
-                    src="/images/gallery/dr-varun-dental-clinic-exterior-viman-nagar.webp"
-                    alt="Dr. Varun's Dental Clinic interior"
-                    width={760}
-                    height={980}
-                    className="h-[300px] w-full object-cover object-[18%_50%] sm:h-[370px] lg:h-[470px]"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 640px)"
+                      srcSet="/images/gallery/dr-varun-dental-clinic-exterior-viman-nagar-mobile.webp"
+                    />
+                    <img
+                      src="/images/gallery/dr-varun-dental-clinic-exterior-viman-nagar.webp"
+                      alt="Dr. Varun's Dental Clinic interior"
+                      className="h-[300px] w-full object-cover object-[18%_50%] sm:h-[370px] lg:h-[470px]"
+                      width={800}
+                      height={610}
+                      loading="lazy"
+                    />
+                  </picture>
                   <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#6c3c11]/42 to-transparent" />
                 </div>
 
@@ -210,14 +217,20 @@ export default function AboutPage() {
             <div className="relative rounded-[44px] border border-white/85 bg-white/94 p-4 shadow-[0_26px_70px_rgba(108,60,17,0.18)] backdrop-blur-sm">
               <div className="relative overflow-hidden rounded-[34px] border border-primary-container/10 bg-[linear-gradient(160deg,#fff7ef_0%,#fffdfa_100%)]">
                 <div className="absolute left-[-6%] top-[-3%] h-40 w-40 rounded-full bg-white/55 blur-3xl" />
-                <Image
-                  src="/images/gallery/dr-varun-tomke-portrait-viman-nagar.webp"
-                  alt="Dr. Varun Tomke portrait"
-                  width={620}
-                  height={760}
-                  className="relative z-10 h-auto w-full object-cover"
-                  priority
-                />
+                <picture>
+                  <source
+                    media="(max-width: 640px)"
+                    srcSet="/images/gallery/dr-varun-tomke-portrait-viman-nagar-mobile.webp"
+                  />
+                  <img
+                    src="/images/gallery/dr-varun-tomke-portrait-viman-nagar.webp"
+                    alt="Dr. Varun Tomke portrait"
+                    className="relative z-10 h-auto w-full object-cover"
+                    width={600}
+                    height={600}
+                    loading="lazy"
+                  />
+                </picture>
               </div>
             </div>
 
@@ -355,13 +368,20 @@ export default function AboutPage() {
             <div className="relative rounded-[44px] border border-white/85 bg-white/94 p-4 shadow-[0_26px_70px_rgba(108,60,17,0.18)] backdrop-blur-sm">
               <div className="relative overflow-hidden rounded-[34px] border border-primary-container/10 bg-[linear-gradient(160deg,#fff7ef_0%,#fffdfa_100%)]">
                 <div className="absolute left-[-6%] top-[-3%] h-40 w-40 rounded-full bg-white/55 blur-3xl" />
-                <Image
-                  src="/images/gallery/dr-priyanka-tidke.webp"
-                  alt="Dr. Priyanka Tidke portrait"
-                  width={620}
-                  height={760}
-                  className="relative z-10 h-auto w-full object-cover"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 640px)"
+                    srcSet="/images/gallery/dr-priyanka-tidke-mobile.webp"
+                  />
+                  <img
+                    src="/images/gallery/dr-priyanka-tidke.webp"
+                    alt="Dr. Priyanka Tidke portrait"
+                    className="relative z-10 h-auto w-full object-cover"
+                    width={600}
+                    height={450}
+                    loading="lazy"
+                  />
+                </picture>
               </div>
             </div>
 

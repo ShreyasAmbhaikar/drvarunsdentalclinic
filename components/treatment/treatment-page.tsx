@@ -159,6 +159,7 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
   const pageUrl = `${siteConfig.url}${data.pagePath}`;
   const heroImageAbsolute = new URL(data.heroImage, siteConfig.url).toString();
   const BadgeIcon = data.heroBadgeIcon === "sparkles" ? Sparkles : SmilePlus;
+  const mobileHeroImage = data.heroImage.replace(/\.webp$/, "-mobile.webp");
 
   const structuredData = [
     {
@@ -221,20 +222,37 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
       <link
         rel="preload"
         as="image"
+        href={mobileHeroImage}
+        media="(max-width: 640px)"
+        fetchPriority="high"
+      />
+      <link
+        rel="preload"
+        as="image"
         href={data.heroImage}
+        media="(min-width: 641px)"
         fetchPriority="high"
       />
       <main id="main-content" className="bg-surface-container-lowest pt-[80px]">
         <section className="relative overflow-hidden bg-[#fff8ef]">
           <div className="absolute inset-0">
-            <img
-              src={data.heroImage}
-              alt={data.heroAlt}
-              className="absolute inset-0 h-full w-full object-cover"
-              style={{ objectPosition: data.heroObjectPosition ?? "50% 50%" }}
-              fetchPriority="high"
-              loading="eager"
-            />
+            <picture>
+              <source
+                media="(max-width: 640px)"
+                srcSet={mobileHeroImage}
+              />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={data.heroImage}
+                alt={data.heroAlt}
+                className="absolute inset-0 h-full w-full object-cover"
+                style={{ objectPosition: data.heroObjectPosition ?? "50% 50%" }}
+                fetchPriority="high"
+                loading="eager"
+                width={1200}
+                height={630}
+              />
+            </picture>
             <div className={data.heroGradientClassName ?? "absolute inset-0 bg-[linear-gradient(90deg,rgba(52,27,7,0.94)_0%,rgba(90,47,11,0.76)_46%,rgba(255,248,239,0.12)_100%)]"} />
           </div>
 

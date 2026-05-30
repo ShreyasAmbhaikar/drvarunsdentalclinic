@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
@@ -61,13 +61,20 @@ export function About() {
                 maskSize: "100% 100%"
               }}
             >
-              <Image
-                src={siteConfig.images.confidentSmile}
-                alt="Patient smiling confidently after a dental care consultation"
-                fill
-                sizes="(min-width: 768px) 500px, 100vw"
-                className="object-cover object-[43%_50%]"
-              />
+              <picture>
+                <source
+                  media="(max-width: 640px)"
+                  srcSet="/images/confident-smile-dental-care-viman-nagar-mobile.webp"
+                />
+                <img
+                  src={siteConfig.images.confidentSmile}
+                  alt="Patient smiling confidently after a dental care consultation"
+                  className="absolute inset-0 h-full w-full object-cover object-[43%_50%]"
+                  width={600}
+                  height={600}
+                  loading="lazy"
+                />
+              </picture>
             </div>
           </div>
         </div>

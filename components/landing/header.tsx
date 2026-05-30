@@ -57,7 +57,7 @@ export function Header() {
             width={56}
             height={48}
             alt={`${siteConfig.name} logo`}
-            className="h-10 w-auto shrink-0 object-contain sm:h-12"
+            className="h-10 w-[47px] shrink-0 object-contain sm:h-12 sm:w-[56px]"
             priority
           />
           <span className="flex flex-col justify-center leading-tight">

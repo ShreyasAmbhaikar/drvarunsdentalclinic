@@ -111,12 +111,13 @@ summary::-webkit-details-marker {
   transform: translateY(0);
 }
 
-@supports (content-visibility: auto) {
+/* Commented out to eliminate layout shifts (CLS) caused by content-visibility: auto's hardcoded placeholder height */
+/* @supports (content-visibility: auto) {
   .deferred-section {
     content-visibility: auto;
     contain-intrinsic-size: 900px;
   }
-}
+} */
 
 .rotating-badge {
   animation: spin 15s linear infinite;
