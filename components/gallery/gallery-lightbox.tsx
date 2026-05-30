@@ -8,6 +8,7 @@ type GalleryMedia = {
   src: string;
   alt: string;
   type?: "image" | "video";
+  poster?: string;
 };
 
 export function GalleryLightbox({
@@ -76,7 +77,8 @@ export function GalleryLightbox({
                   className="block h-auto w-full transition-transform duration-500 group-hover:scale-[1.02]"
                   muted
                   playsInline
-                  preload="metadata"
+                  preload="none"
+                  poster={image.poster}
                 />
                 <span className="absolute inset-0 bg-black/22 transition-colors duration-300 group-hover:bg-black/28" />
                 <span className="absolute left-1/2 top-1/2 inline-flex h-[76px] w-[76px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-4 border-white/90 bg-primary-container/88 text-white shadow-[0_16px_34px_rgba(37,20,6,0.28)] backdrop-blur-sm">

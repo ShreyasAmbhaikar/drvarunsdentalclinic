@@ -53,7 +53,8 @@ const galleryImages = [
   {
     src: "/images/gallery/videoplayback.mp4",
     alt: "Clinic walkthrough video from Dr. Varun's Dental Clinic",
-    type: "video" as const
+    type: "video" as const,
+    poster: "/images/gallery/dental-clinic-workspace-viman-nagar-thumb.webp"
   }
 ] as const;
 

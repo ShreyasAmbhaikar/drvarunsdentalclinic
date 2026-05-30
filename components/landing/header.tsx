@@ -51,7 +51,7 @@ export function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-100/40 bg-white/95 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.05)]">
       <div className="mx-auto flex h-[80px] max-w-[1440px] items-center justify-between px-5 sm:px-6 lg:px-14">
-        <Link href="/dental-clinic-viman-nagar" className="flex min-w-0 items-center gap-2.5 sm:gap-3" aria-label={siteConfig.name}>
+        <Link href="/dental-clinic-viman-nagar" prefetch={false} className="flex min-w-0 items-center gap-2.5 sm:gap-3" aria-label={siteConfig.name}>
           <Image
             src={siteConfig.images.logo}
             width={56}
@@ -89,6 +89,7 @@ export function Header() {
                   <Link
                     href={item.href}
                     onClick={() => setIsTreatmentsOpen(false)}
+                    prefetch={false}
                     className={`flex items-center gap-1.5 rounded-full px-3.5 py-2 transition-colors xl:gap-2 xl:px-4 ${
                       isActive(item.href)
                         ? "bg-primary-container text-white shadow-soft"
@@ -135,6 +136,7 @@ export function Header() {
                       <Link
                         key={treatment.href}
                         href={treatment.href}
+                        prefetch={false}
                         onClick={() => setIsTreatmentsOpen(false)}
                         className="block rounded-[16px] px-4 py-2.5 transition-colors hover:bg-[#fff0da]"
                       >
@@ -150,6 +152,7 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
+                prefetch={false}
                 className={`rounded-full px-3.5 py-2 transition-colors xl:px-4 ${
                   isActive(item.href)
                     ? "bg-primary-container text-white shadow-soft"
@@ -220,6 +223,7 @@ export function Header() {
                                 <Link
                                   key={treatment.href}
                                   href={treatment.href}
+                                  prefetch={false}
                                   onClick={closeMenus}
                                   className="block rounded-[12px] px-3 py-2 font-body-main text-[13px] font-medium leading-5 text-text-dark transition-colors hover:bg-section-light hover:text-primary-container"
                                 >
@@ -237,6 +241,7 @@ export function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
+                  prefetch={false}
                   onClick={closeMenus}
                   className={`block rounded-full px-4 py-3 font-label-sm text-sm font-semibold transition-colors ${
                     isActive(item.href)

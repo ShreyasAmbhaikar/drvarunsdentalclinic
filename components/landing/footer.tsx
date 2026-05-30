@@ -46,7 +46,7 @@ export function Footer() {
           <FooterColumn title="Quick Links" className="min-w-0">
             {siteConfig.nav.map((item) => (
               <li key={item.href}>
-                <Link className="text-[#FFF0DB] transition-colors hover:text-white hover:underline" href={item.href}>
+                <Link className="text-[#FFF0DB] transition-colors hover:text-white hover:underline" href={item.href} prefetch={false}>
                   {item.label}
                 </Link>
               </li>
@@ -100,6 +100,7 @@ export function Footer() {
                       <Link
                         className="text-[#FFF0DB] transition-colors hover:text-white hover:underline underline-offset-4"
                         href={treatment.href}
+                        prefetch={false}
                       >
                         {treatment.title}
                       </Link>
