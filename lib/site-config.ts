@@ -3,7 +3,7 @@ export const siteConfig = {
   shortName: "Dr. Varun's",
   tagline:
     "Gentle, modern dental care with clear guidance, advanced treatment planning, and a calm clinic experience for confident, healthy smiles at every visit.",
-  url: "https://www.drvarundental.com",
+  url: "https://www.drvarunsdental.com",
   domainPlaceholder: true,
   locale: "en_IN",
   language: "en",

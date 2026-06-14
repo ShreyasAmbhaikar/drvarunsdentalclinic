@@ -118,7 +118,7 @@ https://your-domain.com/llms-full.txt
 
 Update `lib/site-config.ts`:
 
-- Replace `https://www.drvarundental.com` with the final domain.
+- Replace `https://www.drvarunsdental.com` with the final domain.
 - Replace placeholder phone, email, address, city, pin code, and coordinates.
 - Replace social profile URLs.
 - Replace doctor names/team details with approved real details.
