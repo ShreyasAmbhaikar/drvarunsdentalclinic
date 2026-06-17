@@ -156,7 +156,7 @@ export function createTreatmentMetadata(data: TreatmentPageData): Metadata {
 }
 
 export function TreatmentPage({ data }: { data: TreatmentPageData }) {
-  const pageUrl = `${siteConfig.url}${data.pagePath}`;
+  const pageUrl = `${siteConfig.url}${data.pagePath.endsWith("/") ? data.pagePath : `${data.pagePath}/`}`;
   const heroImageAbsolute = new URL(data.heroImage, siteConfig.url).toString();
   const BadgeIcon = data.heroBadgeIcon === "sparkles" ? Sparkles : SmilePlus;
   const mobileHeroImage = data.heroImage.replace(/\.webp$/, "-mobile.webp");
@@ -193,7 +193,7 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: siteConfig.url
+          item: `${siteConfig.url}/dental-clinic-viman-nagar/`
         },
         {
           "@type": "ListItem",

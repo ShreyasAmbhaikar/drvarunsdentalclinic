@@ -72,7 +72,7 @@ export function Header() {
 
         <nav aria-label="Primary navigation" className="hidden items-center gap-1.5 font-label-sm text-[13px] font-medium tracking-tight lg:flex xl:gap-3">
           {siteConfig.nav.map((item) =>
-            item.href === "/our-services" ? (
+            item.href === "/our-services/" ? (
               <div
                 key={item.href}
                 className="relative"
@@ -183,7 +183,7 @@ export function Header() {
           </summary>
           <div className="absolute right-0 top-14 w-64 rounded-[18px] border border-slate-100 bg-white p-3 shadow-card">
             {siteConfig.nav.map((item) =>
-              item.href === "/our-services" ? (
+              item.href === "/our-services/" ? (
                 <div key={item.href} className="mb-1">
                   <button
                     type="button"

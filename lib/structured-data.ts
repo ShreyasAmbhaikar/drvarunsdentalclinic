@@ -1,9 +1,27 @@
 import { siteConfig } from "@/lib/site-config";
 
-const absoluteUrl = (path: string) => new URL(path, siteConfig.url).toString();
+const absoluteUrl = (path: string) => {
+  const formattedPath =
+    path.endsWith("/") || path.includes(".") || path.includes("#")
+      ? path
+      : `${path}/`;
+  return new URL(formattedPath, siteConfig.url).toString();
+};
 
 export function getStructuredData() {
-  const sameAs = Object.values(siteConfig.socialLinks).filter(Boolean);
+  const sameAs = Object.values(siteConfig.socialLinks).filter((link) => {
+    if (!link) return false;
+    const lowercase = link.toLowerCase().trim();
+    return !(
+      lowercase === "https://www.facebook.com/" ||
+      lowercase === "https://facebook.com/" ||
+      lowercase === "https://x.com/" ||
+      lowercase === "https://www.instagram.com/" ||
+      lowercase === "https://instagram.com/" ||
+      lowercase === "https://www.linkedin.com/" ||
+      lowercase === "https://linkedin.com/"
+    );
+  });
 
   const localBusiness = {
     "@context": "https://schema.org",
@@ -100,7 +118,7 @@ export function getStructuredData() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: siteConfig.url
+        item: `${siteConfig.url}/dental-clinic-viman-nagar/`
       }
     ]
   };

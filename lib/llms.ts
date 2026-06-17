@@ -15,7 +15,7 @@ ${siteConfig.description}
 - **Geolocation**: Latitude ${siteConfig.geo.latitude}, Longitude ${siteConfig.geo.longitude}
 
 ## All Dental Treatments & Services
-${siteConfig.treatments.map((t) => `- [**${t.title}**](${siteConfig.url}${t.href}/): ${t.description}`).join("\n")}
+${siteConfig.treatments.map((t) => `- [**${t.title}**](${siteConfig.url}${t.href}): ${t.description}`).join("\n")}
 
 ## Useful Navigation Links
 - [**Home**](${siteConfig.url}/dental-clinic-viman-nagar/)

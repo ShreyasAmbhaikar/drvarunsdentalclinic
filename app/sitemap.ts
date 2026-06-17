@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const treatmentPages = siteConfig.treatments.map((t) => ({
-    url: `${siteConfig.url}${t.href}/`,
+    url: `${siteConfig.url}${t.href}`,
     lastModified: siteConfig.lastUpdated,
     changeFrequency: "monthly" as const,
     priority: 0.9

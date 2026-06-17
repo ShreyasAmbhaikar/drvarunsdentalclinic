@@ -64,113 +64,113 @@ export const siteConfig = {
   businessListingUrl:
     "https://www.google.com/maps/place/DR+VARUN'S+DENTAL+CLINIC+IN+VIMAN+NAGAR+%7C+DENTIST+IN+VIMAN+NAGAR/@18.565329,73.9167066,17z/data=!4m14!1m7!3m6!1s0x3bc2c146e7b76cad:0x82c459f5b366b2ba!2sDR+VARUN'S+DENTAL+CLINIC+IN+VIMAN+NAGAR+%7C+DENTIST+IN+VIMAN+NAGAR!8m2!3d18.565329!4d73.9167066!16s%2Fg%2F1vyxgw67!3m5!1s0x3bc2c146e7b76cad:0x82c459f5b366b2ba!8m2!3d18.565329!4d73.9167066!16s%2Fg%2F1vyxgw67?hl=en&entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D",
   nav: [
-    { label: "Home", href: "/dental-clinic-viman-nagar" },
-    { label: "About", href: "/about" },
-    { label: "Our Treatments", href: "/our-services" },
-    { label: "Gallery", href: "/gallery" },
-    { label: "Testimonials", href: "/testimonials" },
-    { label: "Contact Us", href: "/contact-us" }
+    { label: "Home", href: "/dental-clinic-viman-nagar/" },
+    { label: "About", href: "/about/" },
+    { label: "Our Treatments", href: "/our-services/" },
+    { label: "Gallery", href: "/gallery/" },
+    { label: "Testimonials", href: "/testimonials/" },
+    { label: "Contact Us", href: "/contact-us/" }
   ],
   treatments: [
     {
       title: "Root Canal Treatment",
-      href: "/root-canal-treatment-in-viman-nagar",
+      href: "/root-canal-treatment-in-viman-nagar/",
       description:
         "Tooth-saving care for pain, infection, sensitivity, and deep decay with a calm, modern approach."
     },
     {
       title: "Dental Implant Treatment",
-      href: "/dental-implant-in-viman-nagar",
+      href: "/dental-implant-in-viman-nagar/",
       description:
         "Stable replacement planning for one or more missing teeth with natural-looking restorative support."
     },
     {
       title: "All Gum Care",
-      href: "/all-gum-care-in-viman-nagar",
+      href: "/all-gum-care-in-viman-nagar/",
       description:
         "Deep cleaning, root planing, curettage, and flap surgery to protect gums from bleeding and recession."
     },
     {
       title: "Teeth Whitening",
-      href: "/teeth-whitening-in-viman-nagar",
+      href: "/teeth-whitening-in-viman-nagar/",
       description:
         "Professional smile brightening for yellow or dull-looking teeth after proper dental evaluation."
     },
     {
       title: "Braces Treatment",
-      href: "/braces-treatment-in-viman-nagar",
+      href: "/braces-treatment-in-viman-nagar/",
       description:
         "Orthodontic guidance for crooked teeth, gaps, crowding, bite concerns, and smile alignment."
     },
     {
       title: "Invisalign Treatment",
-      href: "/invisalign-treatment-in-viman-nagar",
+      href: "/invisalign-treatment-in-viman-nagar/",
       description:
         "Clear aligner consultation for discreet teeth straightening and selected alignment concerns."
     },
     {
       title: "Wisdom Tooth Surgery",
-      href: "/wisdom-tooth-surgery-in-viman-nagar",
+      href: "/wisdom-tooth-surgery-in-viman-nagar/",
       description:
         "Advanced oral surgery for impacted, painful, or infected wisdom teeth with precise planning."
     },
     {
       title: "Dental Tooth Filling",
-      href: "/dental-tooth-filling-in-viman-nagar",
+      href: "/dental-tooth-filling-in-viman-nagar/",
       description:
         "Cavity filling, tooth-coloured restoration, chipped tooth repair, and old filling replacement."
     },
     {
       title: "Dentures Treatment",
-      href: "/dentures-treatment-in-viman-nagar",
+      href: "/dentures-treatment-in-viman-nagar/",
       description:
         "Custom complete, partial, and flexible dentures to restore chewing, speaking, and smile confidence."
     },
     {
       title: "Crowns and Bridges",
-      href: "/crowns-and-bridges-in-viman-nagar",
+      href: "/crowns-and-bridges-in-viman-nagar/",
       description:
         "Durable, custom-fit crowns and bridges to protect damaged teeth and fill missing dental gaps."
     },
     {
       title: "Dental Jewellery",
-      href: "/dental-jewellery-in-viman-nagar",
+      href: "/dental-jewellery-in-viman-nagar/",
       description:
         "Add sparkle to your smile with safe, non-invasive, and painless tooth crystals and gems."
     },
     {
       title: "Full Mouth Rehabilitation (FMR)",
-      href: "/full-mouth-rehabilitation-in-viman-nagar",
+      href: "/full-mouth-rehabilitation-in-viman-nagar/",
       description:
         "Comprehensive restoration of dental function, comfort, and aesthetics for the entire mouth."
     },
     {
       title: "Smile Designing",
-      href: "/smile-designing-in-viman-nagar",
+      href: "/smile-designing-in-viman-nagar/",
       description:
         "Personalized cosmetic smile makeovers combining laminates, veneers, alignment, and brightening."
     },
     {
       title: "Pediatric Dentistry",
-      href: "/pediatric-dentistry-in-viman-nagar",
+      href: "/pediatric-dentistry-in-viman-nagar/",
       description:
         "Gentle, friendly child dental care, pediatric checkups, fluoride application, and cavity protection."
     },
     {
       title: "Restricted Mouth Surgery",
-      href: "/restricted-mouth-surgery-in-viman-nagar",
+      href: "/restricted-mouth-surgery-in-viman-nagar/",
       description:
         "Specialized surgical therapy for restricted mouth opening (OSMF) caused by gutka or betel nut habits."
     },
     {
       title: "Extraction",
-      href: "/extraction-in-viman-nagar",
+      href: "/extraction-in-viman-nagar/",
       description:
         "Gentle, painless tooth extraction for severely decayed, broken, or orthodontic crowded teeth."
     },
     {
       title: "All Minor Surgeries",
-      href: "/all-minor-surgeries-in-viman-nagar",
+      href: "/all-minor-surgeries-in-viman-nagar/",
       description:
         "Conservative jaw fracture wire stabilization, salivary cyst mucocele removal, and small oral tumor excision."
     }
@@ -178,19 +178,19 @@ export const siteConfig = {
   services: [
     {
       title: "Root Canal Treatment",
-      href: "/root-canal-treatment-in-viman-nagar",
+      href: "/root-canal-treatment-in-viman-nagar/",
       description:
         "Tooth-saving care for pain, infection, sensitivity, and deep decay with a calm, modern approach."
     },
     {
       title: "Dental Implant Treatment",
-      href: "/dental-implant-in-viman-nagar",
+      href: "/dental-implant-in-viman-nagar/",
       description:
         "Stable replacement planning for one or more missing teeth with natural-looking restorative support."
     },
     {
       title: "Braces Treatment",
-      href: "/braces-treatment-in-viman-nagar",
+      href: "/braces-treatment-in-viman-nagar/",
       description:
         "Orthodontic guidance for crooked teeth, gaps, crowding, bite concerns, and smile alignment."
     }
@@ -369,43 +369,43 @@ export const categorizedTreatments = [
   {
     name: "General & Preventive Dentistry",
     items: [
-      { title: "Dental Tooth Filling", href: "/dental-tooth-filling-in-viman-nagar" },
-      { title: "All Gum Care", href: "/all-gum-care-in-viman-nagar" },
-      { title: "Pediatric Dentistry", href: "/pediatric-dentistry-in-viman-nagar" }
+      { title: "Dental Tooth Filling", href: "/dental-tooth-filling-in-viman-nagar/" },
+      { title: "All Gum Care", href: "/all-gum-care-in-viman-nagar/" },
+      { title: "Pediatric Dentistry", href: "/pediatric-dentistry-in-viman-nagar/" }
     ]
   },
   {
     name: "Restorative & Implants",
     items: [
-      { title: "Dental Implant Treatment", href: "/dental-implant-in-viman-nagar" },
-      { title: "Crowns and Bridges", href: "/crowns-and-bridges-in-viman-nagar" },
-      { title: "Dentures Treatment", href: "/dentures-treatment-in-viman-nagar" },
-      { title: "Root Canal Treatment", href: "/root-canal-treatment-in-viman-nagar" },
-      { title: "Full Mouth Rehabilitation (FMR)", href: "/full-mouth-rehabilitation-in-viman-nagar" }
+      { title: "Dental Implant Treatment", href: "/dental-implant-in-viman-nagar/" },
+      { title: "Crowns and Bridges", href: "/crowns-and-bridges-in-viman-nagar/" },
+      { title: "Dentures Treatment", href: "/dentures-treatment-in-viman-nagar/" },
+      { title: "Root Canal Treatment", href: "/root-canal-treatment-in-viman-nagar/" },
+      { title: "Full Mouth Rehabilitation (FMR)", href: "/full-mouth-rehabilitation-in-viman-nagar/" }
     ]
   },
   {
     name: "Orthodontics",
     items: [
-      { title: "Braces Treatment", href: "/braces-treatment-in-viman-nagar" },
-      { title: "Invisalign Treatment", href: "/invisalign-treatment-in-viman-nagar" }
+      { title: "Braces Treatment", href: "/braces-treatment-in-viman-nagar/" },
+      { title: "Invisalign Treatment", href: "/invisalign-treatment-in-viman-nagar/" }
     ]
   },
   {
     name: "Cosmetic Dentistry",
     items: [
-      { title: "Smile Designing", href: "/smile-designing-in-viman-nagar" },
-      { title: "Teeth Whitening", href: "/teeth-whitening-in-viman-nagar" },
-      { title: "Dental Jewellery", href: "/dental-jewellery-in-viman-nagar" }
+      { title: "Smile Designing", href: "/smile-designing-in-viman-nagar/" },
+      { title: "Teeth Whitening", href: "/teeth-whitening-in-viman-nagar/" },
+      { title: "Dental Jewellery", href: "/dental-jewellery-in-viman-nagar/" }
     ]
   },
   {
     name: "Surgical & Oral Care",
     items: [
-      { title: "Extraction", href: "/extraction-in-viman-nagar" },
-      { title: "Wisdom Tooth Surgery", href: "/wisdom-tooth-surgery-in-viman-nagar" },
-      { title: "Restricted Mouth Surgery", href: "/restricted-mouth-surgery-in-viman-nagar" },
-      { title: "All Minor Surgeries", href: "/all-minor-surgeries-in-viman-nagar" }
+      { title: "Extraction", href: "/extraction-in-viman-nagar/" },
+      { title: "Wisdom Tooth Surgery", href: "/wisdom-tooth-surgery-in-viman-nagar/" },
+      { title: "Restricted Mouth Surgery", href: "/restricted-mouth-surgery-in-viman-nagar/" },
+      { title: "All Minor Surgeries", href: "/all-minor-surgeries-in-viman-nagar/" }
     ]
   }
 ] as const;
