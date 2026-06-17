@@ -38,7 +38,7 @@ export function Hero() {
           <p className="mt-6 max-w-[520px] font-body-main text-[15px] leading-7 text-text-muted md:max-w-[44ch] lg:max-w-[520px] lg:text-[16px]">
             Visit Dr. Varun Tomke, an experienced dental surgeon and
             implantologist, for gentle root canal treatment, dental implants,
-            smile makeovers, dental venners, dental aligners and family dental care near Viman Nagar, Wadgaon Sheri, Kalyani Nagar and Kharadi area.
+            smile makeovers, dental veneers, dental aligners and family dental care near Viman Nagar, Wadgaon Sheri, Kalyani Nagar and Kharadi area.
           </p>
 
           <div className="mt-7 hidden flex-col gap-3 sm:flex-row md:flex">
