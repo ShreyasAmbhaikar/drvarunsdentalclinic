@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Explore clinic moments, dental care, and confident smiles at Dr. Varun's Dental Clinic.",
   alternates: {
-    canonical: `${siteConfig.url}/gallery`
+    canonical: `${siteConfig.url}/gallery/`
   },
   openGraph: {
     title: `Image Gallery | ${siteConfig.shortName}`,

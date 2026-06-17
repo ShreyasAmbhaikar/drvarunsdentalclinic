@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "About",
   description: `Learn more about ${siteConfig.name}.`,
   alternates: {
-    canonical: `${siteConfig.url}/about`
+    canonical: `${siteConfig.url}/about/`
   }
 };
 

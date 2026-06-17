@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Our Treatments",
   description: `Explore treatment pages at ${siteConfig.name}.`,
   alternates: {
-    canonical: `${siteConfig.url}/our-services`
+    canonical: `${siteConfig.url}/our-services/`
   }
 };
 

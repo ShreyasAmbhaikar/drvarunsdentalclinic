@@ -129,7 +129,7 @@ export type TreatmentPageData = {
 const phoneHref = `tel:${siteConfig.phone.replace(/[^\d+]/g, "")}`;
 
 export function createTreatmentMetadata(data: TreatmentPageData): Metadata {
-  const pageUrl = `${siteConfig.url}${data.pagePath}`;
+  const pageUrl = `${siteConfig.url}${data.pagePath}/`;
   const heroImageAbsolute = new URL(data.heroImage, siteConfig.url).toString();
 
   return {

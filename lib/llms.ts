@@ -15,15 +15,15 @@ ${siteConfig.description}
 - **Geolocation**: Latitude ${siteConfig.geo.latitude}, Longitude ${siteConfig.geo.longitude}
 
 ## All Dental Treatments & Services
-${siteConfig.treatments.map((t) => `- **${t.title}** (${siteConfig.url}${t.href}): ${t.description}`).join("\n")}
+${siteConfig.treatments.map((t) => `- **${t.title}** (${siteConfig.url}${t.href}/): ${t.description}`).join("\n")}
 
 ## Useful Navigation Links
-- **Home**: ${siteConfig.url}/dental-clinic-viman-nagar
-- **About the Clinic**: ${siteConfig.url}/about
-- **Our Services Directory**: ${siteConfig.url}/our-services
-- **Patient Testimonials**: ${siteConfig.url}/testimonials
-- **Contact Info & Directions**: ${siteConfig.url}/contact-us
-- **Gallery**: ${siteConfig.url}/gallery
+- **Home**: ${siteConfig.url}/dental-clinic-viman-nagar/
+- **About the Clinic**: ${siteConfig.url}/about/
+- **Our Services Directory**: ${siteConfig.url}/our-services/
+- **Patient Testimonials**: ${siteConfig.url}/testimonials/
+- **Contact Info & Directions**: ${siteConfig.url}/contact-us/
+- **Gallery**: ${siteConfig.url}/gallery/
 - **Sitemap XML**: ${siteConfig.url}/sitemap.xml
 `;
 }

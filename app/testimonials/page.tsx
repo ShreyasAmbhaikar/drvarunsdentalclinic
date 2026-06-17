@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Testimonials",
   description: `Read patient reviews and testimonials for ${siteConfig.name} in Viman Nagar, Pune.`,
   alternates: {
-    canonical: `${siteConfig.url}/testimonials`
+    canonical: `${siteConfig.url}/testimonials/`
   }
 };
 

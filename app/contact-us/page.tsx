@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Contact Us",
   description: `Contact ${siteConfig.name} for appointments and dental care support.`,
   alternates: {
-    canonical: `${siteConfig.url}/contact-us`
+    canonical: `${siteConfig.url}/contact-us/`
   }
 };
 
