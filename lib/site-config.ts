@@ -145,6 +145,12 @@ export const siteConfig = {
         "Comprehensive restoration of dental function, comfort, and aesthetics for the entire mouth."
     },
     {
+      title: "Dental Veneers",
+      href: "/dental-veneers-in-viman-nagar/",
+      description:
+        "Custom porcelain and composite veneers to correct chipped, stained, crooked teeth, or gaps with natural aesthetics."
+    },
+    {
       title: "Smile Designing",
       href: "/smile-designing-in-viman-nagar/",
       description:
@@ -394,6 +400,7 @@ export const categorizedTreatments = [
   {
     name: "Cosmetic Dentistry",
     items: [
+      { title: "Dental Veneers", href: "/dental-veneers-in-viman-nagar/" },
       { title: "Smile Designing", href: "/smile-designing-in-viman-nagar/" },
       { title: "Teeth Whitening", href: "/teeth-whitening-in-viman-nagar/" },
       { title: "Dental Jewellery", href: "/dental-jewellery-in-viman-nagar/" }

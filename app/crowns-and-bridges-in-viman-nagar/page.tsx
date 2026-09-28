@@ -195,7 +195,7 @@ const crownsAndBridges: TreatmentPageData = {
     { label: "root canal treatment before crown placement", href: "/root-canal-treatment-in-viman-nagar" },
     { label: "dental implant options for single tooth replacement", href: "/dental-implant-in-viman-nagar" },
     { label: "all gum care for bleeding and pocket treatments", href: "/all-gum-care-in-viman-nagar" },
-    { label: "cosmetic smile designing and dental veneers", href: "/our-services" },
+    { label: "cosmetic smile designing and dental veneers", href: "/dental-veneers-in-viman-nagar" },
     { label: "dentures treatment for multiple missing teeth", href: "/our-services" }
   ],
   structuredProcedureName: "Crown and Bridge Fitting Restoration",
