@@ -17,8 +17,8 @@ export function Footer() {
     <footer className="relative overflow-hidden bg-primary-container pb-5 pt-14 text-white">
       <div className="relative z-10 mx-auto max-w-[1440px] px-6 md:px-10 lg:px-14">
         {/* Top Section: Brand Info, Quick Links & Contact Details */}
-        <div className="grid grid-cols-1 gap-x-12 gap-y-10 pb-10 border-b border-[#f3d2ac]/20 md:grid-cols-3">
-          <div className="min-w-0">
+        <div className="grid grid-cols-1 gap-y-10 pb-10 border-b border-[#f3d2ac]/20 md:grid-cols-[1.2fr_0.8fr_1.2fr] md:gap-x-8 lg:grid-cols-[1.25fr_0.75fr_1.25fr] lg:gap-x-14">
+          <div className="min-w-0 max-w-[360px]">
             <div className="mb-5 flex min-w-0 items-center gap-3.5">
               <span className="flex h-[68px] w-[68px] items-center justify-center rounded-full bg-white/95 p-2 shadow-soft">
                 <Image
@@ -38,12 +38,12 @@ export function Footer() {
                 </span>
               </span>
             </div>
-            <p className="max-w-[320px] font-body-main text-[14px] leading-6 text-white/90">
+            <p className="font-body-main text-[14px] leading-6 text-white/90">
               {siteConfig.tagline}
             </p>
           </div>
 
-          <FooterColumn title="Quick Links" className="min-w-0">
+          <FooterColumn title="Quick Links" className="min-w-0 md:justify-self-center">
             {siteConfig.nav.map((item) => (
               <li key={item.href}>
                 <Link className="text-[#FFF0DB] transition-colors hover:text-white hover:underline" href={item.href} prefetch={false}>
@@ -53,7 +53,7 @@ export function Footer() {
             ))}
           </FooterColumn>
 
-          <FooterColumn title="Contact Us" className="min-w-0">
+          <FooterColumn title="Contact Us" className="min-w-0 lg:justify-self-end max-w-[380px]">
             <li className="flex min-w-0 gap-3 text-white/90">
               <Phone className="mt-1 h-4 w-4 shrink-0 text-[#FFF0DB]/95" aria-hidden="true" />
               <a href={phoneHref} className="text-[#FFF0DB] break-words transition-colors hover:text-white hover:underline">
