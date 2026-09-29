@@ -6,9 +6,9 @@ import {
 
 const dentalVeneers: TreatmentPageData = {
   pagePath: "/dental-veneers-in-viman-nagar",
-  metaTitle: "Dental Veneers in Viman Nagar | Porcelain & Composite Veneers",
+  metaTitle: "Dental Veneers in Viman Nagar | Porcelain Veneers Near Me",
   metaDescription:
-    "Get custom porcelain and composite dental veneers in Viman Nagar at Dr. Varun's Dental Clinic. Fix chipped, stained, crooked teeth, or gaps with natural aesthetics.",
+    "Custom porcelain & composite dental veneers in Viman Nagar, Pune at Dr. Varun's Dental Clinic near Phoenix Mall. Fix gaps, chips & stains. Call 098229 52573.",
   ogTitle: "Dental Veneers Treatment in Viman Nagar, Pune",
   ogDescription:
     "Transform your smile with custom porcelain and composite veneers at Dr. Varun's Dental Clinic in Viman Nagar, Pune. Flawless shape, color, and alignment.",

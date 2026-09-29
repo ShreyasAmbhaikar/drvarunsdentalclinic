@@ -6,9 +6,9 @@ import {
 
 const dentalImplant: TreatmentPageData = {
   pagePath: "/dental-implant-in-viman-nagar",
-  metaTitle: "Dental Implant in Viman Nagar | Missing Tooth Replacement Near Me",
+  metaTitle: "Dental Implants in Viman Nagar | Teeth Implants Near Me",
   metaDescription:
-    "Get dental implant treatment in Viman Nagar at Dr. Varun's Dental Clinic. Visit an experienced implant dentist for missing tooth replacement, fixed teeth, crowns and implant-supported dentures.",
+    "Permanent dental implants in Viman Nagar, Pune at Dr. Varun's Dental Clinic near Phoenix Mall & Tingre Nagar. 17+ yrs exp, zirconia caps. Call 098229 52573.",
   ogTitle: "Dental Implant Treatment in Viman Nagar, Pune",
   ogDescription:
     "Carefully planned dental implants for missing teeth, fixed tooth replacement, crowns, bridges, and implant-supported dentures in Viman Nagar.",

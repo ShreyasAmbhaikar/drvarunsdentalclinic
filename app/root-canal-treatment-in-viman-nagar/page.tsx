@@ -8,7 +8,7 @@ const rootCanalTreatment: TreatmentPageData = {
   pagePath: "/root-canal-treatment-in-viman-nagar",
   metaTitle: "Root Canal Treatment in Viman Nagar | Painless RCT Near Me",
   metaDescription:
-    "Get painless root canal treatment in Viman Nagar at Dr. Varun's Dental Clinic. Visit an experienced dentist for tooth pain, infection, RCT, filling and dental crown care.",
+    "Painless root canal treatment in Viman Nagar, Pune at Dr. Varun's Dental Clinic near Phoenix Mall. 17+ yrs exp. Single sitting RCT available. Call 098229 52573.",
   ogTitle: "Root Canal Treatment in Viman Nagar, Pune",
   ogDescription:
     "Comfortable, tooth-saving root canal treatment for tooth pain, swelling, sensitivity, and dental infection in Viman Nagar.",

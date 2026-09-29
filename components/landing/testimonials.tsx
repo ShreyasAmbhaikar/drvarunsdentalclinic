@@ -38,9 +38,9 @@ export function Testimonials() {
               />
             </div>
             <div>
-              <div className="font-hero-heading text-[38px] font-extrabold leading-none">4.8</div>
+              <div className="font-hero-heading text-[38px] font-extrabold leading-none">4.9</div>
               <div className="mt-1 font-label-sm text-[13px] font-semibold text-white/88">
-                121 reviews
+                151 reviews
               </div>
             </div>
           </div>

@@ -56,10 +56,15 @@ export function getStructuredData() {
         closes: item.closes
       })
     ),
-    areaServed: {
-      "@type": "City",
-      name: siteConfig.areaServed
-    },
+    areaServed: [
+      { "@type": "City", name: "Viman Nagar, Pune" },
+      { "@type": "AdministrativeArea", name: "Tingre Nagar, Pune" },
+      { "@type": "AdministrativeArea", name: "Kalyani Nagar, Pune" },
+      { "@type": "AdministrativeArea", name: "Kharadi, Pune" },
+      { "@type": "AdministrativeArea", name: "Wadgaon Sheri, Pune" },
+      { "@type": "LandmarksOrHistoricalBuildings", name: "Phoenix Marketcity Pune" }
+    ],
+    hasMap: siteConfig.businessListingUrl,
     medicalSpecialty: "Dentistry",
     sameAs,
     hasOfferCatalog: {

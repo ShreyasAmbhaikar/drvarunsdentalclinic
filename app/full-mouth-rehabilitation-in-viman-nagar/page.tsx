@@ -6,9 +6,9 @@ import {
 
 const fullMouthRehab: TreatmentPageData = {
   pagePath: "/full-mouth-rehabilitation-in-viman-nagar",
-  metaTitle: "Full Mouth Rehabilitation in Viman Nagar | Full Mouth Reconstruction Near Me",
+  metaTitle: "Full Mouth Rehabilitation in Viman Nagar | FMR Near Me",
   metaDescription:
-    "Restore your complete smile with Full Mouth Rehabilitation (FMR) in Viman Nagar at Dr. Varun's Dental Clinic. Get advanced reconstructive care for missing, worn, and weak teeth.",
+    "Full mouth rehabilitation & reconstruction in Viman Nagar, Pune at Dr. Varun's Dental Clinic near Phoenix Mall. 17+ yrs exp. Call 098229 52573.",
   ogTitle: "Full Mouth Rehabilitation (FMR) in Viman Nagar, Pune",
   ogDescription:
     "Rebuild your dental function, comfort, and chewing stability with expert Full Mouth Reconstruction services in Viman Nagar, Pune.",

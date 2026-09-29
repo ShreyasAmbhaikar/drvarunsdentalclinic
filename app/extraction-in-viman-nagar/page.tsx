@@ -6,9 +6,9 @@ import {
 
 const extraction: TreatmentPageData = {
   pagePath: "/extraction-in-viman-nagar",
-  metaTitle: "Tooth Extraction in Viman Nagar | Painless Tooth Removal Near Me",
+  metaTitle: "Tooth Extraction in Viman Nagar | Painless Removal Near Me",
   metaDescription:
-    "Get safe and painless tooth extraction in Viman Nagar at Dr. Varun's Dental Clinic. Get gentle tooth removal, broken root extractions, and socket preservation near you.",
+    "Safe, painless tooth extraction in Viman Nagar, Pune at Dr. Varun's Dental Clinic near Phoenix Mall. Gentle tooth removal & broken root care. Call 098229 52573.",
   ogTitle: "Painless Tooth Extraction & Removal in Viman Nagar, Pune",
   ogDescription:
     "Gentle and pain-free simple or surgical tooth extraction in Viman Nagar, Pune. Safe dental extraction for decayed, broken, or crowded teeth.",

@@ -8,7 +8,7 @@ const smileDesigning: TreatmentPageData = {
   pagePath: "/smile-designing-in-viman-nagar",
   metaTitle: "Smile Designing in Viman Nagar | Cosmetic Dentist Near Me",
   metaDescription:
-    "Get a stunning cosmetic smile makeover with Smile Designing in Viman Nagar at Dr. Varun's Dental Clinic. Restore teeth alignment, brightness, veneers, and gap closures.",
+    "Cosmetic smile designing & makeovers in Viman Nagar, Pune at Dr. Varun's Dental Clinic near Phoenix Mall. Veneers, laminates & alignment. Call 098229 52573.",
   ogTitle: "Cosmetic Smile Designing in Viman Nagar, Pune",
   ogDescription:
     "Transform your smile with advanced cosmetic smile designing, porcelain veneers, laminates, and teeth alignment in Viman Nagar, Pune.",

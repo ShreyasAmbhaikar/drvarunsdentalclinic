@@ -6,9 +6,9 @@ import {
 
 const crownsAndBridges: TreatmentPageData = {
   pagePath: "/crowns-and-bridges-in-viman-nagar",
-  metaTitle: "Crowns and Bridges in Viman Nagar | Dental Cap Clinic Near Me",
+  metaTitle: "Crowns and Bridges in Viman Nagar | Dental Cap Near Me",
   metaDescription:
-    "Get custom dental crowns and bridges in Viman Nagar at Dr. Varun's Dental Clinic. Restore damaged or missing teeth with durable ceramic, zirconia, and metal caps.",
+    "Durable zirconia & ceramic dental crowns in Viman Nagar near Phoenix Mall. Restore broken or missing teeth with custom caps. Call Dr. Varun's Dental Clinic.",
   ogTitle: "Crowns and Bridges Treatment in Viman Nagar, Pune",
   ogDescription:
     "Protect and restore cracked, decayed, or missing teeth with strong, custom-fit dental crowns and bridges in Viman Nagar, Pune.",

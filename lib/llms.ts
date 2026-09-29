@@ -13,6 +13,8 @@ ${siteConfig.description}
 - **Address**: ${siteConfig.address.streetAddress}, ${siteConfig.address.addressLocality}, ${siteConfig.address.addressRegion} ${siteConfig.address.postalCode}, ${siteConfig.address.addressCountry}
 - **Clinic Hours**: ${siteConfig.hours}
 - **Geolocation**: Latitude ${siteConfig.geo.latitude}, Longitude ${siteConfig.geo.longitude}
+- **Primary Landmarks & Location**: Located at Ideal Landmark besides PNG Jewellers, 500m from Phoenix Marketcity Mall. Serving Viman Nagar, Tingre Nagar, Kalyani Nagar, Kharadi, and Airport Road in Pune.
+- **Google Maps Listing**: ${siteConfig.businessListingUrl}
 
 ## All Dental Treatments & Services
 ${siteConfig.treatments.map((t) => `- [**${t.title}**](${siteConfig.url}${t.href}): ${t.description}`).join("\n")}

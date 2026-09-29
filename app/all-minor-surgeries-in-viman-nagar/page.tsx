@@ -8,7 +8,7 @@ const minorSurgeries: TreatmentPageData = {
   pagePath: "/all-minor-surgeries-in-viman-nagar",
   metaTitle: "All Minor Surgeries in Viman Nagar | Oral Surgeon Near Me",
   metaDescription:
-    "Get expert minor oral surgeries in Viman Nagar, Pune at Dr. Varun's Dental Clinic. Painless treatments for jaw fractures, oral cyst/tumor removal, and surgical extractions near you.",
+    "Expert minor oral surgeries in Viman Nagar, Pune at Dr. Varun's Dental Clinic near Phoenix Mall. Jaw wiring, cyst removal & extractions. Call 098229 52573.",
   ogTitle: "All Minor Oral Surgeries in Viman Nagar, Pune | Dr. Varun's",
   ogDescription:
     "Trusted minor surgeries clinic in Viman Nagar Pune. Painless removal of salivary mucoceles, mouth tumors, jaw fracture wiring, and surgical extractions nearby.",

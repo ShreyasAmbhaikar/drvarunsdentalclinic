@@ -6,9 +6,9 @@ import {
 
 const gumCare: TreatmentPageData = {
   pagePath: "/all-gum-care-in-viman-nagar",
-  metaTitle: "All Gum Care & Preventative Care in Viman Nagar | Clinic Near Me",
+  metaTitle: "Gum Care & Teeth Cleaning in Viman Nagar | Near Me",
   metaDescription:
-    "Get complete gum care, teeth cleaning, deep scaling, fluoride varnish, and pit & fissure sealants in Viman Nagar at Dr. Varun's Dental Clinic near you.",
+    "Professional teeth cleaning, deep scaling & gum disease care in Viman Nagar, Pune at Dr. Varun's Dental Clinic near Phoenix Mall. Call 098229 52573.",
   ogTitle: "All Gum Care & Preventative Dentistry in Viman Nagar, Pune",
   ogDescription:
     "Protect your smile from gum bleeding and tooth decay. Professional scaling, flap surgery, deep curettage, fluoride application, and sealants in Viman Nagar, Pune.",

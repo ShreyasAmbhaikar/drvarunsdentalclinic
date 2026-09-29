@@ -182,7 +182,20 @@ export function TreatmentPage({ data }: { data: TreatmentPageData }) {
         address: {
           "@type": "PostalAddress",
           ...siteConfig.address
-        }
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: siteConfig.geo.latitude,
+          longitude: siteConfig.geo.longitude
+        },
+        hasMap: siteConfig.businessListingUrl,
+        areaServed: [
+          { "@type": "City", name: "Viman Nagar, Pune" },
+          { "@type": "AdministrativeArea", name: "Tingre Nagar, Pune" },
+          { "@type": "AdministrativeArea", name: "Kalyani Nagar, Pune" },
+          { "@type": "AdministrativeArea", name: "Kharadi, Pune" },
+          { "@type": "LandmarksOrHistoricalBuildings", name: "Phoenix Marketcity Pune" }
+        ]
       }
     },
     {

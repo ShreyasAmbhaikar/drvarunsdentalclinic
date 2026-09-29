@@ -112,10 +112,27 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom Section: Copyright */}
-        <div className="pt-6 text-center font-body-main text-[14px] leading-6 text-white/90">
-          <p className="text-white/80">&copy; 2026 {siteConfig.name}. All Rights Reserved.</p>
-          <p className="mt-0.5 flex flex-wrap items-center justify-center gap-1.5 text-white/80">
+        {/* Service Areas Served */}
+        <div className="py-8 border-b border-[#FFF0DB]/10">
+          <h3 className="mb-3 font-card-title text-[14px] font-bold uppercase tracking-wider text-[#FFF0DB]">
+            Areas We Serve in Pune
+          </h3>
+          <div className="flex flex-wrap items-center gap-2 text-[13.5px] text-white/90">
+            {["Viman Nagar", "Tingre Nagar", "Kalyani Nagar", "Kharadi", "Airport Road", "Wadgaon Sheri", "Koregaon Park"].map((area) => (
+              <span
+                key={area}
+                className="rounded-full bg-white/10 px-3.5 py-1 font-medium transition-colors hover:bg-white/15"
+              >
+                {area}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Bottom Section: Copyright (Left) & Developer Credit (Right) */}
+        <div className="flex flex-col items-center justify-between gap-3 pt-6 text-center font-body-main text-[14px] leading-6 text-white/80 sm:flex-row sm:text-left">
+          <p>&copy; 2026 {siteConfig.name}. All Rights Reserved.</p>
+          <p className="flex items-center gap-1.5">
             <span>Developed with</span>
             <Heart className="h-3.5 w-3.5 fill-current text-[#ff4f4f]" aria-hidden="true" />
             <span>by</span>
@@ -123,7 +140,7 @@ export function Footer() {
               href={agencyWhatsappHref}
               target="_blank"
               rel="noreferrer"
-              className="font-semibold text-white underline decoration-white/35 underline-offset-4 transition-colors hover:text-white/80"
+              className="font-semibold text-white underline decoration-white/35 underline-offset-4 transition-colors hover:text-white/90"
             >
               QuantumReach Media
             </a>

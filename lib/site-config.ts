@@ -9,20 +9,25 @@ export const siteConfig = {
   language: "en",
   lastUpdated: "2026-05-04",
   description:
-    "Dr. Varun's Dental Clinic provides gentle, modern dental care including dental exams, teeth whitening, implants, braces guidance, root canal support, and emergency dental care.",
+    "Dr. Varun's Dental Clinic is the best dental clinic in Viman Nagar, Pune, located besides PNG Jewellers near Phoenix Marketcity Mall. Offering painless root canals, dental implants, braces, smile designing, and dental veneers by Dr. Varun Tomke (17+ yrs exp).",
   seoTitle:
-    "Dr. Varun's Dental Clinic | Modern Dentist for Confident Smiles",
+    "Best Dental Clinic in Viman Nagar | Dentist Near Me Pune",
   seoDescription:
-    "Book gentle, modern dental care at Dr. Varun's Dental Clinic. Explore dental exams, teeth whitening, implants, emergency dentist support, and smile care services.",
+    "Best dental clinic in Viman Nagar, Pune near Phoenix Mall & PNG Jewellers. 17+ yrs exp. Painless root canal, implants & braces nearby. Call 098229 52573.",
   keywords: [
+    "Best Dental Clinic in Viman Nagar",
+    "Best Dentist in Viman Nagar Pune",
+    "Dental Clinic Near Me",
+    "Dentist Near Me",
+    "Dentist near Phoenix Mall",
+    "Dentist near Tingre Nagar",
+    "Dentist near Kalyani Nagar",
+    "Emergency Dentist Viman Nagar",
     "Dr. Varun's Dental Clinic",
-    "dentist near me",
-    "dental clinic",
-    "teeth whitening",
-    "dental implants",
-    "emergency dentist",
-    "root canal",
-    "braces and Invisalign"
+    "Dental Implants Viman Nagar",
+    "Root Canal Treatment in Viman Nagar",
+    "Dental Veneers in Viman Nagar",
+    "Braces and Invisalign Pune"
   ],
   phone: "098229 52573",
   email: "dr.varuntomke@gmail.com",
@@ -53,7 +58,7 @@ export const siteConfig = {
     }
   ],
   priceRange: "$$",
-  areaServed: "Viman Nagar, Pune, Maharashtra",
+  areaServed: "Viman Nagar, Tingre Nagar, Kalyani Nagar, Kharadi, Pune",
   socialLinks: {
     facebook: "https://www.facebook.com/",
     x: "https://x.com/",
@@ -183,22 +188,22 @@ export const siteConfig = {
   ],
   services: [
     {
-      title: "Root Canal Treatment",
+      title: "Root Canal Treatment in Viman Nagar",
       href: "/root-canal-treatment-in-viman-nagar/",
       description:
-        "Tooth-saving care for pain, infection, sensitivity, and deep decay with a calm, modern approach."
+        "Painless, tooth-saving root canal care for severe pain, tooth decay, and infection by an experienced dental surgeon."
     },
     {
-      title: "Dental Implant Treatment",
+      title: "Dental Implants in Viman Nagar",
       href: "/dental-implant-in-viman-nagar/",
       description:
-        "Stable replacement planning for one or more missing teeth with natural-looking restorative support."
+        "Permanent, natural-looking replacement for missing teeth using high-grade titanium posts and durable zirconia crowns."
     },
     {
-      title: "Braces Treatment",
+      title: "Braces & Aligners in Viman Nagar",
       href: "/braces-treatment-in-viman-nagar/",
       description:
-        "Orthodontic guidance for crooked teeth, gaps, crowding, bite concerns, and smile alignment."
+        "Expert orthodontic care and Invisalign clear aligners for crooked teeth, gaps, crowding, and confident smile alignment."
     }
   ],
   stats: [

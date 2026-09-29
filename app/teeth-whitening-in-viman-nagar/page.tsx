@@ -6,9 +6,9 @@ import {
 
 const teethWhitening: TreatmentPageData = {
   pagePath: "/teeth-whitening-in-viman-nagar",
-  metaTitle: "Teeth Whitening in Viman Nagar | Professional Whitening Near Me",
+  metaTitle: "Teeth Whitening in Viman Nagar | Smile Whitening Near Me",
   metaDescription:
-    "Get professional teeth whitening in Viman Nagar at Dr. Varun's Dental Clinic. Visit an experienced cosmetic dentist for yellow teeth, stains, smile brightening and dental polishing.",
+    "Professional laser teeth whitening in Viman Nagar, Pune at Dr. Varun's Dental Clinic near Phoenix Mall. Whiter smile in 1 sitting. Call 098229 52573 today.",
   ogTitle: "Teeth Whitening in Viman Nagar, Pune",
   ogDescription:
     "Professional smile brightening for yellow teeth, stains, wedding whitening, and cosmetic dental confidence in Viman Nagar.",

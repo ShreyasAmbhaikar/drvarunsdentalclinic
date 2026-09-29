@@ -6,9 +6,9 @@ import {
 
 const restrictedMouthSurgery: TreatmentPageData = {
   pagePath: "/restricted-mouth-surgery-in-viman-nagar",
-  metaTitle: "Restricted Mouth Surgery in Viman Nagar | Mouth Opening Surgery Near Me",
+  metaTitle: "Restricted Mouth Surgery in Viman Nagar | OSMF Near Me",
   metaDescription:
-    "Get specialized surgical treatment for restricted mouth opening (OSMF) in Viman Nagar at Dr. Varun's Dental Clinic. Reclaim normal mouth opening with expert care.",
+    "Specialized OSMF & restricted mouth opening surgery in Viman Nagar, Pune at Dr. Varun's Dental Clinic near Phoenix Mall. 17+ yrs exp. Call 098229 52573.",
   ogTitle: "Restricted Mouth Surgery & OSMF Treatment in Viman Nagar, Pune",
   ogDescription:
     "Treatment for limited mouth opening caused by Oral Submucous Fibrosis (OSMF) from gutka, betel nut, or tobacco. Professional fibrotomy release in Viman Nagar, Pune.",

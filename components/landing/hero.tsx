@@ -35,13 +35,11 @@ export function Hero() {
             </span>
           </h1>
 
-          <p className="mt-6 max-w-[520px] font-body-main text-[15px] leading-7 text-text-muted md:max-w-[44ch] lg:max-w-[520px] lg:text-[16px]">
-            Visit Dr. Varun Tomke, an experienced dental surgeon and
-            implantologist, for gentle root canal treatment, dental implants,
-            smile makeovers, dental veneers, dental aligners and family dental care near Viman Nagar, Wadgaon Sheri, Kalyani Nagar and Kharadi area.
+          <p className="mt-5 max-w-[520px] font-body-main text-[16px] leading-relaxed text-text-muted md:max-w-[46ch] lg:max-w-[520px] lg:text-[17px]">
+            Welcome to Dr. Varun’s Dental Clinic in Viman Nagar, Pune. Led by Dr. Varun Tomke with 17+ years of clinical excellence, we provide gentle, advanced dental care—specializing in painless root canals, dental implants, invisible aligners, and cosmetic smile makeovers for patients across Viman Nagar and nearby areas.
           </p>
 
-          <div className="mt-7 hidden flex-col gap-3 sm:flex-row md:flex">
+          <div className="mt-8 hidden flex-col gap-3 sm:flex-row md:flex">
             <a
               href="#services"
               className="inline-flex h-[46px] items-center justify-center rounded-[14px] bg-primary-container px-8 font-label-sm text-sm font-semibold text-white shadow-[0_14px_28px_rgba(184,95,13,0.22)] transition-colors duration-200 hover:bg-primary-dark"

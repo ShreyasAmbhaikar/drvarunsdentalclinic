@@ -6,9 +6,9 @@ import {
 
 const wisdomToothSurgery: TreatmentPageData = {
   pagePath: "/wisdom-tooth-surgery-in-viman-nagar",
-  metaTitle: "Wisdom Tooth Surgery in Viman Nagar | Impacted Tooth Cap Clinic Near Me",
+  metaTitle: "Wisdom Tooth Surgery in Viman Nagar | Extraction Near Me",
   metaDescription:
-    "Get expert wisdom tooth surgery in Viman Nagar at Dr. Varun's Dental Clinic. Painless removal of impacted, tilted, and painful wisdom teeth by experienced surgeons.",
+    "Painless wisdom tooth removal & extraction in Viman Nagar, Pune. Safe surgical care for impacted teeth by Dr. Varun Tomke near Phoenix Mall. Call 098229 52573.",
   ogTitle: "Wisdom Tooth Surgery & Impacted Extraction in Viman Nagar, Pune",
   ogDescription:
     "Painless surgical extraction of impacted, decayed, or painful wisdom teeth. Advanced osteotomy and surgical tooth removal in Viman Nagar, Pune.",

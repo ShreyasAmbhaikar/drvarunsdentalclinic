@@ -18,15 +18,12 @@ export function About() {
       <div className="mx-auto grid max-w-[980px] grid-cols-1 items-center gap-8 md:grid-cols-2 lg:gap-10">
         <div className="flex flex-col">
           <h2 className="mb-4 font-section-heading text-[29px] font-extrabold leading-[1.12] text-text-dark md:text-[38px]">
-            Achieve a Confident
+            17+ Years of Advanced
             <br />
-            Smile With Us
+            & Gentle Dental Care
           </h2>
           <p className="mb-6 font-body-main text-[15px] leading-7 text-text-muted">
-            At {siteConfig.name}, we combine advanced dental care with a warm,
-            friendly approach. Our skilled team focuses on comfort, precision,
-            and personalized treatment so every patient can enjoy a healthier,
-            brighter smile.
+            At {siteConfig.name}, we believe dental treatments should be comfortable, gentle, and transparent. Led by Dr. Varun Tomke (President, IDA Pune East), our clinic combines 17+ years of specialized clinical experience with modern painless dentistry, digital imaging, and strict hygiene protocols to ensure every visit leaves you with a healthy, confident smile.
           </p>
 
           <div className="mb-7 flex flex-col gap-3">

@@ -6,9 +6,9 @@ import {
 
 const denturesTreatment: TreatmentPageData = {
   pagePath: "/dentures-treatment-in-viman-nagar",
-  metaTitle: "Dentures Treatment in Viman Nagar | Fake Teeth Clinic Near Me",
+  metaTitle: "Dentures Treatment in Viman Nagar | Dentures Near Me",
   metaDescription:
-    "Get high-quality complete, partial, and flexible dentures in Viman Nagar at Dr. Varun's Dental Clinic. Replace missing teeth with custom comfortable fake teeth solutions.",
+    "Custom complete, partial & flexible dentures in Viman Nagar, Pune at Dr. Varun's Dental Clinic near Phoenix Mall. Restore your smile. Call 098229 52573.",
   ogTitle: "Dentures Treatment in Viman Nagar, Pune | Custom Fake Teeth",
   ogDescription:
     "Restore your chewing ability, speech, and smile with custom-fit complete, partial, or flexible dentures in Viman Nagar, Pune.",

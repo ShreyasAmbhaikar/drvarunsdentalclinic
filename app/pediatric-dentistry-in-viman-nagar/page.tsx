@@ -8,7 +8,7 @@ const pediatricDentistry: TreatmentPageData = {
   pagePath: "/pediatric-dentistry-in-viman-nagar",
   metaTitle: "Pediatric Dentistry in Viman Nagar | Child Dentist Near Me",
   metaDescription:
-    "Gentle pediatric dentistry and child dental care in Viman Nagar at Dr. Varun's Dental Clinic. Visit a child-friendly dentist for cavities protection, fluoride, and painless care.",
+    "Gentle pediatric dentistry in Viman Nagar, Pune at Dr. Varun's Dental Clinic near Phoenix Mall. Cavity care, fluoride & child-friendly dentist. Call 098229 52573.",
   ogTitle: "Pediatric Dentistry & Child Dental Care in Viman Nagar, Pune",
   ogDescription:
     "Keep your child's smile healthy with gentle pediatric dental checkups, cavity fillings, fluoride therapies, and kids' dentistry in Viman Nagar, Pune.",

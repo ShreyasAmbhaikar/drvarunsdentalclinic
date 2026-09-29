@@ -4,7 +4,7 @@ export const bracesTreatment: TreatmentPageData = {
   pagePath: "/braces-treatment-in-viman-nagar",
   metaTitle: "Braces Treatment in Viman Nagar | Dental Braces Near Me",
   metaDescription:
-    "Get braces treatment in Viman Nagar at Dr. Varun's Dental Clinic. Visit an experienced dentist for dental braces, crooked teeth, gaps, teeth alignment and smile correction.",
+    "Top dental braces & clip treatment in Viman Nagar, Pune at Dr. Varun's Dental Clinic near Phoenix Mall. Fix crooked teeth & gaps. Call 098229 52573.",
   ogTitle: "Braces Treatment in Viman Nagar, Pune",
   ogDescription:
     "Dental braces consultation for crooked teeth, crowding, gaps, bite problems, and smile alignment in Viman Nagar.",
@@ -198,7 +198,7 @@ export const invisalignTreatment: TreatmentPageData = {
   pagePath: "/invisalign-treatment-in-viman-nagar",
   metaTitle: "Invisalign Treatment in Viman Nagar | Clear Aligners Near Me",
   metaDescription:
-    "Get Invisalign treatment in Viman Nagar at Dr. Varun's Dental Clinic. Visit an experienced dentist for clear aligners, invisible braces, teeth straightening and smile correction.",
+    "Discreet Invisalign clear aligners in Viman Nagar, Pune at Dr. Varun's Dental Clinic near Phoenix Mall & Tingre Nagar. Straighten teeth invisibly. Call 098229 52573.",
   ogTitle: "Invisalign Treatment in Viman Nagar, Pune",
   ogDescription:
     "Clear aligner consultation for discreet teeth straightening, mild crowding, gaps, and smile alignment in Viman Nagar.",
@@ -586,7 +586,7 @@ export const dentalToothFilling: TreatmentPageData = {
   pagePath: "/dental-tooth-filling-in-viman-nagar",
   metaTitle: "Dental Tooth Filling in Viman Nagar | Cavity Filling Near Me",
   metaDescription:
-    "Get dental tooth filling in Viman Nagar at Dr. Varun's Dental Clinic. Visit an experienced dentist for cavity filling, tooth-coloured fillings, chipped tooth repair and old filling replacement.",
+    "Tooth-coloured composite dental fillings in Viman Nagar, Pune at Dr. Varun's Dental Clinic near Phoenix Mall. Fix cavities & chipped teeth. Call 098229 52573.",
   ogTitle: "Dental Tooth Filling in Viman Nagar, Pune",
   ogDescription:
     "Cavity filling, tooth-coloured fillings, chipped tooth repair, and old filling replacement in Viman Nagar.",
