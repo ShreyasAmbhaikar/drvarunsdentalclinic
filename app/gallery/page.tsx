@@ -26,58 +26,64 @@ export const metadata: Metadata = {
 };
 
 const galleryImages = [
-  // Column 1 (approx)
+  // Column 1
   {
     src: "/images/gallery/dr-varun-dental-clinic-exterior-viman-nagar.webp",
     alt: "Exterior view of Dr. Varun's Dental Clinic in Viman Nagar"
-  },
-  {
-    src: "/images/gallery/dr-varun-dental-clinic-happy-patient-smile-viman-nagar.webp",
-    alt: "Dr. Varun Tomke with a happy patient giving thumbs up at Dr. Varun's Dental Clinic in Viman Nagar, Pune"
-  },
-  {
-    src: "/images/gallery/modern-dental-operatory-viman-nagar.webp",
-    alt: "Modern dental operatory at Dr. Varun's Dental Clinic"
   },
   {
     src: "/images/gallery/dr-varun-dental-clinic-pediatric-child-dentistry-viman-nagar.webp",
     alt: "Dr. Varun Tomke with a smiling young pediatric patient giving thumbs up on dental chair in Viman Nagar"
   },
   {
-    src: "/images/gallery/dentist-near-phoenix-mall-viman-nagar.webp",
-    alt: "Dentist near Phoenix Marketcity Mall in Viman Nagar - Dr. Varun's Dental Clinic Pune"
-  },
-
-  // Column 2 (approx)
-  {
     src: "/images/gallery/dr-varun-dental-clinic-reception-viman-nagar.webp",
     alt: "Clinic reception area at Dr. Varun's Dental Clinic"
-  },
-  {
-    src: "/images/gallery/dr-varun-dental-clinic-satisfied-patient-consultation-viman-nagar.webp",
-    alt: "Dr. Varun Tomke posing with a satisfied patient giving thumbs up inside the dental clinic in Viman Nagar"
-  },
-  {
-    src: "/images/gallery/dental-consultation-room-viman-nagar.webp",
-    alt: "Dental consultation room at Dr. Varun's Dental Clinic"
   },
   {
     src: "/images/gallery/dr-varun-dental-clinic-painless-dental-treatment-viman-nagar.webp",
     alt: "Dr. Varun Tomke showing okay sign with relaxed patient on dental chair during painless treatment in Viman Nagar"
   },
   {
-    src: "/images/gallery/re-root-canal-treatment-in-viman-nagar.webp",
-    alt: "Re-root canal treatment and tooth-saving dental care in Viman Nagar Pune at Dr. Varun's Dental Clinic"
+    src: "/images/gallery/dentist-near-phoenix-mall-viman-nagar.webp",
+    alt: "Dentist near Phoenix Marketcity Mall in Viman Nagar - Dr. Varun's Dental Clinic Pune"
   },
 
-  // Column 3 (approx)
+  // Column 2
   {
-    src: "/images/gallery/dental-treatment-chair-viman-nagar.webp",
-    alt: "Dental treatment chair at Dr. Varun's Dental Clinic"
+    src: "/images/gallery/dr-varun-dental-clinic-happy-patient-smile-viman-nagar.webp",
+    alt: "Dr. Varun Tomke with a happy patient giving thumbs up at Dr. Varun's Dental Clinic in Viman Nagar, Pune"
+  },
+  {
+    src: "/images/gallery/dental-consultation-room-viman-nagar.webp",
+    alt: "Dental consultation room at Dr. Varun's Dental Clinic"
   },
   {
     src: "/images/gallery/dr-varun-dental-clinic-senior-patient-smile-care-viman-nagar.webp",
     alt: "Dr. Varun Tomke with a smiling senior patient during dental care consultation at Viman Nagar clinic"
+  },
+  {
+    src: "/images/gallery/videoplayback.mp4",
+    alt: "Clinic walkthrough video from Dr. Varun's Dental Clinic",
+    type: "video" as const,
+    poster: "/images/gallery/dental-clinic-workspace-viman-nagar-thumb.webp"
+  },
+  {
+    src: "/images/gallery/re-root-canal-treatment-in-viman-nagar.webp",
+    alt: "Re-root canal treatment and tooth-saving dental care in Viman Nagar Pune at Dr. Varun's Dental Clinic"
+  },
+
+  // Column 3
+  {
+    src: "/images/gallery/modern-dental-operatory-viman-nagar.webp",
+    alt: "Modern dental operatory at Dr. Varun's Dental Clinic"
+  },
+  {
+    src: "/images/gallery/dr-varun-dental-clinic-satisfied-patient-consultation-viman-nagar.webp",
+    alt: "Dr. Varun Tomke posing with a satisfied patient giving thumbs up inside the dental clinic in Viman Nagar"
+  },
+  {
+    src: "/images/gallery/dental-treatment-chair-viman-nagar.webp",
+    alt: "Dental treatment chair at Dr. Varun's Dental Clinic"
   },
   {
     src: "/images/gallery/dr-varun-dental-clinic-patient-smile-checkup-viman-nagar.webp",
@@ -86,12 +92,6 @@ const galleryImages = [
   {
     src: "/images/gallery/dental-clinic-workspace-viman-nagar.webp",
     alt: "Dental clinic workspace at Dr. Varun's Dental Clinic"
-  },
-  {
-    src: "/images/gallery/videoplayback.mp4",
-    alt: "Clinic walkthrough video from Dr. Varun's Dental Clinic",
-    type: "video" as const,
-    poster: "/images/gallery/dental-clinic-workspace-viman-nagar-thumb.webp"
   },
   {
     src: "/images/gallery/dental-clinic-near-pune-airport-viman-nagar.webp",
