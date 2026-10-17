@@ -26,29 +26,58 @@ export const metadata: Metadata = {
 };
 
 const galleryImages = [
+  // Column 1 (approx)
   {
     src: "/images/gallery/dr-varun-dental-clinic-exterior-viman-nagar.webp",
-    alt: "Exterior view of Dr. Varun's Dental Clinic"
+    alt: "Exterior view of Dr. Varun's Dental Clinic in Viman Nagar"
   },
+  {
+    src: "/images/gallery/dr-varun-dental-clinic-happy-patient-smile-viman-nagar.webp",
+    alt: "Dr. Varun Tomke with a happy patient giving thumbs up at Dr. Varun's Dental Clinic in Viman Nagar, Pune"
+  },
+  {
+    src: "/images/gallery/modern-dental-operatory-viman-nagar.webp",
+    alt: "Modern dental operatory at Dr. Varun's Dental Clinic"
+  },
+  {
+    src: "/images/gallery/dr-varun-dental-clinic-pediatric-child-dentistry-viman-nagar.webp",
+    alt: "Dr. Varun Tomke with a smiling young pediatric patient giving thumbs up on dental chair in Viman Nagar"
+  },
+
+  // Column 2 (approx)
   {
     src: "/images/gallery/dr-varun-dental-clinic-reception-viman-nagar.webp",
     alt: "Clinic reception area at Dr. Varun's Dental Clinic"
   },
   {
-    src: "/images/gallery/modern-dental-operatory-viman-nagar.webp",
-    alt: "Dental operatory at Dr. Varun's Dental Clinic"
+    src: "/images/gallery/dr-varun-dental-clinic-satisfied-patient-consultation-viman-nagar.webp",
+    alt: "Dr. Varun Tomke posing with a satisfied patient giving thumbs up inside the dental clinic in Viman Nagar"
   },
   {
     src: "/images/gallery/dental-consultation-room-viman-nagar.webp",
-    alt: "Consultation room at Dr. Varun's Dental Clinic"
+    alt: "Dental consultation room at Dr. Varun's Dental Clinic"
   },
   {
+    src: "/images/gallery/dr-varun-dental-clinic-painless-dental-treatment-viman-nagar.webp",
+    alt: "Dr. Varun Tomke showing okay sign with relaxed patient on dental chair during painless treatment in Viman Nagar"
+  },
+
+  // Column 3 (approx)
+  {
     src: "/images/gallery/dental-treatment-chair-viman-nagar.webp",
-    alt: "Treatment chair at Dr. Varun's Dental Clinic"
+    alt: "Dental treatment chair at Dr. Varun's Dental Clinic"
+  },
+  {
+    src: "/images/gallery/dr-varun-dental-clinic-senior-patient-smile-care-viman-nagar.webp",
+    alt: "Dr. Varun Tomke with a smiling senior patient during dental care consultation at Viman Nagar clinic"
+  },
+  {
+    src: "/images/gallery/dr-varun-dental-clinic-patient-smile-checkup-viman-nagar.webp",
+    alt: "Dr. Varun Tomke giving thumbs up with a smiling patient after dental checkup in Viman Nagar clinic"
   },
   {
     src: "/images/gallery/dental-clinic-workspace-viman-nagar.webp",
-    alt: "Clinic workspace at Dr. Varun's Dental Clinic"
+    alt: "Dental clinic workspace at Dr. Varun's Dental Clinic"
   },
   {
     src: "/images/gallery/videoplayback.mp4",

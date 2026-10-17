@@ -1,9 +1,17 @@
 from PIL import Image
 import os
 
-public_gallery_dir = r"c:\Users\ACER\Desktop\Dr Varun Dental Website\public\images\gallery"
+public_gallery_dir = os.path.normpath(
+    os.path.join(os.path.dirname(__file__), "..", "public", "images", "gallery")
+)
 
 gallery_files = [
+    "dr-varun-dental-clinic-happy-patient-smile-viman-nagar.webp",
+    "dr-varun-dental-clinic-pediatric-child-dentistry-viman-nagar.webp",
+    "dr-varun-dental-clinic-satisfied-patient-consultation-viman-nagar.webp",
+    "dr-varun-dental-clinic-painless-dental-treatment-viman-nagar.webp",
+    "dr-varun-dental-clinic-patient-smile-checkup-viman-nagar.webp",
+    "dr-varun-dental-clinic-senior-patient-smile-care-viman-nagar.webp",
     "dr-varun-dental-clinic-exterior-viman-nagar.webp",
     "dr-varun-dental-clinic-reception-viman-nagar.webp",
     "modern-dental-operatory-viman-nagar.webp",
