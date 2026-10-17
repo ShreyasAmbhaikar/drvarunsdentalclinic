@@ -43,6 +43,10 @@ const galleryImages = [
     src: "/images/gallery/dr-varun-dental-clinic-pediatric-child-dentistry-viman-nagar.webp",
     alt: "Dr. Varun Tomke with a smiling young pediatric patient giving thumbs up on dental chair in Viman Nagar"
   },
+  {
+    src: "/images/gallery/dentist-near-phoenix-mall-viman-nagar.webp",
+    alt: "Dentist near Phoenix Marketcity Mall in Viman Nagar - Dr. Varun's Dental Clinic Pune"
+  },
 
   // Column 2 (approx)
   {
@@ -60,6 +64,10 @@ const galleryImages = [
   {
     src: "/images/gallery/dr-varun-dental-clinic-painless-dental-treatment-viman-nagar.webp",
     alt: "Dr. Varun Tomke showing okay sign with relaxed patient on dental chair during painless treatment in Viman Nagar"
+  },
+  {
+    src: "/images/gallery/re-root-canal-treatment-in-viman-nagar.webp",
+    alt: "Re-root canal treatment and tooth-saving dental care in Viman Nagar Pune at Dr. Varun's Dental Clinic"
   },
 
   // Column 3 (approx)
@@ -84,6 +92,10 @@ const galleryImages = [
     alt: "Clinic walkthrough video from Dr. Varun's Dental Clinic",
     type: "video" as const,
     poster: "/images/gallery/dental-clinic-workspace-viman-nagar-thumb.webp"
+  },
+  {
+    src: "/images/gallery/dental-clinic-near-pune-airport-viman-nagar.webp",
+    alt: "Dental clinic near Pune Airport in Viman Nagar - Dr. Varun's Dental Clinic"
   }
 ] as const;
 

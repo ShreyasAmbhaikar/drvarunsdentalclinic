@@ -17,7 +17,10 @@ gallery_files = [
     "modern-dental-operatory-viman-nagar.webp",
     "dental-consultation-room-viman-nagar.webp",
     "dental-treatment-chair-viman-nagar.webp",
-    "dental-clinic-workspace-viman-nagar.webp"
+    "dental-clinic-workspace-viman-nagar.webp",
+    "dentist-near-phoenix-mall-viman-nagar.webp",
+    "re-root-canal-treatment-in-viman-nagar.webp",
+    "dental-clinic-near-pune-airport-viman-nagar.webp"
 ]
 
 def generate_thumb(file_name, max_dim=480, quality=75):
