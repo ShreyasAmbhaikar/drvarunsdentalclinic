@@ -69,15 +69,17 @@ export function Hero() {
                 <source
                   media="(max-width: 640px)"
                   srcSet="/images/home-dental-clinic-hero-viman-nagar-mobile.webp"
+                  width={480}
+                  height={528}
                 />
                 <img
                   src={siteConfig.images.heroCheckup}
-                  alt="Dentist explaining dental care to a patient in a modern clinic"
+                  alt="Dr. Varun Tomke with a smiling young pediatric patient giving thumbs up at Dr. Varun's Dental Clinic in Viman Nagar"
                   className="absolute inset-0 h-full w-full object-cover object-[48%_50%]"
                   fetchPriority="high"
                   loading="eager"
-                  width={600}
-                  height={900}
+                  width={720}
+                  height={792}
                 />
               </picture>
             </div>
