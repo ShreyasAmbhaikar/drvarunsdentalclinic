@@ -190,11 +190,11 @@ const extraction: TreatmentPageData = {
   ctaText:
     "Visit Dr. Varun's Dental Clinic for simple extractions, surgical tooth removals, broken root retrievals, socket preservation, and cosmetic tooth replacements in Viman Nagar, Pune.",
   internalLinks: [
-    { label: "dental implant to replace missing teeth", href: "/dental-implant-in-viman-nagar" },
-    { label: "wisdom tooth surgery for impacted back teeth", href: "/wisdom-tooth-surgery-in-viman-nagar" },
-    { label: "all gum care for bleeding or loose teeth", href: "/all-gum-care-in-viman-nagar" },
-    { label: "dental crowns and bridges for tooth gaps", href: "/crowns-and-bridges-in-viman-nagar" },
-    { label: "tooth coloured fillings for decayed cavities", href: "/dental-tooth-filling-in-viman-nagar" }
+    { label: "dental implant to replace missing teeth", href: "/dental-implant-in-viman-nagar/" },
+    { label: "wisdom tooth surgery for impacted back teeth", href: "/wisdom-tooth-surgery-in-viman-nagar/" },
+    { label: "all gum care for bleeding or loose teeth", href: "/all-gum-care-in-viman-nagar/" },
+    { label: "dental crowns and bridges for tooth gaps", href: "/crowns-and-bridges-in-viman-nagar/" },
+    { label: "tooth coloured fillings for decayed cavities", href: "/dental-tooth-filling-in-viman-nagar/" }
   ],
   structuredProcedureName: "Painless Tooth Extraction",
   structuredHowPerformed:

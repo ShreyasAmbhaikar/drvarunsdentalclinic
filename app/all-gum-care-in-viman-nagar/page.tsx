@@ -185,11 +185,11 @@ const gumCare: TreatmentPageData = {
   ctaText:
     "Visit Dr. Varun's Dental Clinic for professional teeth cleaning, deep scaling, gum flap surgery, fluoride varnish, and pit & fissure sealants in Viman Nagar, Pune.",
   internalLinks: [
-    { label: "gentle tooth extraction for severely decayed teeth", href: "/extraction-in-viman-nagar" },
-    { label: "dental implants to replace missing teeth", href: "/dental-implant-in-viman-nagar" },
-    { label: "minor oral surgeries for jaw and mouth growths", href: "/all-minor-surgeries-in-viman-nagar" },
-    { label: "root canal treatment to treat deep decay", href: "/root-canal-treatment-in-viman-nagar" },
-    { label: "wisdom tooth surgery for painful molars", href: "/wisdom-tooth-surgery-in-viman-nagar" }
+    { label: "gentle tooth extraction for severely decayed teeth", href: "/extraction-in-viman-nagar/" },
+    { label: "dental implants to replace missing teeth", href: "/dental-implant-in-viman-nagar/" },
+    { label: "minor oral surgeries for jaw and mouth growths", href: "/all-minor-surgeries-in-viman-nagar/" },
+    { label: "root canal treatment to treat deep decay", href: "/root-canal-treatment-in-viman-nagar/" },
+    { label: "wisdom tooth surgery for painful molars", href: "/wisdom-tooth-surgery-in-viman-nagar/" }
   ],
   structuredProcedureName: "Periodontal Gum Care & Preventive Dentistry",
   structuredHowPerformed:

@@ -190,11 +190,11 @@ const wisdomToothSurgery: TreatmentPageData = {
   ctaText:
     "Visit Dr. Varun's Dental Clinic for impacted wisdom tooth surgery, surgical extractions, painless tooth removals, and jaw pain relief in Viman Nagar, Pune.",
   internalLinks: [
-    { label: "painless tooth extraction for non-wisdom teeth", href: "/extraction-in-viman-nagar" },
-    { label: "dental implants to replace missing molars", href: "/dental-implant-in-viman-nagar" },
-    { label: "all gum care for back gums swelling", href: "/all-gum-care-in-viman-nagar" },
-    { label: "root canal treatment to salvage teeth", href: "/root-canal-treatment-in-viman-nagar" },
-    { label: "routine dental checkup and consultation", href: "/our-services" }
+    { label: "painless tooth extraction for non-wisdom teeth", href: "/extraction-in-viman-nagar/" },
+    { label: "dental implants to replace missing molars", href: "/dental-implant-in-viman-nagar/" },
+    { label: "all gum care for back gums swelling", href: "/all-gum-care-in-viman-nagar/" },
+    { label: "root canal treatment to salvage teeth", href: "/root-canal-treatment-in-viman-nagar/" },
+    { label: "routine dental checkup and consultation", href: "/our-services/" }
   ],
   structuredProcedureName: "Surgical Wisdom Tooth Extraction",
   structuredHowPerformed:

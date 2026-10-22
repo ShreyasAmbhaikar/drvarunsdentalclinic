@@ -192,11 +192,11 @@ const pediatricDentistry: TreatmentPageData = {
   ctaText:
     "Visit Dr. Varun's Dental Clinic for kids' checkups, gentle cavity fillings, fluoride varnish shielding, dental sealants, and friendly child-friendly dentistry in Viman Nagar, Pune.",
   internalLinks: [
-    { label: "all gum care for bleeding and pocket treatments", href: "/all-gum-care-in-viman-nagar" },
-    { label: "braces consultation for crooked teeth guidance", href: "/braces-treatment-in-viman-nagar" },
-    { label: "Invisalign clear aligners for teenagers", href: "/invisalign-treatment-in-viman-nagar" },
-    { label: "tooth coloured fillings for cavities", href: "/dental-tooth-filling-in-viman-nagar" },
-    { label: "emergency dentist appointments for tooth pain", href: "/our-services" }
+    { label: "all gum care for bleeding and pocket treatments", href: "/all-gum-care-in-viman-nagar/" },
+    { label: "braces consultation for crooked teeth guidance", href: "/braces-treatment-in-viman-nagar/" },
+    { label: "Invisalign clear aligners for teenagers", href: "/invisalign-treatment-in-viman-nagar/" },
+    { label: "tooth coloured fillings for cavities", href: "/dental-tooth-filling-in-viman-nagar/" },
+    { label: "emergency dentist appointments for tooth pain", href: "/our-services/" }
   ],
   structuredProcedureName: "Pediatric Dental Checkup and Prevention",
   structuredHowPerformed:

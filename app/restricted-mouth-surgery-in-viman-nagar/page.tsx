@@ -190,11 +190,11 @@ const restrictedMouthSurgery: TreatmentPageData = {
   ctaText:
     "Visit Dr. Varun's Dental Clinic for restricted mouth surgery, OSMF medical injections, laser fibrotomy, jaw physiotherapy, and oral cancer screening in Viman Nagar, Pune.",
   internalLinks: [
-    { label: "gentle tooth extraction for damaged molars", href: "/extraction-in-viman-nagar" },
-    { label: "wisdom tooth surgery for impacted back teeth", href: "/wisdom-tooth-surgery-in-viman-nagar" },
-    { label: "all gum care for healthy mouth tissues", href: "/all-gum-care-in-viman-nagar" },
-    { label: "routine dental checkups and diagnostic screening", href: "/our-services" },
-    { label: "minor oral surgeries for jaw and mouth growths", href: "/all-minor-surgeries-in-viman-nagar" }
+    { label: "gentle tooth extraction for damaged molars", href: "/extraction-in-viman-nagar/" },
+    { label: "wisdom tooth surgery for impacted back teeth", href: "/wisdom-tooth-surgery-in-viman-nagar/" },
+    { label: "all gum care for healthy mouth tissues", href: "/all-gum-care-in-viman-nagar/" },
+    { label: "routine dental checkups and diagnostic screening", href: "/our-services/" },
+    { label: "minor oral surgeries for jaw and mouth growths", href: "/all-minor-surgeries-in-viman-nagar/" }
   ],
   structuredProcedureName: "Restricted Mouth Fibrotomy Surgery",
   structuredHowPerformed:

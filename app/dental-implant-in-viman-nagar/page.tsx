@@ -224,11 +224,11 @@ const dentalImplant: TreatmentPageData = {
   ctaText:
     "Visit Dr. Varun's Dental Clinic, Viman Nagar, Pune for dental implant consultation, missing tooth replacement, implant-supported crowns, bridges, dentures, and full mouth rehabilitation planning.",
   internalLinks: [
-    { label: "dental crown over implant", href: "/our-services" },
-    { label: "dental bridge for missing teeth", href: "/our-services" },
-    { label: "removable denture treatment", href: "/our-services" },
-    { label: "full mouth dental implant planning", href: "/our-services" },
-    { label: "tooth extraction before implant placement", href: "/our-services" }
+    { label: "dental crown over implant", href: "/our-services/" },
+    { label: "dental bridge for missing teeth", href: "/our-services/" },
+    { label: "removable denture treatment", href: "/our-services/" },
+    { label: "full mouth dental implant planning", href: "/our-services/" },
+    { label: "tooth extraction before implant placement", href: "/our-services/" }
   ],
   structuredProcedureName: "Dental Implant Treatment",
   structuredHowPerformed:

@@ -201,11 +201,11 @@ const dentalVeneers: TreatmentPageData = {
   ctaText:
     "Visit Dr. Varun's Dental Clinic for porcelain veneers, composite laminates, minimal-prep veneers, smile designing, and comprehensive cosmetic dentistry in Viman Nagar, Pune.",
   internalLinks: [
-    { label: "cosmetic smile designing and makeovers", href: "/smile-designing-in-viman-nagar" },
-    { label: "professional teeth whitening for brighter enamel", href: "/teeth-whitening-in-viman-nagar" },
-    { label: "crowns and bridges for heavily broken teeth", href: "/crowns-and-bridges-in-viman-nagar" },
-    { label: "tooth-coloured dental fillings for minor cavities", href: "/dental-tooth-filling-in-viman-nagar" },
-    { label: "all gum care for healthy veneer foundations", href: "/all-gum-care-in-viman-nagar" }
+    { label: "cosmetic smile designing and makeovers", href: "/smile-designing-in-viman-nagar/" },
+    { label: "professional teeth whitening for brighter enamel", href: "/teeth-whitening-in-viman-nagar/" },
+    { label: "crowns and bridges for heavily broken teeth", href: "/crowns-and-bridges-in-viman-nagar/" },
+    { label: "tooth-coloured dental fillings for minor cavities", href: "/dental-tooth-filling-in-viman-nagar/" },
+    { label: "all gum care for healthy veneer foundations", href: "/all-gum-care-in-viman-nagar/" }
   ],
   structuredProcedureName: "Dental Veneers and Laminates Placement",
   structuredHowPerformed:

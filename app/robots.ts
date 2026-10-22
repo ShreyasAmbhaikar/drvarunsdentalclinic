@@ -25,11 +25,13 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: "/"
+        allow: "/",
+        disallow: ["/_next/static/media/"]
       },
       {
         userAgent: allowedAiAndSearchAgents,
-        allow: "/"
+        allow: "/",
+        disallow: ["/_next/static/media/"]
       }
     ],
     sitemap: `${siteConfig.url}/sitemap.xml`

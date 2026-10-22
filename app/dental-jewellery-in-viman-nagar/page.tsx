@@ -188,11 +188,11 @@ const dentalJewellery: TreatmentPageData = {
   ctaText:
     "Visit Dr. Varun's Dental Clinic for certified Swarovski tooth gems, dental jewellery bonding, safe removal, and cosmetic smile designs in Viman Nagar, Pune.",
   internalLinks: [
-    { label: "cosmetic smile designing and veneers", href: "/our-services" },
-    { label: "professional teeth whitening for a brighter smile", href: "/teeth-whitening-in-viman-nagar" },
-    { label: "all gum care for bleeding and pocket treatments", href: "/all-gum-care-in-viman-nagar" },
-    { label: "tooth coloured fillings to repair decay", href: "/dental-tooth-filling-in-viman-nagar" },
-    { label: "Invisalign clear aligners for teeth straightening", href: "/invisalign-treatment-in-viman-nagar" }
+    { label: "cosmetic smile designing and veneers", href: "/our-services/" },
+    { label: "professional teeth whitening for a brighter smile", href: "/teeth-whitening-in-viman-nagar/" },
+    { label: "all gum care for bleeding and pocket treatments", href: "/all-gum-care-in-viman-nagar/" },
+    { label: "tooth coloured fillings to repair decay", href: "/dental-tooth-filling-in-viman-nagar/" },
+    { label: "Invisalign clear aligners for teeth straightening", href: "/invisalign-treatment-in-viman-nagar/" }
   ],
   structuredProcedureName: "Dental Jewellery Application",
   structuredHowPerformed:

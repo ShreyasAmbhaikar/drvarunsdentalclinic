@@ -192,11 +192,11 @@ const crownsAndBridges: TreatmentPageData = {
   ctaText:
     "Visit Dr. Varun's Dental Clinic for ceramic crowns, zirconia caps, dental bridges, old crown replacement, and custom restorative dentistry in Viman Nagar, Pune.",
   internalLinks: [
-    { label: "root canal treatment before crown placement", href: "/root-canal-treatment-in-viman-nagar" },
-    { label: "dental implant options for single tooth replacement", href: "/dental-implant-in-viman-nagar" },
-    { label: "all gum care for bleeding and pocket treatments", href: "/all-gum-care-in-viman-nagar" },
-    { label: "cosmetic smile designing and dental veneers", href: "/dental-veneers-in-viman-nagar" },
-    { label: "dentures treatment for multiple missing teeth", href: "/our-services" }
+    { label: "root canal treatment before crown placement", href: "/root-canal-treatment-in-viman-nagar/" },
+    { label: "dental implant options for single tooth replacement", href: "/dental-implant-in-viman-nagar/" },
+    { label: "all gum care for bleeding and pocket treatments", href: "/all-gum-care-in-viman-nagar/" },
+    { label: "cosmetic smile designing and dental veneers", href: "/dental-veneers-in-viman-nagar/" },
+    { label: "dentures treatment for multiple missing teeth", href: "/our-services/" }
   ],
   structuredProcedureName: "Crown and Bridge Fitting Restoration",
   structuredHowPerformed:

@@ -185,11 +185,11 @@ const minorSurgeries: TreatmentPageData = {
   ctaText:
     "Schedule an evaluation at Dr. Varun's Dental Clinic for painless salivary cyst removal, jaw wiring, frenectomy, and minor oral surgeries in Viman Nagar, Pune.",
   internalLinks: [
-    { label: "gentle tooth extraction for severely damaged teeth", href: "/extraction-in-viman-nagar" },
-    { label: "all gum care for deep scaling and flap treatment", href: "/all-gum-care-in-viman-nagar" },
-    { label: "dental implants for stable teeth replacement", href: "/dental-implant-in-viman-nagar" },
-    { label: "root canal treatment to save infected teeth", href: "/root-canal-treatment-in-viman-nagar" },
-    { label: "wisdom tooth surgery for impacted molars", href: "/wisdom-tooth-surgery-in-viman-nagar" }
+    { label: "gentle tooth extraction for severely damaged teeth", href: "/extraction-in-viman-nagar/" },
+    { label: "all gum care for deep scaling and flap treatment", href: "/all-gum-care-in-viman-nagar/" },
+    { label: "dental implants for stable teeth replacement", href: "/dental-implant-in-viman-nagar/" },
+    { label: "root canal treatment to save infected teeth", href: "/root-canal-treatment-in-viman-nagar/" },
+    { label: "wisdom tooth surgery for impacted molars", href: "/wisdom-tooth-surgery-in-viman-nagar/" }
   ],
   structuredProcedureName: "Minor Oral Surgery",
   structuredHowPerformed:

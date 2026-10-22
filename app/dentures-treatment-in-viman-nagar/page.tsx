@@ -192,11 +192,11 @@ const denturesTreatment: TreatmentPageData = {
   ctaText:
     "Visit Dr. Varun's Dental Clinic for custom complete, partial, flexible, or implant-supported dentures. Get custom-fit fake teeth solutions from an experienced dentist in Viman Nagar, Pune.",
   internalLinks: [
-    { label: "dental implant treatment for stable teeth replacement", href: "/dental-implant-in-viman-nagar" },
-    { label: "routine dental checkup and consultation", href: "/our-services" },
-    { label: "all gum care for bleeding and pocket treatments", href: "/all-gum-care-in-viman-nagar" },
-    { label: "tooth coloured dental filling for decay", href: "/dental-tooth-filling-in-viman-nagar" },
-    { label: "root canal treatment to save failing teeth", href: "/root-canal-treatment-in-viman-nagar" }
+    { label: "dental implant treatment for stable teeth replacement", href: "/dental-implant-in-viman-nagar/" },
+    { label: "routine dental checkup and consultation", href: "/our-services/" },
+    { label: "all gum care for bleeding and pocket treatments", href: "/all-gum-care-in-viman-nagar/" },
+    { label: "tooth coloured dental filling for decay", href: "/dental-tooth-filling-in-viman-nagar/" },
+    { label: "root canal treatment to save failing teeth", href: "/root-canal-treatment-in-viman-nagar/" }
   ],
   structuredProcedureName: "Dentures Fitting Treatment",
   structuredHowPerformed:

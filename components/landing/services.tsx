@@ -37,7 +37,7 @@ export function Services() {
       </div>
       <div className="mt-8 text-center">
         <Link
-          href="/our-services"
+          href="/our-services/"
           className="inline-flex h-[42px] items-center rounded-full bg-cyan-soft px-[28px] font-label-sm text-sm font-semibold text-white transition-colors duration-200 hover:bg-cyan"
         >
           View All Services

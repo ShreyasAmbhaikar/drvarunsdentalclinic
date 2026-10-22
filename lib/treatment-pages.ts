@@ -183,11 +183,11 @@ export const bracesTreatment: TreatmentPageData = {
   ctaText:
     "Visit Dr. Varun's Dental Clinic for braces consultation, teeth alignment planning, smile guidance, and oral health evaluation in Viman Nagar.",
   internalLinks: [
-    { label: "clear aligners for teeth straightening", href: "/invisalign-treatment-in-viman-nagar" },
-    { label: "all gum care for bleeding and pocket treatments", href: "/all-gum-care-in-viman-nagar" },
-    { label: "dental checkup before braces", href: "/our-services" },
-    { label: "painless tooth extraction if required", href: "/extraction-in-viman-nagar" },
-    { label: "smile designing after teeth alignment", href: "/our-services" }
+    { label: "clear aligners for teeth straightening", href: "/invisalign-treatment-in-viman-nagar/" },
+    { label: "all gum care for bleeding and pocket treatments", href: "/all-gum-care-in-viman-nagar/" },
+    { label: "dental checkup before braces", href: "/our-services/" },
+    { label: "painless tooth extraction if required", href: "/extraction-in-viman-nagar/" },
+    { label: "smile designing after teeth alignment", href: "/our-services/" }
   ],
   structuredProcedureName: "Dental Braces Treatment",
   structuredHowPerformed:
@@ -377,11 +377,11 @@ export const invisalignTreatment: TreatmentPageData = {
   ctaText:
     "Visit Dr. Varun's Dental Clinic for clear aligner consultation, alignment evaluation, oral health checks, and smile-focused treatment planning in Viman Nagar.",
   internalLinks: [
-    { label: "traditional braces treatment for complex alignment cases", href: "/braces-treatment-in-viman-nagar" },
-    { label: "all gum care for bleeding and pocket treatments", href: "/all-gum-care-in-viman-nagar" },
-    { label: "dental checkup before clear aligners", href: "/our-services" },
-    { label: "complete smile makeover treatment", href: "/our-services" },
-    { label: "smile designing after teeth alignment", href: "/our-services" }
+    { label: "traditional braces treatment for complex alignment cases", href: "/braces-treatment-in-viman-nagar/" },
+    { label: "all gum care for bleeding and pocket treatments", href: "/all-gum-care-in-viman-nagar/" },
+    { label: "dental checkup before clear aligners", href: "/our-services/" },
+    { label: "complete smile makeover treatment", href: "/our-services/" },
+    { label: "smile designing after teeth alignment", href: "/our-services/" }
   ],
   structuredProcedureName: "Invisalign and Clear Aligner Treatment",
   structuredHowPerformed:
@@ -571,11 +571,11 @@ export const wisdomToothExtraction: TreatmentPageData = {
   ctaText:
     "Visit Dr. Varun's Dental Clinic for wisdom tooth pain evaluation, X-ray guidance, impacted tooth diagnosis, and emergency dental care in Viman Nagar.",
   internalLinks: [
-    { label: "root canal treatment when a tooth can be saved", href: "/root-canal-treatment-in-viman-nagar" },
-    { label: "dental checkup and X-ray evaluation", href: "/our-services" },
-    { label: "emergency dentist for tooth pain and swelling", href: "/contact-us" },
-    { label: "simple tooth extraction treatment", href: "/our-services" },
-    { label: "gum infection treatment near wisdom tooth", href: "/our-services" }
+    { label: "root canal treatment when a tooth can be saved", href: "/root-canal-treatment-in-viman-nagar/" },
+    { label: "dental checkup and X-ray evaluation", href: "/our-services/" },
+    { label: "emergency dentist for tooth pain and swelling", href: "/contact-us/" },
+    { label: "simple tooth extraction treatment", href: "/our-services/" },
+    { label: "gum infection treatment near wisdom tooth", href: "/our-services/" }
   ],
   structuredProcedureName: "Wisdom Tooth Extraction",
   structuredHowPerformed:
@@ -770,11 +770,11 @@ export const dentalToothFilling: TreatmentPageData = {
   ctaText:
     "Visit Dr. Varun's Dental Clinic for dental tooth filling, cavity filling, old filling replacement, chipped tooth repair, and preventive dental checkups in Viman Nagar.",
   internalLinks: [
-    { label: "root canal treatment for deep cavities", href: "/root-canal-treatment-in-viman-nagar" },
-    { label: "all gum care for bleeding and pocket treatments", href: "/all-gum-care-in-viman-nagar" },
-    { label: "routine dental checkup for early cavity detection", href: "/our-services" },
-    { label: "cavity filling for children", href: "/our-services" },
-    { label: "dental crown for badly damaged teeth", href: "/our-services" }
+    { label: "root canal treatment for deep cavities", href: "/root-canal-treatment-in-viman-nagar/" },
+    { label: "all gum care for bleeding and pocket treatments", href: "/all-gum-care-in-viman-nagar/" },
+    { label: "routine dental checkup for early cavity detection", href: "/our-services/" },
+    { label: "cavity filling for children", href: "/our-services/" },
+    { label: "dental crown for badly damaged teeth", href: "/our-services/" }
   ],
   structuredProcedureName: "Dental Tooth Filling",
   structuredHowPerformed:

@@ -192,11 +192,11 @@ const fullMouthRehab: TreatmentPageData = {
   ctaText:
     "Schedule a comprehensive evaluation at Dr. Varun's Dental Clinic for full mouth rehabilitation, bite correction, TMJ therapy, and advanced restorative dentistry in Viman Nagar, Pune.",
   internalLinks: [
-    { label: "dental implant therapy for missing teeth", href: "/dental-implant-in-viman-nagar" },
-    { label: "zirconia dental crowns and bridges", href: "/crowns-and-bridges-in-viman-nagar" },
-    { label: "root canal treatment to salvage weak teeth", href: "/root-canal-treatment-in-viman-nagar" },
-    { label: "cosmetic smile designing and veneers", href: "/our-services" },
-    { label: "all gum care for bleeding and pocket treatments", href: "/all-gum-care-in-viman-nagar" }
+    { label: "dental implant therapy for missing teeth", href: "/dental-implant-in-viman-nagar/" },
+    { label: "zirconia dental crowns and bridges", href: "/crowns-and-bridges-in-viman-nagar/" },
+    { label: "root canal treatment to salvage weak teeth", href: "/root-canal-treatment-in-viman-nagar/" },
+    { label: "cosmetic smile designing and veneers", href: "/our-services/" },
+    { label: "all gum care for bleeding and pocket treatments", href: "/all-gum-care-in-viman-nagar/" }
   ],
   structuredProcedureName: "Full Mouth Rehabilitation (FMR)",
   structuredHowPerformed:

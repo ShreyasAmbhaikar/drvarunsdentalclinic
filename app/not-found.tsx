@@ -32,14 +32,14 @@ export default function NotFound() {
 
         <div className="mt-8 flex w-full max-w-[430px] flex-col gap-3 sm:flex-row sm:justify-center">
           <Link
-            href="/"
+            href="/dental-clinic-viman-nagar/"
             className="inline-flex h-[50px] items-center justify-center gap-2 rounded-full bg-primary-container px-7 font-label-sm text-sm font-semibold text-white transition-colors hover:bg-primary-dark"
           >
             <Home className="h-4 w-4" aria-hidden="true" />
             Back to home
           </Link>
           <Link
-            href="/contact-us"
+            href="/contact-us/"
             className="inline-flex h-[50px] items-center justify-center gap-2 rounded-full border border-[#e7d2ba] bg-white px-7 font-label-sm text-sm font-semibold text-primary-container transition-colors hover:border-[#d9bb99] hover:bg-[#fff6ea]"
           >
             <Phone className="h-4 w-4" aria-hidden="true" />

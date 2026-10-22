@@ -170,11 +170,11 @@ const rootCanalTreatment: TreatmentPageData = {
   ctaText:
     "Visit Dr. Varun's Dental Clinic, Viman Nagar, Pune for root canal treatment, tooth pain treatment, fillings, dental crowns, and other dental care services.",
   internalLinks: [
-    { label: "dental crown after root canal treatment", href: "/our-services" },
-    { label: "tooth extraction when a tooth cannot be saved", href: "/our-services" },
-    { label: "tooth coloured dental filling", href: "/our-services" },
-    { label: "emergency tooth pain treatment", href: "/our-services" },
-    { label: "routine dental checkup", href: "/our-services" }
+    { label: "dental crown after root canal treatment", href: "/our-services/" },
+    { label: "tooth extraction when a tooth cannot be saved", href: "/our-services/" },
+    { label: "tooth coloured dental filling", href: "/our-services/" },
+    { label: "emergency tooth pain treatment", href: "/our-services/" },
+    { label: "routine dental checkup", href: "/our-services/" }
   ],
   structuredProcedureName: "Root Canal Treatment",
   structuredHowPerformed:
